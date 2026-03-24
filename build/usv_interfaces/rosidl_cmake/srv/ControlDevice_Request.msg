@@ -1,0 +1,5 @@
+# === Request ===
+string device_id    # 设备ID (例如: "nav_light_left", "sampler_pump")
+string command      # 指令 (例如: "ON", "OFF", "SET_LEVEL")
+float32 value       # 数值 (例如: 亮度 0-100)
+

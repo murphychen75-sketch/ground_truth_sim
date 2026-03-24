@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__traits.hpp

@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/vessel_state.h

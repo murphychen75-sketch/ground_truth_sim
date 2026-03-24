@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/VisionDetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Header.idl"
+#include "usv_interfaces/msg/VisionDetection.idl"
+
+module usv_interfaces {
+  module msg {
+    struct VisionDetectionArray {
+      @verbatim (language="comment", text=
+        "相机原始图像的采样时间戳与坐标系")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "算法产生当前结果的系统时间（用于端到端延迟）")
+      builtin_interfaces::msg::Time output_stamp;
+
+      @verbatim (language="comment", text=
+        "当前帧的检测列表")
+      sequence<usv_interfaces::msg::VisionDetection> detections;
+    };
+  };
+};

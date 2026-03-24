@@ -1,0 +1,110 @@
+# Parameters for running ground truth with four vision cameras and four mmWave radars.
+# All nodes share the same file; each section key must match the node name in the launch file.
+
+ground_truth_node:
+  ros__parameters:
+    update_dt: 0.02            # 50 Hz 真值刷新，确保满足 25/15 Hz 采样
+    frame_id: "base_link"
+    target_count: 6
+    annulus_radius_min: 50.0    # 最近目标距离（米）
+    annulus_radius_max: 150.0   # 最远目标距离（米）
+
+sim_vision_front:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/front/detections"
+    marker_topic: "/vision/front/markers"
+    frame_id: "camera_front_link"
+    camera_id: "front"
+    camera_yaw: 0.0
+    fov_half_angle: 0.78539816339   # 45°，总 FoV = 90°
+    sigma_angle: 0.01               # 更小的角度噪声
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+
+sim_vision_right:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/right/detections"
+    marker_topic: "/vision/right/markers"
+    frame_id: "camera_right_link"
+    camera_id: "right"
+    camera_yaw: -1.57079632679
+    fov_half_angle: 0.78539816339
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+
+sim_vision_rear:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/rear/detections"
+    marker_topic: "/vision/rear/markers"
+    frame_id: "camera_back_link"
+    camera_id: "rear"
+    camera_yaw: 3.14159265359
+    fov_half_angle: 0.78539816339
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+
+sim_vision_left:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/left/detections"
+    marker_topic: "/vision/left/markers"
+    frame_id: "camera_left_link"
+    camera_id: "left"
+    camera_yaw: 1.57079632679
+    fov_half_angle: 0.78539816339
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+
+sim_mmwave_front:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    target_topic: "/mmwave/front/targets"
+    marker_topic: "/mmwave/front/markers"
+    frame_id: "mmwave_front_link"
+    radar_id: "mmwave_front"
+    radar_yaw: 0.0
+    fov_half_angle: 1.0471975512    # 60°，总 FoV = 120°
+    publish_rate_hz: 15.0
+
+sim_mmwave_right:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    target_topic: "/mmwave/right/targets"
+    marker_topic: "/mmwave/right/markers"
+    frame_id: "mmwave_right_link"
+    radar_id: "mmwave_right"
+    radar_yaw: -1.57079632679
+    fov_half_angle: 1.0471975512
+    publish_rate_hz: 15.0
+
+sim_mmwave_rear:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    target_topic: "/mmwave/rear/targets"
+    marker_topic: "/mmwave/rear/markers"
+    frame_id: "mmwave_back_link"
+    radar_id: "mmwave_rear"
+    radar_yaw: 3.14159265359
+    fov_half_angle: 1.0471975512
+    publish_rate_hz: 15.0
+
+sim_mmwave_left:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    target_topic: "/mmwave/left/targets"
+    marker_topic: "/mmwave/left/markers"
+    frame_id: "mmwave_left_link"
+    radar_id: "mmwave_left"
+    radar_yaw: 1.57079632679
+    fov_half_angle: 1.0471975512
+    publish_rate_hz: 15.0

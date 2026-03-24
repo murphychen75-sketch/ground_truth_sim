@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/OperationMode.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module usv_interfaces {
+  module msg {
+    module OperationMode_Constants {
+      @verbatim (language="comment", text=
+        "手动遥控")
+      const uint8 MODE_MANUAL = 0;
+      @verbatim (language="comment", text=
+        "自动航向/巡线")
+      const uint8 MODE_AUTO_HEADING = 1;
+      @verbatim (language="comment", text=
+        "智能避障巡线")
+      const uint8 MODE_SMART_PATH = 2;
+      @verbatim (language="comment", text=
+        "自主点对点导航")
+      const uint8 MODE_AUTO_NAV = 3;
+    };
+    struct OperationMode {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "当前模式")
+      uint8 mode;
+    };
+  };
+};

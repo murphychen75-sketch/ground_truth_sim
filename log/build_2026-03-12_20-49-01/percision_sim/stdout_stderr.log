@@ -1,0 +1,18 @@
+running develop
+running egg_info
+creating percision_sim.egg-info
+writing manifest file 'percision_sim.egg-info/SOURCES.txt'
+writing manifest file 'percision_sim.egg-info/SOURCES.txt'
+running build_ext
+running symlink_data
+creating /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/ament_index
+creating /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/ament_index/resource_index
+creating /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/ament_index/resource_index/packages
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/resource/percision_sim -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/ament_index/resource_index/packages
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/package.xml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/README.md -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim
+creating /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/config/percision_sim_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/config/multi_sensor_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+creating /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/launch
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/percision_sim/launch/multi_sensor_sim.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/launch

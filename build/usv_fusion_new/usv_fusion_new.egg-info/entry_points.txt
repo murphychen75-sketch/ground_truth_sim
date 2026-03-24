@@ -1,0 +1,5 @@
+[console_scripts]
+global_fusion_node = usv_fusion_new.global_fusion_node:main
+global_viz_node = usv_fusion_new.global_viz_node:main
+local_fusion_node = usv_fusion_new.local_fusion_node:main
+

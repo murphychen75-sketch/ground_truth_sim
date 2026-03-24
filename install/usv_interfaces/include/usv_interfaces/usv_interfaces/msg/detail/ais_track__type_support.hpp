@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_cpp/usv_interfaces/msg/detail/ais_track__type_support.hpp

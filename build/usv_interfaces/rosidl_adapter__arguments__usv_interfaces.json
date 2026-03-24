@@ -1,0 +1,20 @@
+{
+  "package_name": "usv_interfaces",
+  "non_idl_tuples": [
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/ControlDeviation.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/OperationMode.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/VisionDetection.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/VisionDetectionArray.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/MmwaveTarget.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/MmwaveTargetArray.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/NavRadarTarget.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/NavRadarTargetArray.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/AISTrack.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/AISTrackArray.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/GlobalTrack.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/GlobalTrackArray.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/VesselState.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:srv/ControlDevice.srv",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:action/ExecuteMission.action"
+  ]
+}

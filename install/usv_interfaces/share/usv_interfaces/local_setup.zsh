@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/ament_cmake_environment_hooks/local_setup.zsh

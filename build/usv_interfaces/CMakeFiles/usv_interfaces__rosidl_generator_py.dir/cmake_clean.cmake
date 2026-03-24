@@ -1,0 +1,39 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_array_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_array_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_array_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_array_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_array_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_array_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_operation_mode_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_operation_mode_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_array_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_array_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_s.c.o.d"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o"
+  "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o.d"
+  "rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.pdb"
+  "rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/usv_interfaces__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

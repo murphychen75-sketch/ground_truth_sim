@@ -1,0 +1,18 @@
+running develop
+running egg_info
+creating ground_truth_sim.egg-info
+writing manifest file 'ground_truth_sim.egg-info/SOURCES.txt'
+writing manifest file 'ground_truth_sim.egg-info/SOURCES.txt'
+running build_ext
+running symlink_data
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ament_index
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ament_index/resource_index
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ament_index/resource_index/packages
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/resource/ground_truth_sim -> /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ament_index/resource_index/packages
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/package.xml -> /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/rviz
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/rviz/ground_truth_view.rviz -> /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/rviz
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/launch
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/launch/ground_truth_sim.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/launch
+creating /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/config
+symbolically linking /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/config/ground_truth_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/config

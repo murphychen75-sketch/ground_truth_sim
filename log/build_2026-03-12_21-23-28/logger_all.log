@@ -1,0 +1,330 @@
+[0.045s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.045s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x72823f57e860>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72823f57e350>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72823f57e350>>)
+[0.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.130s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cczh/temp-code/ground_truth_sim'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/percision_sim) by extension 'ros'
+[0.137s] DEBUG:colcon.colcon_core.package_identification:Package 'src/percision_sim' with type 'ros.ament_python' and name 'percision_sim'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim' with type 'ros.ament_python' and name 'ground_truth_sim'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_fusion_new) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usv_fusion_new' with type 'ros.ament_python' and name 'usv_fusion_new'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_interfaces) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usv_interfaces' with type 'ros.ament_cmake' and name 'usv_interfaces'
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.149s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/cczh/temp-code/ground_truth_sim/install
+[0.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 354 installed packages in /opt/ros/humble
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'usv_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.169s] DEBUG:colcon.colcon_core.verb:Building package 'usv_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces', 'merge_install': False, 'path': '/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_target' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'ground_truth_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.169s] DEBUG:colcon.colcon_core.verb:Building package 'ground_truth_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim', 'merge_install': False, 'path': '/home/cczh/temp-code/ground_truth_sim/src/sim', 'symlink_install': False, 'test_result_base': None}
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_target' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.169s] Level 5:colcon.colcon_core.verb:set package 'percision_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.169s] DEBUG:colcon.colcon_core.verb:Building package 'percision_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cczh/temp-code/ground_truth_sim/build/percision_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cczh/temp-code/ground_truth_sim/install/percision_sim', 'merge_install': False, 'path': '/home/cczh/temp-code/ground_truth_sim/src/percision_sim', 'symlink_install': False, 'test_result_base': None}
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_target' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_clean_cache' from command line to 'False'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_clean_first' from command line to 'False'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'cmake_force_configure' from command line to 'False'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'ament_cmake_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'catkin_cmake_args' from command line to 'None'
+[0.170s] Level 5:colcon.colcon_core.verb:set package 'usv_fusion_new' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.170s] DEBUG:colcon.colcon_core.verb:Building package 'usv_fusion_new' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new', 'merge_install': False, 'path': '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new', 'symlink_install': False, 'test_result_base': None}
+[0.170s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.170s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.170s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces' with build type 'ament_cmake'
+[0.170s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces'
+[0.171s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32
+[1.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32
+[1.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/opt/ros/humble /usr/bin/cmake --install /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces
+[1.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_interfaces)
+[1.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/opt/ros/humble /usr/bin/cmake --install /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces
+[1.272s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces' for CMake module files
+[1.273s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces' for CMake config files
+[1.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_interfaces', 'cmake_prefix_path')
+[1.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.ps1'
+[1.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.dsv'
+[1.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.sh'
+[1.274s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib'
+[1.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_interfaces', 'ld_library_path_lib')
+[1.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.ps1'
+[1.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.dsv'
+[1.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.sh'
+[1.275s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/bin'
+[1.275s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/pkgconfig/usv_interfaces.pc'
+[1.275s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/python3.10/site-packages'
+[1.275s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/bin'
+[1.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.ps1'
+[1.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.dsv'
+[1.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.sh'
+[1.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.bash'
+[1.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.zsh'
+[1.276s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/colcon-core/packages/usv_interfaces)
+[1.277s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_interfaces)
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces' for CMake module files
+[1.277s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces' for CMake config files
+[1.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_interfaces', 'cmake_prefix_path')
+[1.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.ps1'
+[1.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.dsv'
+[1.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/cmake_prefix_path.sh'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib'
+[1.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_interfaces', 'ld_library_path_lib')
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.ps1'
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.dsv'
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/hook/ld_library_path_lib.sh'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/bin'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/pkgconfig/usv_interfaces.pc'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/python3.10/site-packages'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/bin'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.ps1'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.dsv'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.sh'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.bash'
+[1.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.zsh'
+[1.279s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/colcon-core/packages/usv_interfaces)
+[1.280s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cczh/temp-code/ground_truth_sim/src/sim' with build type 'ament_python'
+[1.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('ground_truth_sim', 'ament_prefix_path')
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/ament_prefix_path.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/ament_prefix_path.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/ament_prefix_path.sh'
+[1.280s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.280s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.282s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim' with build type 'ament_python'
+[1.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('percision_sim', 'ament_prefix_path')
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/ament_prefix_path.ps1'
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/ament_prefix_path.dsv'
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/ament_prefix_path.sh'
+[1.282s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.284s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new' with build type 'ament_python'
+[1.284s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_fusion_new', 'ament_prefix_path')
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/ament_prefix_path.ps1'
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/ament_prefix_path.dsv'
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/ament_prefix_path.sh'
+[1.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.413s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cczh/temp-code/ground_truth_sim/src/sim'
+[1.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.542s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim'
+[1.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.674s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new'
+[1.674s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.674s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/sim': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ground_truth_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/install.log --single-version-externally-managed install_data
+[1.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/percision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/percision_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/percision_sim/install.log --single-version-externally-managed install_data
+[1.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/build
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim' for CMake module files
+[1.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/sim' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ground_truth_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/ground_truth_sim/install.log --single-version-externally-managed install_data
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim' for CMake config files
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/lib'
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/bin'
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/lib/pkgconfig/ground_truth_sim.pc'
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/lib/python3.10/site-packages'
+[2.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('ground_truth_sim', 'pythonpath')
+[2.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/pythonpath.ps1'
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/pythonpath.dsv'
+[2.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/hook/pythonpath.sh'
+[2.001s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/bin'
+[2.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ground_truth_sim)
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/package.ps1'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/package.dsv'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/package.sh'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/package.bash'
+[2.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/ground_truth_sim/package.zsh'
+[2.002s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim/share/colcon-core/packages/ground_truth_sim)
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim' for CMake module files
+[2.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/percision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/percision_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/percision_sim/install.log --single-version-externally-managed install_data
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim' for CMake config files
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib'
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/bin'
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/pkgconfig/percision_sim.pc'
+[2.007s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages'
+[2.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('percision_sim', 'pythonpath')
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/pythonpath.ps1'
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/pythonpath.dsv'
+[2.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/hook/pythonpath.sh'
+[2.008s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/bin'
+[2.008s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(percision_sim)
+[2.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/package.ps1'
+[2.008s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/package.dsv'
+[2.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/package.sh'
+[2.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/package.bash'
+[2.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/package.zsh'
+[2.010s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/colcon-core/packages/percision_sim)
+[2.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/build
+[2.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_fusion_new build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/install.log --single-version-externally-managed install_data --force
+[2.229s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new' for CMake module files
+[2.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_fusion_new build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/install.log --single-version-externally-managed install_data --force
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new' for CMake config files
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib'
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/bin'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/pkgconfig/usv_fusion_new.pc'
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/lib/python3.10/site-packages'
+[2.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_fusion_new', 'pythonpath')
+[2.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/pythonpath.ps1'
+[2.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/pythonpath.dsv'
+[2.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/hook/pythonpath.sh'
+[2.232s] Level 1:colcon.colcon_core.environment:checking '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/bin'
+[2.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_fusion_new)
+[2.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/package.ps1'
+[2.233s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/package.dsv'
+[2.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/package.sh'
+[2.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/package.bash'
+[2.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/package.zsh'
+[2.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/colcon-core/packages/usv_fusion_new)
+[2.233s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.234s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.236s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.236s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.236s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.241s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.242s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cczh/temp-code/ground_truth_sim/install/local_setup.ps1'
+[2.242s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cczh/temp-code/ground_truth_sim/install/_local_setup_util_ps1.py'
+[2.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cczh/temp-code/ground_truth_sim/install/setup.ps1'
+[2.243s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cczh/temp-code/ground_truth_sim/install/local_setup.sh'
+[2.243s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cczh/temp-code/ground_truth_sim/install/_local_setup_util_sh.py'
+[2.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cczh/temp-code/ground_truth_sim/install/setup.sh'
+[2.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cczh/temp-code/ground_truth_sim/install/local_setup.bash'
+[2.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cczh/temp-code/ground_truth_sim/install/setup.bash'
+[2.244s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cczh/temp-code/ground_truth_sim/install/local_setup.zsh'
+[2.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cczh/temp-code/ground_truth_sim/install/setup.zsh'

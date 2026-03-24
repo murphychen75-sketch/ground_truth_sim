@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c

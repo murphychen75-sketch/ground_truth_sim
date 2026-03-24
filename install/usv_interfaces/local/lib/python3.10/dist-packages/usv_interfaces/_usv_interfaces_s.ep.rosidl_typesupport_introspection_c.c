@@ -1,0 +1,1 @@
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_introspection_c.c

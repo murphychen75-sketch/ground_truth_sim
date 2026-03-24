@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(usv_interfaces_IDL_FILES "msg/ControlDeviation.idl;msg/OperationMode.idl;msg/VisionDetection.idl;msg/VisionDetectionArray.idl;msg/MmwaveTarget.idl;msg/MmwaveTargetArray.idl;msg/NavRadarTarget.idl;msg/NavRadarTargetArray.idl;msg/AISTrack.idl;msg/AISTrackArray.idl;msg/GlobalTrack.idl;msg/GlobalTrackArray.idl;msg/VesselState.idl;srv/ControlDevice.idl;action/ExecuteMission.idl")
+set(usv_interfaces_INTERFACE_FILES "msg/ControlDeviation.msg;msg/OperationMode.msg;msg/VisionDetection.msg;msg/VisionDetectionArray.msg;msg/MmwaveTarget.msg;msg/MmwaveTargetArray.msg;msg/NavRadarTarget.msg;msg/NavRadarTargetArray.msg;msg/AISTrack.msg;msg/AISTrackArray.msg;msg/GlobalTrack.msg;msg/GlobalTrackArray.msg;msg/VesselState.msg;srv/ControlDevice.srv;srv/ControlDevice_Request.msg;srv/ControlDevice_Response.msg;action/ExecuteMission.action")
