@@ -1,0 +1,3 @@
+[submodule "src/usv_interfaces"]
+	path = src/usv_interfaces
+	url = https://github.com/murphychen75-sketch/usv_interfaces.git
