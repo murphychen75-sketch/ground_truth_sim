@@ -1,9 +1,0 @@
-Metadata-Version: 2.1
-Name: ground_truth_sim
-Version: 0.1.0
-Summary: Ground truth generator with RViz visualization for USV simulations
-Maintainer: USV Dev
-Maintainer-email: usv@example.com
-License: Apache-2.0
-Requires-Dist: setuptools
-Requires-Dist: numpy

@@ -1,2 +1,0 @@
-[console_scripts]
-event_fusion_node = usv_event_fusion.event_fusion_node:main
