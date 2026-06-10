@@ -1,0 +1,850 @@
+[0.006s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces -DCMAKE_INSTALL_PREFIX=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces
+[0.062s] -- The C compiler identification is GNU 11.4.0
+[0.157s] -- The CXX compiler identification is GNU 11.4.0
+[0.163s] -- Detecting C compiler ABI info
+[0.229s] -- Detecting C compiler ABI info - done
+[0.241s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.241s] -- Detecting C compile features
+[0.242s] -- Detecting C compile features - done
+[0.246s] -- Detecting CXX compiler ABI info
+[0.323s] -- Detecting CXX compiler ABI info - done
+[0.330s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.331s] -- Detecting CXX compile features
+[0.331s] -- Detecting CXX compile features - done
+[0.333s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.528s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.566s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.580s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.582s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.585s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.590s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.596s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.607s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.613s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.620s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.858s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.129s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.225s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.243s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.244s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.260s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.260s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.261s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.261s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.279s] -- Found PythonExtra: .so  
+[1.318s] -- Configuring done
+[1.353s] -- Generating done
+[1.360s] -- Build files have been written to: /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces
+[1.366s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces -DCMAKE_INSTALL_PREFIX=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces
+[1.367s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32
+[1.407s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.420s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.424s] [  0%] Built target ament_cmake_python_copy_usv_interfaces
+[1.521s] running egg_info
+[1.521s] creating usv_interfaces.egg-info
+[1.532s] writing usv_interfaces.egg-info/PKG-INFO
+[1.532s] writing dependency_links to usv_interfaces.egg-info/dependency_links.txt
+[1.532s] writing top-level names to usv_interfaces.egg-info/top_level.txt
+[1.532s] writing manifest file 'usv_interfaces.egg-info/SOURCES.txt'
+[1.562s] reading manifest file 'usv_interfaces.egg-info/SOURCES.txt'
+[1.562s] writing manifest file 'usv_interfaces.egg-info/SOURCES.txt'
+[1.579s] [  0%] Built target ament_cmake_python_build_usv_interfaces_egg
+[2.420s] [  1%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/ais_track__functions.c.o[0m
+[2.420s] [  1%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__functions.c.o[0m
+[2.421s] [  2%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__functions.c.o[0m
+[2.421s] [  2%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.c.o[0m
+[2.421s] [  3%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target_array__functions.c.o[0m
+[2.421s] [  3%] Built target usv_interfaces__cpp
+[2.421s] [  3%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.c.o[0m
+[2.421s] [  3%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o[0m
+[2.421s] [  4%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/operation_mode__functions.c.o[0m
+[2.421s] [  4%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vision_detection__functions.c.o[0m
+[2.421s] [  4%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o[0m
+[2.421s] [  5%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o[0m
+[2.421s] [  5%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__functions.c.o[0m
+[2.421s] [  6%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__functions.c.o[0m
+[2.422s] [  6%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target_array__functions.c.o[0m
+[2.422s] [  7%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__functions.c.o[0m
+[2.422s] [  7%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/action/detail/execute_mission__functions.c.o[0m
+[2.423s] [  8%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vessel_state__functions.c.o[0m
+[2.423s] [  9%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o[0m
+[2.423s] [  9%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o[0m
+[2.424s] [ 11%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o[0m
+[2.424s] [ 11%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.c.o[0m
+[2.427s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.428s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.429s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.446s] [ 15%] [32m[1mLinking C shared library libusv_interfaces__rosidl_generator_c.so[0m
+[2.475s] [ 15%] Built target usv_interfaces__rosidl_generator_c
+[2.483s] [ 16%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.483s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.483s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.157s] [ 19%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/nav_radar_target__type_support.cpp.o[0m
+[3.157s] [ 19%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/nav_radar_target_array__type_support.cpp.o[0m
+[3.157s] [ 19%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.cpp.o[0m
+[3.157s] [ 20%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/vision_detection__type_support.cpp.o[0m
+[3.157s] [ 20%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/operation_mode__type_support.cpp.o[0m
+[3.158s] [ 22%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/global_track_array__type_support.cpp.o[0m
+[3.158s] [ 22%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/mmwave_target__type_support.cpp.o[0m
+[3.158s] [ 22%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/vision_detection_array__type_support.cpp.o[0m
+[3.158s] [ 23%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/mmwave_target_array__type_support.cpp.o[0m
+[3.158s] [ 23%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/ais_track__type_support.cpp.o[0m
+[3.158s] [ 25%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/ais_track_array__type_support.cpp.o[0m
+[3.158s] [ 25%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o[0m
+[3.159s] [ 25%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o[0m
+[3.159s] [ 26%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.cpp.o[0m
+[3.159s] [ 26%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.cpp.o[0m
+[3.159s] [ 26%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.o[0m
+[3.159s] [ 26%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o[0m
+[3.159s] [ 27%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/vessel_state__type_support.cpp.o[0m
+[3.159s] [ 28%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.o[0m
+[3.159s] [ 28%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.o[0m
+[3.160s] [ 29%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.cpp.o[0m
+[3.171s] [ 29%] [32m[1mLinking CXX shared library libusv_interfaces__rosidl_typesupport_cpp.so[0m
+[3.203s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track_array__type_support.cpp.o[0m
+[3.203s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/mmwave_target_array__type_support.cpp.o[0m
+[3.203s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/ais_track__type_support.cpp.o[0m
+[3.203s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vision_detection__type_support.cpp.o[0m
+[3.203s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp.o[0m
+[3.205s] [ 32%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/nav_radar_target__type_support.cpp.o[0m
+[3.205s] [ 33%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/mmwave_target__type_support.cpp.o[0m
+[3.206s] [ 33%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vision_detection_array__type_support.cpp.o[0m
+[3.206s] [ 33%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/ais_track_array__type_support.cpp.o[0m
+[3.206s] [ 34%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/nav_radar_target_array__type_support.cpp.o[0m
+[3.206s] [ 35%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/operation_mode__type_support.cpp.o[0m
+[3.206s] [ 36%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o[0m
+[3.206s] [ 36%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o[0m
+[3.206s] [ 36%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.cpp.o[0m
+[3.206s] [ 37%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o[0m
+[3.206s] [ 37%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o[0m
+[3.206s] [ 37%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp.o[0m
+[3.206s] [ 38%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o[0m
+[3.206s] [ 39%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o[0m
+[3.206s] [ 39%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o[0m
+[3.206s] [ 40%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o[0m
+[3.214s] [ 40%] Built target usv_interfaces__rosidl_typesupport_cpp
+[3.214s] [ 40%] [32m[1mLinking CXX shared library libusv_interfaces__rosidl_typesupport_c.so[0m
+[3.232s] [ 41%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/nav_radar_target__type_support.cpp.o[0m
+[3.232s] [ 41%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/operation_mode__type_support.cpp.o[0m
+[3.232s] [ 41%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/nav_radar_target_array__type_support.cpp.o[0m
+[3.232s] [ 42%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.cpp.o[0m
+[3.232s] [ 43%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.cpp.o[0m
+[3.232s] [ 43%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track_array__type_support.cpp.o[0m
+[3.232s] [ 44%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.o[0m
+[3.232s] [ 44%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/ais_track_array__type_support.cpp.o[0m
+[3.233s] [ 45%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/vision_detection__type_support.cpp.o[0m
+[3.233s] [ 45%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/vision_detection_array__type_support.cpp.o[0m
+[3.233s] [ 46%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/mmwave_target_array__type_support.cpp.o[0m
+[3.233s] [ 46%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/mmwave_target__type_support.cpp.o[0m
+[3.234s] [ 47%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/ais_track__type_support.cpp.o[0m
+[3.234s] [ 48%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.o[0m
+[3.234s] [ 48%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.o[0m
+[3.234s] [ 49%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/vessel_state__type_support.cpp.o[0m
+[3.234s] [ 50%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.o[0m
+[3.234s] [ 50%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.cpp.o[0m
+[3.234s] [ 50%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.o[0m
+[3.234s] [ 50%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.o[0m
+[3.235s] [ 51%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.cpp.o[0m
+[3.248s] [ 52%] [32m[1mLinking CXX shared library libusv_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.253s] [ 52%] Built target usv_interfaces__rosidl_typesupport_c
+[3.304s] [ 52%] Built target usv_interfaces__rosidl_typesupport_introspection_cpp
+[3.361s] [ 54%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.c.o[0m
+[3.361s] [ 54%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.cpp.o[0m
+[3.361s] [ 55%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/operation_mode__type_support.c.o[0m
+[3.361s] [ 54%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target_array__type_support.c.o[0m
+[3.361s] [ 55%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track__type_support.c.o[0m
+[3.361s] [ 54%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target_array__type_support.c.o[0m
+[3.361s] [ 55%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__type_support.c.o[0m
+[3.361s] [ 58%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/mmwave_target__type_support.cpp.o[0m
+[3.361s] [ 59%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.c.o[0m
+[3.361s] [ 63%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o[0m
+[3.361s] [ 58%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection_array__type_support.c.o[0m
+[3.361s] [ 63%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection__type_support.c.o[0m
+[3.361s] [ 58%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/mmwave_target_array__type_support.cpp.o[0m
+[3.361s] [ 63%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/vision_detection__type_support.cpp.o[0m
+[3.361s] [ 63%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/nav_radar_target__type_support.cpp.o[0m
+[3.361s] [ 64%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/ais_track__type_support.cpp.o[0m
+[3.361s] [ 63%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/operation_mode__type_support.cpp.o[0m
+[3.361s] [ 63%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__type_support.c.o[0m
+[3.361s] [ 63%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target__type_support.c.o[0m
+[3.362s] [ 65%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o[0m
+[3.362s] [ 65%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/vision_detection_array__type_support.cpp.o[0m
+[3.362s] [ 65%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/vessel_state__type_support.cpp.o[0m
+[3.362s] [ 65%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track_array__type_support.cpp.o[0m
+[3.362s] [ 65%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track_array__type_support.c.o[0m
+[3.362s] [ 65%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.o[0m
+[3.362s] [ 65%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/nav_radar_target_array__type_support.cpp.o[0m
+[3.362s] [ 66%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/ais_track_array__type_support.cpp.o[0m
+[3.362s] [ 66%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vessel_state__type_support.c.o[0m
+[3.362s] [ 67%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.cpp.o[0m
+[3.362s] [ 67%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o[0m
+[3.368s] [ 68%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o[0m
+[3.371s] [ 68%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o[0m
+[3.372s] [ 69%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.c.o[0m
+[3.374s] [ 71%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.c.o[0m
+[3.374s] [ 71%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.o[0m
+[3.374s] [ 71%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.o[0m
+[3.374s] [ 72%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.o[0m
+[3.374s] [ 72%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o[0m
+[3.380s] [ 72%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.o[0m
+[3.381s] [ 73%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.cpp.o[0m
+[3.382s] [ 73%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.o[0m
+[3.382s] [ 74%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.cpp.o[0m
+[3.395s] [ 74%] [32m[1mLinking C shared library libusv_interfaces__rosidl_typesupport_introspection_c.so[0m
+[3.416s] [ 74%] Built target usv_interfaces__rosidl_typesupport_introspection_c
+[3.446s] [ 74%] [32m[1mLinking CXX shared library libusv_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.448s] [ 75%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vision_detection_array__type_support_c.cpp.o[0m
+[3.448s] [ 75%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/mmwave_target__type_support_c.cpp.o[0m
+[3.448s] [ 76%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/nav_radar_target_array__type_support_c.cpp.o[0m
+[3.449s] [ 77%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/ais_track_array__type_support_c.cpp.o[0m
+[3.449s] [ 78%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o[0m
+[3.450s] [ 79%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.cpp.o[0m
+[3.450s] [ 79%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.cpp.o[0m
+[3.450s] [ 79%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o[0m
+[3.450s] [ 81%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/operation_mode__type_support_c.cpp.o[0m
+[3.450s] [ 81%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o[0m
+[3.450s] [ 81%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vision_detection__type_support_c.cpp.o[0m
+[3.451s] [ 82%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/mmwave_target_array__type_support_c.cpp.o[0m
+[3.451s] [ 82%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/nav_radar_target__type_support_c.cpp.o[0m
+[3.451s] [ 82%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/ais_track__type_support_c.cpp.o[0m
+[3.451s] [ 82%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track_array__type_support_c.cpp.o[0m
+[3.451s] [ 83%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o[0m
+[3.452s] [ 83%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o[0m
+[3.452s] [ 84%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp.o[0m
+[3.453s] [ 85%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o[0m
+[3.453s] [ 85%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o[0m
+[3.453s] [ 85%] [32mBuilding CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o[0m
+[3.513s] [ 85%] Built target usv_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.517s] [ 85%] [32m[1mLinking CXX shared library libusv_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.572s] [ 85%] Built target usv_interfaces__rosidl_typesupport_fastrtps_c
+[3.609s] [ 85%] Built target usv_interfaces
+[3.641s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.519s] [ 86%] Built target usv_interfaces__py
+[5.539s] [ 87%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_array_s.c.o[0m
+[5.540s] [ 88%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_array_s.c.o[0m
+[5.540s] [ 89%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o[0m
+[5.540s] [ 89%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_ais_track_s.c.o[0m
+[5.541s] [ 89%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.o[0m
+[5.541s] [ 90%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o[0m
+[5.542s] [ 91%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o[0m
+[5.543s] [ 91%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.o[0m
+[5.543s] [ 92%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_operation_mode_s.c.o[0m
+[5.543s] [ 92%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_s.c.o[0m
+[5.543s] [ 92%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o[0m
+[5.545s] [ 93%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vision_detection_array_s.c.o[0m
+[5.546s] [ 93%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_s.c.o[0m
+[5.546s] [ 94%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_s.c.o[0m
+[5.546s] [ 94%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_mmwave_target_array_s.c.o[0m
+[5.547s] [ 94%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_nav_radar_target_s.c.o[0m
+[5.547s] [ 95%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o[0m
+[5.549s] [ 96%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o[0m
+[5.549s] [ 96%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o[0m
+[5.551s] [ 96%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o[0m
+[5.552s] [ 97%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o[0m
+[5.568s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so[0m
+[5.611s] [ 97%] Built target usv_interfaces__rosidl_generator_py
+[5.634s] [ 98%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.642s] [ 99%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.643s] [100%] [32mBuilding C object CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.652s] [100%] [32m[1mLinking C shared library rosidl_generator_py/usv_interfaces/usv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.658s] [100%] [32m[1mLinking C shared library rosidl_generator_py/usv_interfaces/usv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.661s] [100%] [32m[1mLinking C shared library rosidl_generator_py/usv_interfaces/usv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.692s] [100%] Built target usv_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.692s] [100%] Built target usv_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.695s] [100%] Built target usv_interfaces__rosidl_typesupport_c__pyext
+[5.709s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32
+[5.726s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake --install /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces
+[5.736s] -- Install configuration: ""
+[5.736s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/ament_index/resource_index/rosidl_interfaces/usv_interfaces
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/control_deviation.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__functions.c
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__functions.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__struct.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__type_support.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__functions.c
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__functions.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__struct.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__type_support.h
+[5.737s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__functions.c
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__functions.h
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__struct.h
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__type_support.h
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__functions.c
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__functions.h
+[5.738s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__struct.h
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__type_support.h
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__functions.c
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__functions.h
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__struct.h
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__type_support.h
+[5.739s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__functions.c
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__functions.h
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__struct.h
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__type_support.h
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__functions.c
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__functions.h
+[5.740s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__struct.h
+[5.741s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__type_support.h
+[5.741s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__functions.c
+[5.741s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__functions.h
+[5.741s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__struct.h
+[5.741s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__type_support.h
+[5.742s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__functions.c
+[5.742s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__functions.h
+[5.742s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__struct.h
+[5.742s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__type_support.h
+[5.742s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__functions.c
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__functions.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__struct.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__type_support.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__functions.c
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__functions.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__struct.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__type_support.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__functions.c
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__functions.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__struct.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__type_support.h
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__functions.c
+[5.743s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__struct.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__type_support.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__functions.c
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__struct.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__type_support.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__functions.c
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__struct.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__type_support.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__functions.c
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__struct.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__functions.c
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__functions.h
+[5.744s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__struct.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__type_support.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/operation_mode.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vision_detection.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vision_detection_array.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/mmwave_target.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/mmwave_target_array.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/nav_radar_target.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/nav_radar_target_array.h
+[5.745s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/ais_track.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/ais_track_array.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/global_track.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/global_track_array.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vessel_state.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_track_sample.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_profile.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_snapshot.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_scene_snapshot.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_catalog.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/control_device.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__functions.c
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__functions.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__struct.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__type_support.h
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__functions.c
+[5.746s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__functions.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__struct.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__type_support.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/get_target_history.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/execute_mission.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__functions.c
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__functions.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__struct.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__type_support.h
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/library_path.sh
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/library_path.dsv
+[5.747s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_generator_c.so
+[5.748s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_generator_c.so" to ""
+[5.748s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.748s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.748s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__rosidl_typesupport_fastrtps_c.h
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__rosidl_typesupport_fastrtps_c.h
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__rosidl_typesupport_fastrtps_c.h
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_fastrtps_c.h
+[5.748s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_fastrtps_c.h
+[5.749s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.750s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.750s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__rosidl_typesupport_fastrtps_c.h
+[5.750s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_fastrtps_c.h
+[5.750s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.750s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.750s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_fastrtps_c.h
+[5.750s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.751s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.751s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.751s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/control_deviation.hpp
+[5.751s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__builder.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__struct.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__traits.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__type_support.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__builder.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__struct.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__traits.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__type_support.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__builder.hpp
+[5.751s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__struct.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__traits.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__type_support.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__builder.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__struct.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__traits.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__type_support.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__builder.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__struct.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__traits.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__type_support.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__builder.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__struct.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__traits.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__type_support.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__builder.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__struct.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__traits.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__type_support.hpp
+[5.752s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__builder.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__struct.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__traits.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__type_support.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__builder.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__struct.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__traits.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__type_support.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__builder.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__struct.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__traits.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__type_support.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__builder.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__struct.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__traits.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__type_support.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__builder.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__struct.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__traits.hpp
+[5.753s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__struct.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__traits.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__struct.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__traits.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__struct.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__traits.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__struct.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__traits.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__struct.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__traits.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__builder.hpp
+[5.754s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__struct.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__traits.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__type_support.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/operation_mode.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vision_detection.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vision_detection_array.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/mmwave_target.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/mmwave_target_array.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/nav_radar_target.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/nav_radar_target_array.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/ais_track.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/ais_track_array.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/global_track.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/global_track_array.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/vessel_state.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_track_sample.hpp
+[5.755s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_profile.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_snapshot.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_scene_snapshot.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/fused_target_catalog.hpp
+[5.756s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/control_device.hpp
+[5.756s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__builder.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__struct.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__traits.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__type_support.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__builder.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__struct.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__traits.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__type_support.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/get_target_history.hpp
+[5.756s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/execute_mission.hpp
+[5.756s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__builder.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__struct.hpp
+[5.756s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__traits.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__type_support.hpp
+[5.757s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.757s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.757s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/dds_fastrtps
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_fastrtps_cpp.hpp
+[5.757s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.758s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__rosidl_typesupport_fastrtps_cpp.hpp
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/dds_fastrtps
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_fastrtps_cpp.hpp
+[5.758s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.758s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_fastrtps_cpp.hpp
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/dds_fastrtps
+[5.758s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.759s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.759s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.759s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.759s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_introspection_c.h
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__type_support.c
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__rosidl_typesupport_introspection_c.h
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__type_support.c
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__rosidl_typesupport_introspection_c.h
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__type_support.c
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__rosidl_typesupport_introspection_c.h
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__type_support.c
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_introspection_c.h
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__type_support.c
+[5.759s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__rosidl_typesupport_introspection_c.h
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__type_support.c
+[5.760s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__type_support.c
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__type_support.c
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__type_support.c
+[5.761s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.761s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__type_support.c
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_introspection_c.h
+[5.761s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__type_support.c
+[5.761s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.762s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.762s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_introspection_c.h
+[5.762s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__type_support.c
+[5.762s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_introspection_c.so
+[5.762s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.762s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_c.so
+[5.763s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_c.so" to ""
+[5.763s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces
+[5.763s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg
+[5.763s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail
+[5.763s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_introspection_cpp.hpp
+[5.763s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/control_deviation__type_support.cpp
+[5.763s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__rosidl_typesupport_introspection_cpp.hpp
+[5.763s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/operation_mode__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vision_detection_array__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/mmwave_target_array__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/nav_radar_target_array__type_support.cpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__rosidl_typesupport_introspection_cpp.hpp
+[5.764s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/ais_track_array__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/global_track_array__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/vessel_state__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_introspection_cpp.hpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp
+[5.765s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp
+[5.766s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv
+[5.766s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/control_device__type_support.cpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/srv/detail/get_target_history__type_support.cpp
+[5.766s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action
+[5.766s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_introspection_cpp.hpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/usv_interfaces/action/detail/execute_mission__type_support.cpp
+[5.766s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.768s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.768s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_cpp.so
+[5.768s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/pythonpath.sh
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/pythonpath.dsv
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces-0.1.0-py3.10.egg-info
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces-0.1.0-py3.10.egg-info/PKG-INFO
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces-0.1.0-py3.10.egg-info/dependency_links.txt
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces-0.1.0-py3.10.egg-info/top_level.txt
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces-0.1.0-py3.10.egg-info/SOURCES.txt
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/__init__.py
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_control_deviation.py
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_control_deviation_s.c
+[5.769s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_operation_mode.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_operation_mode_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection_array.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection_array_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target_array.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target_array_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target_array.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target_array_s.c
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track.py
+[5.770s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track_array.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track_array_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track_array.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track_array_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vessel_state.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vessel_state_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_track_sample.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_track_sample_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_profile.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_profile_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_snapshot.py
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_snapshot_s.c
+[5.771s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_scene_snapshot.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_scene_snapshot_s.c
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_catalog.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_catalog_s.c
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/__init__.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_control_device.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_control_device_s.c
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_get_target_history.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_get_target_history_s.c
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/__init__.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action/_execute_mission.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action/_execute_mission_s.c
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action/__init__.py
+[5.772s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.c
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/libusv_interfaces__rosidl_generator_py.so
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.773s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.815s] Listing '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/__init__.py'...
+[5.815s] Listing '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action/__init__.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/action/_execute_mission.py'...
+[5.815s] Listing '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/__init__.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_ais_track_array.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_control_deviation.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_scene_snapshot.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_catalog.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_profile.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_target_snapshot.py'...
+[5.815s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_fused_track_sample.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_global_track_array.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_mmwave_target_array.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_nav_radar_target_array.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_operation_mode.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vessel_state.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/msg/_vision_detection_array.py'...
+[5.816s] Listing '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/__init__.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_control_device.py'...
+[5.816s] Compiling '/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/srv/_get_target_history.py'...
+[5.818s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.818s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.819s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.819s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.819s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.820s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages/usv_interfaces/usv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.820s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_generator_py.so
+[5.820s] -- Set runtime path of "/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib/libusv_interfaces__rosidl_generator_py.so" to ""
+[5.820s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/ControlDeviation.idl
+[5.820s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/OperationMode.idl
+[5.820s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VisionDetection.idl
+[5.820s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VisionDetectionArray.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/MmwaveTarget.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/MmwaveTargetArray.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/NavRadarTarget.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/NavRadarTargetArray.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/AISTrack.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/AISTrackArray.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/GlobalTrack.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/GlobalTrackArray.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VesselState.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTrackSample.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetProfile.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetSnapshot.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedSceneSnapshot.idl
+[5.821s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetCatalog.idl
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/ControlDevice.idl
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/GetTargetHistory.idl
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/action/ExecuteMission.idl
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/ControlDeviation.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/OperationMode.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VisionDetection.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VisionDetectionArray.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/MmwaveTarget.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/MmwaveTargetArray.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/NavRadarTarget.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/NavRadarTargetArray.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/AISTrack.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/AISTrackArray.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/GlobalTrack.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/GlobalTrackArray.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/VesselState.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTrackSample.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetProfile.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetSnapshot.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedSceneSnapshot.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/msg/FusedTargetCatalog.msg
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/ControlDevice.srv
+[5.822s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/ControlDevice_Request.msg
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/ControlDevice_Response.msg
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/GetTargetHistory.srv
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/GetTargetHistory_Request.msg
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/srv/GetTargetHistory_Response.msg
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/action/ExecuteMission.action
+[5.823s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include
+[5.823s] -- Up-to-date: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/include/usv_interfaces/topics.hpp
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/ament_index/resource_index/package_run_dependencies/usv_interfaces
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/ament_index/resource_index/parent_prefix_path/usv_interfaces
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/ament_prefix_path.sh
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/ament_prefix_path.dsv
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/path.sh
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/environment/path.dsv
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/local_setup.bash
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/local_setup.sh
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/local_setup.zsh
+[5.823s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/local_setup.dsv
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.dsv
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/ament_index/resource_index/packages/usv_interfaces
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_generator_cExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_generator_cppExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_cExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.824s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_cppExport.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_generator_pyExport.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/export_usv_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfacesConfig.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/cmake/usv_interfacesConfig-version.cmake
+[5.825s] -- Installing: /home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/share/usv_interfaces/package.xml
+[5.827s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion:/home/cczh/temp-code/ground_truth_sim/install/ground_truth_sim:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion:/home/cczh/temp-code/ground_truth_sim/install/percision_sim:/opt/ros/humble /usr/bin/cmake --install /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces

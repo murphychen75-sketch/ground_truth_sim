@@ -37,16 +37,32 @@ private:
   ::usv_interfaces::msg::VisionDetection msg_;
 };
 
+class Init_VisionDetection_pixel_width
+{
+public:
+  explicit Init_VisionDetection_pixel_width(::usv_interfaces::msg::VisionDetection & msg)
+  : msg_(msg)
+  {}
+  Init_VisionDetection_confidence pixel_width(::usv_interfaces::msg::VisionDetection::_pixel_width_type arg)
+  {
+    msg_.pixel_width = std::move(arg);
+    return Init_VisionDetection_confidence(msg_);
+  }
+
+private:
+  ::usv_interfaces::msg::VisionDetection msg_;
+};
+
 class Init_VisionDetection_size_h
 {
 public:
   explicit Init_VisionDetection_size_h(::usv_interfaces::msg::VisionDetection & msg)
   : msg_(msg)
   {}
-  Init_VisionDetection_confidence size_h(::usv_interfaces::msg::VisionDetection::_size_h_type arg)
+  Init_VisionDetection_pixel_width size_h(::usv_interfaces::msg::VisionDetection::_size_h_type arg)
   {
     msg_.size_h = std::move(arg);
-    return Init_VisionDetection_confidence(msg_);
+    return Init_VisionDetection_pixel_width(msg_);
   }
 
 private:

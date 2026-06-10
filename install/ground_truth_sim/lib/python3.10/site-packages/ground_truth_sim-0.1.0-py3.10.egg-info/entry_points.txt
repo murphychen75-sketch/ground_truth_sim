@@ -1,4 +1,4 @@
 [console_scripts]
 ground_truth_node = ground_truth_sim.ground_truth_node:main
+range_overlay_node = ground_truth_sim.range_overlay_node:main
 static_tf_broadcaster = ground_truth_sim.static_tf_broadcaster:main
-

@@ -163,6 +163,7 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_cpp/usv_interfaces/msg/detail/global_track__struct.hpp \
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
  /opt/ros/humble/include/rosidl_typesupport_cpp/rosidl_typesupport_cpp/identifier.hpp \
  /opt/ros/humble/include/rosidl_typesupport_cpp/rosidl_typesupport_cpp/visibility_control.h \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \

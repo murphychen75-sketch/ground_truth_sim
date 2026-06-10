@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import math
+import zlib
 from typing import List, Optional
 
 import numpy as np
 import rclpy
+from builtin_interfaces.msg import Time as TimeMsg
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from visualization_msgs.msg import Marker, MarkerArray
@@ -36,6 +38,9 @@ class SimVisionNode(Node):
         self.declare_parameter("distance_noise_offset", 0.05)
         self.declare_parameter("distance_noise_scale", 0.0005)
         self.declare_parameter("publish_rate_hz", 0.0)
+        self.declare_parameter("detection_latency_min_sec", 0.030)
+        self.declare_parameter("detection_latency_max_sec", 0.050)
+        self.declare_parameter("vision_focal_length_px", 800.0)
 
         self._frame_id = self._get_string("frame_id")
         self._camera_id = self._get_string("camera_id")
@@ -52,6 +57,13 @@ class SimVisionNode(Node):
         publish_rate = self._get_float("publish_rate_hz")
         self._min_publish_period = 1.0 / publish_rate if publish_rate > 0.0 else 0.0
         self._last_publish_time: Optional[float] = None
+        lo = self._get_float("detection_latency_min_sec")
+        hi = self._get_float("detection_latency_max_sec")
+        if hi < lo:
+            lo, hi = hi, lo
+        self._latency_min_sec = lo
+        self._latency_max_sec = hi
+        self._focal_px = max(1.0, self._get_float("vision_focal_length_px"))
 
         qos = QoSProfile(depth=10)
         self._detections_pub = self.create_publisher(
@@ -70,8 +82,15 @@ class SimVisionNode(Node):
         yaw_deg = math.degrees(self._camera_yaw)
         rate_info = f"{publish_rate:.1f} Hz" if publish_rate > 0.0 else "sync"
         self.get_logger().info(
-            "SimVisionNode ready (camera_id=%s, yaw=%.1f deg, rate=%s) subscribing to %s"
-            % (self._camera_id, yaw_deg, rate_info, self._subscription.topic_name)
+            "SimVisionNode ready (camera_id=%s, yaw=%.1f deg, rate=%s, output_latency=%.0f–%.0f ms) subscribing to %s"
+            % (
+                self._camera_id,
+                yaw_deg,
+                rate_info,
+                self._latency_min_sec * 1000.0,
+                self._latency_max_sec * 1000.0,
+                self._subscription.topic_name,
+            )
         )
 
     # ------------------------------------------------------------------
@@ -90,7 +109,12 @@ class SimVisionNode(Node):
         detections = VisionDetectionArray()
         detections.header.stamp = msg.header.stamp
         detections.header.frame_id = self._frame_id
-        detections.output_stamp = publish_time.to_msg()
+        delay_s = float(
+            self._rng.uniform(self._latency_min_sec, self._latency_max_sec)
+        )
+        detections.output_stamp = self._stamp_plus_seconds(
+            msg.header.stamp, delay_s
+        )
 
         markers = MarkerArray()
         marker_list: List[Marker] = []
@@ -121,11 +145,20 @@ class SimVisionNode(Node):
             detection.distance_predict = d_noisy
             detection.size_w = track.size_w
             detection.size_h = track.size_h
+            detection.pixel_width = (
+                self._focal_px * track.size_w / d_noisy if d_noisy > 1e-3 else 0.0
+            )
             detection.confidence = confidence
             detections.detections.append(detection)
 
             marker_list.append(
-                self._make_marker(track.track_id, d_noisy, alpha_noisy, track.size_w, track.size_h)
+                self._make_marker(
+                    int(zlib.crc32(bytes(track.track_id.uuid)) & 0x7FFFFFFF),
+                    d_noisy,
+                    alpha_noisy,
+                    track.size_w,
+                    track.size_h,
+                )
             )
 
         if marker_list:
@@ -142,6 +175,18 @@ class SimVisionNode(Node):
     # ------------------------------------------------------------------
     # Helper methods
     # ------------------------------------------------------------------
+    def _stamp_plus_seconds(self, stamp, delay_sec: float) -> TimeMsg:
+        """Return builtin Time = stamp + delay_sec (nanosecond-safe)."""
+        total_ns = (
+            int(stamp.sec) * 10**9
+            + int(stamp.nanosec)
+            + int(round(float(delay_sec) * 1e9))
+        )
+        out = TimeMsg()
+        out.sec = total_ns // 10**9
+        out.nanosec = total_ns % 10**9
+        return out
+
     def _compute_confidence(self, distance: float) -> float:
         if distance <= 100.0:
             return 1.0

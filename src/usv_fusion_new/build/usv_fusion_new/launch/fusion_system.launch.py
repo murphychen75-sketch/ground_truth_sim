@@ -1,1 +1,0 @@
-/home/cczh/temp-code/ground_truth_sim/src/usv_fusion_new/launch/fusion_system.launch.py

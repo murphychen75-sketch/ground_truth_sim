@@ -48,8 +48,10 @@ cdr_serialize(
   cdr << ros_message.size_l;
   // Member: size_h
   cdr << ros_message.size_h;
-  // Member: snr
-  cdr << ros_message.snr;
+  // Member: objmotion_status
+  cdr << ros_message.objmotion_status;
+  // Member: track_id
+  cdr << ros_message.track_id;
   return true;
 }
 
@@ -83,8 +85,11 @@ cdr_deserialize(
   // Member: size_h
   cdr >> ros_message.size_h;
 
-  // Member: snr
-  cdr >> ros_message.snr;
+  // Member: objmotion_status
+  cdr >> ros_message.objmotion_status;
+
+  // Member: track_id
+  cdr >> ros_message.track_id;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -148,9 +153,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: snr
+  // Member: objmotion_status
   {
-    size_t item_size = sizeof(ros_message.snr);
+    size_t item_size = sizeof(ros_message.objmotion_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: track_id
+  {
+    size_t item_size = sizeof(ros_message.track_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -254,13 +265,21 @@ max_serialized_size_MmwaveTarget(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: snr
+  // Member: objmotion_status
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: track_id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -271,7 +290,7 @@ max_serialized_size_MmwaveTarget(
     using DataType = usv_interfaces::msg::MmwaveTarget;
     is_plain =
       (
-      offsetof(DataType, snr) +
+      offsetof(DataType, track_id) +
       last_member_size
       ) == ret_val;
   }

@@ -1,0 +1,69 @@
+# 3× vision (150° symmetric, 60° each, 15° overlap) + 1× front mmwave (120° FoV).
+# Node names must match three_sensor_sim.launch.py.
+
+sim_vision_front:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/front/detections"
+    marker_topic: "/vision/front/markers"
+    frame_id: "camera_front_link"
+    camera_id: "front"
+    camera_yaw: 0.0
+    fov_half_angle: 0.5235987756   # 30°, total 60°
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+    detection_latency_min_sec: 0.030
+    detection_latency_max_sec: 0.050
+    vision_focal_length_px: 800.0
+
+sim_vision_left:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/left/detections"
+    marker_topic: "/vision/left/markers"
+    frame_id: "camera_left_link"
+    camera_id: "left"
+    camera_yaw: -0.7853981634       # -45°
+    fov_half_angle: 0.5235987756
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+    detection_latency_min_sec: 0.030
+    detection_latency_max_sec: 0.050
+    vision_focal_length_px: 800.0
+
+sim_vision_right:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    detection_topic: "/vision/right/detections"
+    marker_topic: "/vision/right/markers"
+    frame_id: "camera_right_link"
+    camera_id: "right"
+    camera_yaw: 0.7853981634        # +45°
+    fov_half_angle: 0.5235987756
+    sigma_angle: 0.01
+    distance_noise_offset: 0.02
+    distance_noise_scale: 0.0002
+    publish_rate_hz: 25.0
+    detection_latency_min_sec: 0.030
+    detection_latency_max_sec: 0.050
+    vision_focal_length_px: 800.0
+
+sim_mmwave_front:
+  ros__parameters:
+    input_topic: "/sim/ground_truth"
+    target_topic: "/mmwave/front/targets"
+    marker_topic: "/mmwave/front/markers"
+    frame_id: "mmwave_front_link"
+    radar_id: "mmwave_front"
+    radar_yaw: 0.0
+    fov_half_angle: 1.0471975512    # 60°, total 120°
+    radial_noise_std: 0.5
+    angle_noise_deg: 0.1
+    velocity_resolution_m_s: 0.1
+    size_jitter: 0.2
+    motion_speed_threshold_m_s: 0.3
+    publish_rate_hz: 15.0

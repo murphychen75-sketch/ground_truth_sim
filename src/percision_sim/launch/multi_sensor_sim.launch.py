@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Launch four vision cameras and four mmWave radars with shared parameters."""
+"""Launch four vision and four mmWave simulators from YAML (ground truth must run separately)."""
 
 from __future__ import annotations
 
@@ -14,19 +14,9 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 
-def _build_nodes(params_file: LaunchConfiguration) -> List[Node]:
+def _build_sensor_nodes(params_file: LaunchConfiguration) -> List[Node]:
+    """Return eight sensor nodes; parameter keys must match node names in the params file."""
     nodes: List[Node] = []
-
-    nodes.append(
-        Node(
-            package="ground_truth_sim",
-            executable="ground_truth_node",
-            name="ground_truth_node",
-            output="screen",
-            parameters=[params_file],
-        )
-    )
-
     for suffix in ("front", "right", "rear", "left"):
         nodes.append(
             Node(
@@ -53,6 +43,7 @@ def _build_nodes(params_file: LaunchConfiguration) -> List[Node]:
 
 
 def generate_launch_description() -> LaunchDescription:
+    """Sensors + optional RViz. Run ``ground_truth_sim.launch.py`` first (or use ``full_stack_sim.launch.py``)."""
     pkg_share = get_package_share_directory("percision_sim")
     ground_truth_share = get_package_share_directory("ground_truth_sim")
     default_params = os.path.join(pkg_share, "config", "multi_sensor_params.yaml")
@@ -63,44 +54,32 @@ def generate_launch_description() -> LaunchDescription:
     params_file_arg = DeclareLaunchArgument(
         "params_file",
         default_value=default_params,
-        description="YAML file containing parameters for ground truth and all sensor nodes",
+        description="YAML: sim_vision_* and sim_mmwave_* sections (no ground_truth_node)",
     )
     parent_frame_arg = DeclareLaunchArgument(
         "parent_frame",
         default_value=default_parent_frame,
-        description="Parent TF frame for the simulated vessel",
+        description="Deprecated no-op (static TF comes from ground_truth_sim.launch.py)",
     )
     child_frame_arg = DeclareLaunchArgument(
         "child_frame",
         default_value=default_child_frame,
-        description="Child TF frame broadcast by the static transform node",
+        description="Deprecated no-op",
     )
 
     use_rviz_arg = DeclareLaunchArgument(
         "use_rviz",
         default_value="true",
-        description="Whether to auto-start RViz with the multi-sensor scene",
+        description="Whether to auto-start RViz with the multi-sensor marker config",
     )
     rviz_config_arg = DeclareLaunchArgument(
         "rviz_config",
         default_value=default_rviz,
-        description="Absolute path to an RViz configuration file",
+        description="Absolute path to RViz config (e.g. ground_truth_view.rviz)",
     )
 
     params_file = LaunchConfiguration("params_file")
-    nodes = _build_nodes(params_file)
-
-    static_tf_node = Node(
-        package="ground_truth_sim",
-        executable="static_tf_broadcaster",
-        name="static_tf_broadcaster",
-        parameters=[
-            {
-                "parent_frame": LaunchConfiguration("parent_frame"),
-                "child_frame": LaunchConfiguration("child_frame"),
-            }
-        ],
-    )
+    nodes = _build_sensor_nodes(params_file)
 
     rviz_node = Node(
         package="rviz2",
@@ -117,7 +96,6 @@ def generate_launch_description() -> LaunchDescription:
             child_frame_arg,
             use_rviz_arg,
             rviz_config_arg,
-            static_tf_node,
             *nodes,
             rviz_node,
         ]

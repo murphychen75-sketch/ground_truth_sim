@@ -74,6 +74,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: pixel_width
+  {
+    out << "pixel_width: ";
+    rosidl_generator_traits::value_to_yaml(msg.pixel_width, out);
+    out << ", ";
+  }
+
   // member: confidence
   {
     out << "confidence: ";
@@ -153,6 +160,16 @@ inline void to_block_style_yaml(
     }
     out << "size_h: ";
     rosidl_generator_traits::value_to_yaml(msg.size_h, out);
+    out << "\n";
+  }
+
+  // member: pixel_width
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "pixel_width: ";
+    rosidl_generator_traits::value_to_yaml(msg.pixel_width, out);
     out << "\n";
   }
 

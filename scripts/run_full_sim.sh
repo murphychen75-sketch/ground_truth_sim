@@ -52,9 +52,6 @@ set +u
 source "${WS_DIR}/install/setup.bash"
 set -u
 
-echo "[INFO] Launching ground_truth_sim with all sensors enabled..."
-ros2 launch ground_truth_sim ground_truth_sim.launch.py \
-  start_vision_node:=true \
-  start_ais_node:=true \
-  start_nav_radar_node:=true \
-  start_mmwave_node:=true
+echo "[INFO] Launching full stack (ground truth + default sensors + fusion + RViz)..."
+ros2 launch ground_truth_sim full_stack_sim.launch.py \
+  start_ais_node:=true

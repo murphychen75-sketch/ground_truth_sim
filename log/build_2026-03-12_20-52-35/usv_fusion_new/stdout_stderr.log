@@ -1,9 +1,0 @@
-running develop
-running egg_info
-writing manifest file 'usv_fusion_new.egg-info/SOURCES.txt'
-running build_ext
-running symlink_data
-symbolically linking /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/resource/usv_fusion_new -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/ament_index/resource_index/packages
-symbolically linking /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/package.xml -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new
-symbolically linking /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/launch/fusion_system.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/launch
-symbolically linking /home/cczh/temp-code/ground_truth_sim/build/usv_fusion_new/rviz/fusion_view.rviz -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion_new/share/usv_fusion_new/rviz

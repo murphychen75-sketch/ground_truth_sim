@@ -1,1 +1,35 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces/srv/ControlDevice.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from usv_interfaces/srv/ControlDevice.srv
+// generated code does not contain a copyright notice
+
+
+module usv_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "=== Request ===")
+    struct ControlDevice_Request {
+      @verbatim (language="comment", text=
+        "设备ID (例如: \"nav_light_left\", \"sampler_pump\")")
+      string device_id;
+
+      @verbatim (language="comment", text=
+        "指令 (例如: \"ON\", \"OFF\", \"SET_LEVEL\")")
+      string command;
+
+      @verbatim (language="comment", text=
+        "数值 (例如: 亮度 0-100)")
+      float value;
+    };
+    @verbatim (language="comment", text=
+      "=== Response ===")
+    struct ControlDevice_Response {
+      @verbatim (language="comment", text=
+        "执行是否成功")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "错误信息或执行结果描述")
+      string message;
+    };
+  };
+};

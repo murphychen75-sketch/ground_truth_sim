@@ -79,9 +79,17 @@ CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfa
 CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/GlobalTrack.msg
 CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/GlobalTrackArray.msg
 CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/VesselState.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/FusedTrackSample.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/FusedTargetProfile.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/FusedTargetSnapshot.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/FusedSceneSnapshot.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/msg/FusedTargetCatalog.msg
 CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/srv/ControlDevice.srv
 CMakeFiles/usv_interfaces: rosidl_cmake/srv/ControlDevice_Request.msg
 CMakeFiles/usv_interfaces: rosidl_cmake/srv/ControlDevice_Response.msg
+CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/srv/GetTargetHistory.srv
+CMakeFiles/usv_interfaces: rosidl_cmake/srv/GetTargetHistory_Request.msg
+CMakeFiles/usv_interfaces: rosidl_cmake/srv/GetTargetHistory_Response.msg
 CMakeFiles/usv_interfaces: /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces/action/ExecuteMission.action
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -157,6 +165,7 @@ CMakeFiles/usv_interfaces: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+CMakeFiles/usv_interfaces: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/usv_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

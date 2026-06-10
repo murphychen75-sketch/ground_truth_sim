@@ -8,13 +8,13 @@
 
 module usv_interfaces {
   module msg {
+    @verbatim (language="comment", text=
+      "双时间戳（语义区分）：" "\n"
+      "- header.stamp：与该帧对应的图像采集时刻（仿真中与输入真值 stamp 对齐）" "\n"
+      "- output_stamp：识别结果输出时刻（采集时刻 + 算法/流水线延迟；percision_sim 内可用随机延迟建模）")
     struct VisionDetectionArray {
-      @verbatim (language="comment", text=
-        "相机原始图像的采样时间戳与坐标系")
       std_msgs::msg::Header header;
 
-      @verbatim (language="comment", text=
-        "算法产生当前结果的系统时间（用于端到端延迟）")
       builtin_interfaces::msg::Time output_stamp;
 
       @verbatim (language="comment", text=

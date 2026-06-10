@@ -82,7 +82,13 @@ usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interf
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track_array.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_vessel_state.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_control_device.py
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_get_target_history.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/action/_execute_mission.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/__init__.py
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/__init__.py
@@ -100,7 +106,13 @@ usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interf
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track_s.c
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_control_device_s.c
+usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c
 usv_interfaces__py/CMakeFiles/usv_interfaces__py: rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c
 
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -129,7 +141,13 @@ rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/GlobalTrack.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/GlobalTrackArray.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/VesselState.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/FusedTrackSample.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/FusedTargetProfile.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/FusedTargetSnapshot.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/FusedSceneSnapshot.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/msg/FusedTargetCatalog.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/srv/ControlDevice.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/srv/GetTargetHistory.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/usv_interfaces/action/ExecuteMission.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -205,11 +223,11 @@ rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
+rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/usv_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -258,8 +276,26 @@ rosidl_generator_py/usv_interfaces/msg/_global_track_array.py: rosidl_generator_
 rosidl_generator_py/usv_interfaces/msg/_vessel_state.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_vessel_state.py
 
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_track_sample.py
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_profile.py
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot.py
+
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot.py
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog.py
+
 rosidl_generator_py/usv_interfaces/srv/_control_device.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/srv/_control_device.py
+
+rosidl_generator_py/usv_interfaces/srv/_get_target_history.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/srv/_get_target_history.py
 
 rosidl_generator_py/usv_interfaces/action/_execute_mission.py: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/action/_execute_mission.py
@@ -312,8 +348,26 @@ rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c: rosidl_generator
 rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c
 
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c
+
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c
+
 rosidl_generator_py/usv_interfaces/srv/_control_device_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/srv/_control_device_s.c
+
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c
 
 rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c
@@ -331,6 +385,16 @@ usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_ais_track_array_s.c
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_ais_track_s.c
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_control_deviation.py
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track.py
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track_array.py
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c
@@ -354,6 +418,8 @@ usv_interfaces__py: rosidl_generator_py/usv_interfaces/msg/_vision_detection_s.c
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/__init__.py
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_control_device.py
 usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_control_device_s.c
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_get_target_history.py
+usv_interfaces__py: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c
 usv_interfaces__py: usv_interfaces__py/CMakeFiles/usv_interfaces__py
 usv_interfaces__py: usv_interfaces__py/CMakeFiles/usv_interfaces__py.dir/build.make
 .PHONY : usv_interfaces__py

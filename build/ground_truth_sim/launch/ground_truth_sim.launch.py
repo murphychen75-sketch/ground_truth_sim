@@ -1,1 +1,0 @@
-/home/cczh/temp-code/ground_truth_sim/src/sim/launch/ground_truth_sim.launch.py

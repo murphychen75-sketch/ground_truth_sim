@@ -14,6 +14,10 @@
 #include "usv_interfaces/msg/detail/global_track__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'track_id'
+#include "unique_identifier_msgs/msg/detail/uuid__traits.hpp"
+
 namespace usv_interfaces
 {
 
@@ -28,7 +32,7 @@ inline void to_flow_style_yaml(
   // member: track_id
   {
     out << "track_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.track_id, out);
+    to_flow_style_yaml(msg.track_id, out);
     out << ", ";
   }
 
@@ -117,6 +121,13 @@ inline void to_flow_style_yaml(
   {
     out << "matched_mmsi: ";
     rosidl_generator_traits::value_to_yaml(msg.matched_mmsi, out);
+    out << ", ";
+  }
+
+  // member: source_model_name
+  {
+    out << "source_model_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.source_model_name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -130,9 +141,8 @@ inline void to_block_style_yaml(
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "track_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.track_id, out);
-    out << "\n";
+    out << "track_id:\n";
+    to_block_style_yaml(msg.track_id, out, indentation + 2);
   }
 
   // member: x
@@ -254,6 +264,16 @@ inline void to_block_style_yaml(
     rosidl_generator_traits::value_to_yaml(msg.matched_mmsi, out);
     out << "\n";
   }
+
+  // member: source_model_name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "source_model_name: ";
+    rosidl_generator_traits::value_to_yaml(msg.source_model_name, out);
+    out << "\n";
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const GlobalTrack & msg, bool use_flow_style = false)
@@ -302,11 +322,11 @@ inline const char * name<usv_interfaces::msg::GlobalTrack>()
 
 template<>
 struct has_fixed_size<usv_interfaces::msg::GlobalTrack>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<usv_interfaces::msg::GlobalTrack>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<usv_interfaces::msg::GlobalTrack>

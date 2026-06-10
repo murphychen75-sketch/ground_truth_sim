@@ -1,1 +1,4 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_cmake/srv/ControlDevice_Response.msg
+
+# === Response ===
+bool success        # 执行是否成功
+string message      # 错误信息或执行结果描述

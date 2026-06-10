@@ -2,6 +2,7 @@
 // with input from usv_interfaces/msg/GlobalTrack.msg
 // generated code does not contain a copyright notice
 
+#include "unique_identifier_msgs/msg/UUID.idl"
 
 module usv_interfaces {
   module msg {
@@ -9,7 +10,7 @@ module usv_interfaces {
     struct GlobalTrack {
       @verbatim (language="comment", text=
         "融合中心分配的全局唯一 ID")
-      uint32 track_id;
+      unique_identifier_msgs::msg::UUID track_id;
 
       @verbatim (language="comment", text=
         "融合后的平滑相对坐标 X（米）")
@@ -54,6 +55,10 @@ module usv_interfaces {
       @verbatim (language="comment", text=
         "若绑定成功，对应的 AIS MMSI")
       uint32 matched_mmsi;
+
+      @verbatim (language="comment", text=
+        "可选：Gazebo Sim 等仿真中的模型/实体名，独立真值节点可留空")
+      string source_model_name;
     };
   };
 };

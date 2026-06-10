@@ -27,10 +27,13 @@ cd ~/usv_ws
 colcon build --packages-select ground_truth_sim percision_sim usv_interfaces
 source install/setup.bash
 
-# 方案 A：一次性启动（TF + 节点 + RViz）
+# 方案 A：仅真值 + 静态 TF + 仅真值 RViz（默认 ground_truth_only.rviz）
 ros2 launch ground_truth_sim ground_truth_sim.launch.py
 
-# 方案 B：分别控制各进程
+# 方案 B：完整仿真栈（真值无 RViz + percision_sim sensors + usv_event_fusion + 全量 RViz）
+ros2 launch ground_truth_sim full_stack_sim.launch.py
+
+# 方案 C：分别控制各进程
 ros2 run ground_truth_sim static_tf_broadcaster
 ros2 run ground_truth_sim ground_truth_node
 # 启动视觉检测模拟（percision_sim 包）
@@ -50,10 +53,21 @@ ros2 run percision_sim sim_mmwave_node
 
 ```bash
 source ~/usv_ws/install/setup.bash
-rviz2 -d $(ros2 pkg prefix ground_truth_sim)/rviz/ground_truth_view.rviz
+rviz2 -d $(ros2 pkg prefix ground_truth_sim)/share/ground_truth_sim/rviz/ground_truth_only.rviz
+# 或全量传感器显示：
+# rviz2 -d $(ros2 pkg prefix ground_truth_sim)/share/ground_truth_sim/rviz/ground_truth_view.rviz
 ```
 
 请确保固定坐标系设为 `map`（静态父坐标）或 `base_link`，并启用 “Targets (Markers)” 显示，即可看到彩色球体（当前位置）以及短期预测折线。
+
+### 真值环带与传感器视场（圆环 / 扇形环）
+
+RViz 没有内置「圆环」工具，需订阅 **`visualization_msgs/MarkerArray`**。本包提供 `range_overlay_node`，按 `ground_truth` 的环带半径与（可配置的）相机/毫米波 `yaw`、半视场角绘制：
+
+- **整圆环**：内圆 + 外圆（`LINE_STRIP`），命名空间 `gt_annulus`
+- **扇形圆弧环**：内弧 + 外弧 + 两条径向边（闭合 `LINE_STRIP`），`vision_fov_ring` / `mmwave_fov_ring`
+
+`ros2 launch ground_truth_sim ground_truth_sim.launch.py`（以及包含该 launch 的 `full_stack_sim.launch.py`）会**默认**启动 `range_overlay_node`。在 RViz 中：**Add → MarkerArray**，**Topic** 填 `/sim/range_overlay_markers`（与参数 `marker_topic` 一致），**Fixed Frame** 与节点 `frame_id` 一致（默认 `base_link`）。覆盖参数可用 `range_overlay_params_file:=<yaml>`。参数文件见 `config/range_overlay_params.yaml`；与 `ground_truth_params.yaml` 中 `annulus_radius_*` 及传感器 YAML 中的 `camera_yaw` / `fov_half_angle` 等对齐时可逐项修改。
 
 ### 静态 TF 参数
 
@@ -98,11 +112,11 @@ ros2 run ground_truth_sim static_tf_broadcaster --ros-args \
 | `parent_frame` | `map` | 传递给 `static_tf_broadcaster` 的父坐标系 |
 | `child_frame` | `base_link` | 传递给 `static_tf_broadcaster` 的子坐标系 |
 | `use_rviz` | `true` | 是否自动启动 RViz |
-| `rviz_config` | `<pkg_share>/rviz/ground_truth_view.rviz` | RViz 配置文件路径 |
-| `start_vision_node` | `true` | 是否同时启动 `percision_sim` 的视觉检测节点 |
-| `start_ais_node` | `false` | 是否同时启动 `percision_sim` 的 AIS 延迟节点 |
-| `start_nav_radar_node` | `false` | 是否同时启动 `percision_sim` 的导航雷达节点 |
-| `start_mmwave_node` | `false` | 是否同时启动 `percision_sim` 的毫米波节点 |
+| `rviz_config` | `<pkg_share>/rviz/ground_truth_only.rviz` | RViz 配置文件路径（仅 Grid + 真值 Marker） |
+| `params_file` | `<pkg_share>/config/ground_truth_params.yaml` | `ground_truth_node` 参数 YAML |
+| `range_overlay_params_file` | `<pkg_share>/config/range_overlay_params.yaml` | `range_overlay_node` 参数（环带 / 视场 Marker） |
+
+传感器仿真已迁至 `percision_sim`：`sensors_sim.launch.py`（单路各节点）与 `multi_sensor_sim.launch.py`（四视觉 + 四毫米波）。`full_stack_sim.launch.py` 在本包内串联真值、`sensors_sim` 与 `usv_event_fusion/event_fusion.launch.py`。
 
 ### 节点参数
 

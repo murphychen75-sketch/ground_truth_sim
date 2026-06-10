@@ -1,1 +1,0 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/__init__.py

@@ -1,1 +1,30 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces/msg/NavRadarTarget.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/NavRadarTarget.msg
+// generated code does not contain a copyright notice
+
+
+module usv_interfaces {
+  module msg {
+    struct NavRadarTarget {
+      @verbatim (language="comment", text=
+        "相对平面坐标 X（米）")
+      double x;
+
+      @verbatim (language="comment", text=
+        "相对平面坐标 Y（米）")
+      double y;
+
+      @verbatim (language="comment", text=
+        "2D 速度矢量 X（米/秒）")
+      double v_x;
+
+      @verbatim (language="comment", text=
+        "2D 速度矢量 Y（米/秒）")
+      double v_y;
+
+      @verbatim (language="comment", text=
+        "目标 2D 投影面积估算（平方米）")
+      double area;
+    };
+  };
+};

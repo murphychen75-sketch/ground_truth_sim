@@ -34,8 +34,25 @@ extern "C"
 {
 #endif
 
+#include "rosidl_runtime_c/string.h"  // source_model_name
+#include "rosidl_runtime_c/string_functions.h"  // source_model_name
+#include "unique_identifier_msgs/msg/detail/uuid__functions.h"  // track_id
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_usv_interfaces
+size_t get_serialized_size_unique_identifier_msgs__msg__UUID(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_usv_interfaces
+size_t max_serialized_size_unique_identifier_msgs__msg__UUID(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_usv_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, unique_identifier_msgs, msg, UUID)();
 
 
 using _GlobalTrack__ros_msg_type = usv_interfaces__msg__GlobalTrack;
@@ -51,7 +68,16 @@ static bool _GlobalTrack__cdr_serialize(
   const _GlobalTrack__ros_msg_type * ros_message = static_cast<const _GlobalTrack__ros_msg_type *>(untyped_ros_message);
   // Field name: track_id
   {
-    cdr << ros_message->track_id;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, unique_identifier_msgs, msg, UUID
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->track_id, cdr))
+    {
+      return false;
+    }
   }
 
   // Field name: x
@@ -111,6 +137,20 @@ static bool _GlobalTrack__cdr_serialize(
     cdr << ros_message->matched_mmsi;
   }
 
+  // Field name: source_model_name
+  {
+    const rosidl_runtime_c__String * str = &ros_message->source_model_name;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   return true;
 }
 
@@ -125,7 +165,16 @@ static bool _GlobalTrack__cdr_deserialize(
   _GlobalTrack__ros_msg_type * ros_message = static_cast<_GlobalTrack__ros_msg_type *>(untyped_ros_message);
   // Field name: track_id
   {
-    cdr >> ros_message->track_id;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, unique_identifier_msgs, msg, UUID
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->track_id))
+    {
+      return false;
+    }
   }
 
   // Field name: x
@@ -189,6 +238,22 @@ static bool _GlobalTrack__cdr_deserialize(
     cdr >> ros_message->matched_mmsi;
   }
 
+  // Field name: source_model_name
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->source_model_name.data) {
+      rosidl_runtime_c__String__init(&ros_message->source_model_name);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->source_model_name,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'source_model_name'\n");
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -207,11 +272,9 @@ size_t get_serialized_size_usv_interfaces__msg__GlobalTrack(
   (void)wchar_size;
 
   // field.name track_id
-  {
-    size_t item_size = sizeof(ros_message->track_id);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+
+  current_alignment += get_serialized_size_unique_identifier_msgs__msg__UUID(
+    &(ros_message->track_id), current_alignment);
   // field.name x
   {
     size_t item_size = sizeof(ros_message->x);
@@ -281,6 +344,10 @@ size_t get_serialized_size_usv_interfaces__msg__GlobalTrack(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name source_model_name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->source_model_name.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -314,9 +381,20 @@ size_t max_serialized_size_usv_interfaces__msg__GlobalTrack(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_unique_identifier_msgs__msg__UUID(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
   // member: x
   {
@@ -404,6 +482,18 @@ size_t max_serialized_size_usv_interfaces__msg__GlobalTrack(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: source_model_name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -413,7 +503,7 @@ size_t max_serialized_size_usv_interfaces__msg__GlobalTrack(
     using DataType = usv_interfaces__msg__GlobalTrack;
     is_plain =
       (
-      offsetof(DataType, matched_mmsi) +
+      offsetof(DataType, source_model_name) +
       last_member_size
       ) == ret_val;
   }

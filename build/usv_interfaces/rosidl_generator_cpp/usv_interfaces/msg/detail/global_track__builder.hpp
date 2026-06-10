@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_GlobalTrack_source_model_name
+{
+public:
+  explicit Init_GlobalTrack_source_model_name(::usv_interfaces::msg::GlobalTrack & msg)
+  : msg_(msg)
+  {}
+  ::usv_interfaces::msg::GlobalTrack source_model_name(::usv_interfaces::msg::GlobalTrack::_source_model_name_type arg)
+  {
+    msg_.source_model_name = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::usv_interfaces::msg::GlobalTrack msg_;
+};
+
 class Init_GlobalTrack_matched_mmsi
 {
 public:
   explicit Init_GlobalTrack_matched_mmsi(::usv_interfaces::msg::GlobalTrack & msg)
   : msg_(msg)
   {}
-  ::usv_interfaces::msg::GlobalTrack matched_mmsi(::usv_interfaces::msg::GlobalTrack::_matched_mmsi_type arg)
+  Init_GlobalTrack_source_model_name matched_mmsi(::usv_interfaces::msg::GlobalTrack::_matched_mmsi_type arg)
   {
     msg_.matched_mmsi = std::move(arg);
-    return std::move(msg_);
+    return Init_GlobalTrack_source_model_name(msg_);
   }
 
 private:

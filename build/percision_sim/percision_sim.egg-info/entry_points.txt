@@ -3,4 +3,3 @@ sim_ais_node = percision_sim.sim_ais_node:main
 sim_mmwave_node = percision_sim.sim_mmwave_node:main
 sim_nav_radar_node = percision_sim.sim_nav_radar_node:main
 sim_vision_node = percision_sim.sim_vision_node:main
-

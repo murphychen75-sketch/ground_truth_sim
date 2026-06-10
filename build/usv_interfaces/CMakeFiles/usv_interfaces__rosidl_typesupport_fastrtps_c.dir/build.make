@@ -90,7 +90,13 @@ rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosid
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/GlobalTrack.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/GlobalTrackArray.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/VesselState.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/FusedTrackSample.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/FusedTargetProfile.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/FusedTargetSnapshot.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/FusedSceneSnapshot.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/msg/FusedTargetCatalog.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/srv/ControlDevice.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/srv/GetTargetHistory.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/usv_interfaces/action/ExecuteMission.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -166,11 +172,11 @@ rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosid
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
 
@@ -249,11 +255,47 @@ rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__rosidl_typ
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp
 
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp
+
 rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__rosidl_typesupport_fastrtps_c.h
 
 rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__rosidl_typesupport_fastrtps_c.h
@@ -443,10 +485,80 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp.s
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s
+
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp
 
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.i: cmake_force
@@ -457,10 +569,24 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.s
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s
+
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp
 
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.i: cmake_force
@@ -486,7 +612,13 @@ usv_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track_array__type_support_c.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o"
 
 # External object files for target usv_interfaces__rosidl_typesupport_fastrtps_c
@@ -505,19 +637,25 @@ libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.cpp.o
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track_array__type_support_c.cpp.o
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vessel_state__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.o
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: libusv_interfaces__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
@@ -528,7 +666,7 @@ libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libuniq
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libusv_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libusv_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX shared library libusv_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -547,6 +685,16 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_type
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/ais_track_array__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_fastrtps_c.h
@@ -569,6 +717,8 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_type
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/vision_detection_array__type_support_c.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp
 	cd /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

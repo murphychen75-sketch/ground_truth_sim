@@ -4,7 +4,7 @@ ground_truth_node:
     frame_id: base_link
     target_count: 5
     annulus_radius_min: 50.0
-    annulus_radius_max: 500.0
+    annulus_radius_max: 200.0
     speed_min: 2.0
     speed_max: 12.0
     size_width_min: 2.0

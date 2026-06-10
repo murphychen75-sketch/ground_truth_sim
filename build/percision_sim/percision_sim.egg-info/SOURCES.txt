@@ -11,7 +11,10 @@ setup.py
 ../../build/percision_sim/percision_sim.egg-info/zip-safe
 config/multi_sensor_params.yaml
 config/percision_sim_params.yaml
+config/three_vision_one_mmwave_params.yaml
 launch/multi_sensor_sim.launch.py
+launch/sensors_sim.launch.py
+launch/three_sensor_sim.launch.py
 percision_sim/__init__.py
 percision_sim/sim_ais_node.py
 percision_sim/sim_mmwave_node.py

@@ -1,12 +1,13 @@
 # USV 传感器仿真套件
 
-该工作区聚合了三个彼此解耦、可单独部署的 ROS 2 Python/C++ 功能包，用于在无人船（USV）多传感器融合方案中快速搭建真值生成器与多源传感器模拟：
+该工作区聚合了四个彼此解耦、可单独部署的 ROS 2 Python/C++ 功能包，用于在无人船（USV）多传感器融合方案中快速搭建真值生成器与多源传感器模拟：
 
 - `ground_truth_sim`：负责生成高频真值与 RViz 轨迹图层，支持 CTRV 运动模型和可配置目标数量。
 - `percision_sim`：基于真值话题派生视觉、AIS、导航雷达与 4D 毫米波等仿真节点。
+- `usv_event_fusion`：事件驱动融合（单全局航迹表、`threading.Lock` 保护），订阅视觉与毫米波；发布 `FusedSceneSnapshot`、轨迹 `MarkerArray` 等。（旧包 `usv_fusion` 已弃用。）
 - `usv_interfaces`：对外公开统一的消息/服务/动作接口及话题常量，保证多语言节点间的数据契约。
 
-> 推荐将三个包放置在同一个 ROS 2 工作区内构建，便于 `ros2 launch ground_truth_sim ground_truth_sim.launch.py` 一键启动真值与所需的感知模拟节点。
+> 将四个包放在同一工作区构建后，**推荐**使用 `ros2 launch ground_truth_sim three_sensor_fusion_sim.launch.py` 一键拉起「3 路视觉 + 1 路毫米波 + 视场角 Marker + 融合 + RViz」参考栈；也可使用旧版 `full_stack_sim` 或分层单独启动（见下文）。
 
 ## 仓库结构
 
@@ -16,6 +17,8 @@
 | `src/sim/` | `ground_truth_sim` 源代码（节点、TF、launch、RViz、参数）。|
 | `src/percision_sim/` | 视觉 / AIS / 导航雷达 / 毫米波仿真节点与统一参数 YAML。|
 | `src/usv_interfaces/` | 自定义消息（msg）、服务（srv）、动作（action）及话题常量。|
+| `src/usv_event_fusion/` | 事件驱动融合 `event_fusion_node`、关联契约与参数/launch。|
+| `src/usv_fusion/` | （弃用）定时器融合 `sensor_fusion_node`。|
 | `install/`、`build/`、`log/` | colcon 构建生成的安装/产物/日志目录，可随构建刷新。|
 
 ## 功能包概览
@@ -25,18 +28,26 @@
 - [ground_truth_sim 详细说明](./src/sim/README.md)
 - [percision_sim 详细说明](./src/percision_sim/README.md)
 - [usv_interfaces 接口列表](./src/usv_interfaces/README.md)
+- [usv_event_fusion 包说明](./src/usv_event_fusion/README.md) · [融合算法参考](./src/usv_event_fusion/docs/usv_event_fusion_algorithm_reference.md)
 
 ### ground_truth_sim
 - CTRV（Constant Turn Rate and Velocity）模型以 50 Hz 推进全局目标状态，支持随机转向、衰减与自定义数量/尺寸。
 - 发布 `/sim/ground_truth`（`usv_interfaces/msg/GlobalTrackArray`）和 `/sim/ground_truth_markers`（`visualization_msgs/msg/MarkerArray`）。
-- 自带 `rviz/ground_truth_view.rviz`，`ground_truth_sim.launch.py` 可选启动 RViz 及各仿真节点。
+- 自带 `rviz/ground_truth_only.rviz`（仅真值轨迹）与 `rviz/ground_truth_view.rviz`（含多路传感器 Marker）。`ground_truth_sim.launch.py` 只负责静态 TF + `ground_truth_node` + 可选 RViz；传感器由 `percision_sim` 的 launch 单独启动。
 - 主要参数集中在 `src/sim/config/ground_truth_params.yaml`，通过 `params_file` launch 参数覆盖。
 
 ### percision_sim
 - 面向多传感器融合的四个 ROS 2 节点：`sim_vision_node`、`sim_ais_node`、`sim_nav_radar_node`、`sim_mmwave_node`。
 - 统一参数文件 `src/percision_sim/config/percision_sim_params.yaml`，可加载到任意节点（`--ros-args --params-file ...`）。
 - 每个节点都提供 RViz Marker（球体/文本/贴地块/圆柱+箭头）便于调试。
-- 提供 `launch/multi_sensor_sim.launch.py` + `config/multi_sensor_params.yaml`，可一键启动四摄像头（25 Hz, 90° FoV）与四毫米波雷达（15 Hz, 120° FoV），并配套 `rviz/ground_truth_view.rviz` 默认打开 `/sim/ground_truth_markers`、`/vision/markers`、`/ais/markers`、`/nav_radar/markers`、`/mmwave/markers`，免去每次手动勾选。`ground_truth_node` 的 `annulus_radius_min/max` 也在同一个 YAML 中暴露，可按需限制/扩展真值目标的距离范围。
+- `launch/sensors_sim.launch.py` + `percision_sim_params.yaml`：在 **已有** `/sim/ground_truth` 的前提下启动单路视觉 / AIS / 导航雷达 / 毫米波（各一路），由 `start_*` launch 参数开关。
+- `launch/three_sensor_sim.launch.py` + `three_vision_one_mmwave_params.yaml`：**3 路视觉（front/left/right，150° 对称覆盖）+ 1 路前向毫米波**；需先运行 `ground_truth_sim.launch.py`。
+- `launch/multi_sensor_sim.launch.py` + `multi_sensor_params.yaml`：四摄像头 + 四毫米波；**需先**运行 `ground_truth_sim.launch.py`（或 `full_stack_sim.launch.py`）。可选 RViz 默认加载 `ground_truth_view.rviz`。真值环带等参数改在 `ground_truth_params.yaml`。
+
+### usv_event_fusion
+- 节点 **`event_fusion_node`**：**异步回调**触发融合，`vision_topics[]` 与 `/mmwave/targets` **各自独立**一轮观测（不要求同帧雷达+视觉）；输出 **`/fusion/snapshot`**（仅 **已确认** 航迹）、**`/fusion/catalog`**、`/fusion/track_markers`；可选 **`publish_legacy_global_track:=true`** 发布 `/fusion/tracks`。
+- 参数：`event_fusion_io.yaml`（话题/外参）+ `event_fusion_algorithm.yaml`（滤波/关联）；启动：`ros2 launch usv_event_fusion event_fusion.launch.py`。
+
 
 ### usv_interfaces
 - 统一的消息/服务/动作定义，覆盖 GlobalTrack、VisionDetection、AISTrack、NavRadarTarget、MmwaveTarget、VesselState 等。
@@ -64,6 +75,12 @@ flowchart LR
 
     MMWAVE -->|/mmwave/targets| MmwaveTopic[/MmwaveTargetArray/]
     MMWAVE -->|/mmwave/markers| MmwaveMarkers[/MarkerArray/]
+
+    VisionTopic --> FUSION(event_fusion_node)
+    MmwaveTopic --> FUSION
+    FUSION -->|/fusion/snapshot| FusionSnap[/FusedSceneSnapshot/]
+    FUSION -->|/fusion/catalog| FusionCat[/FusedTargetCatalog/]
+    FUSION -->|/fusion/track_markers| FusionMarkers[/MarkerArray/]
 ```
 
 ## 构建与运行
@@ -76,14 +93,26 @@ flowchart LR
 2. 构建（假设已安装系统依赖并 source `/opt/ros/<distro>/setup.bash`）：
    ```bash
    cd ~/usv_ws
-   colcon build --packages-select usv_interfaces ground_truth_sim percision_sim
+   colcon build --packages-select usv_interfaces ground_truth_sim percision_sim usv_event_fusion
    source install/setup.bash
    ```
-3. 一键启动（含静态 TF + ground_truth_node + 可选仿真节点 + RViz）：
+3. 分层或一键启动示例：
    ```bash
-   ros2 launch ground_truth_sim ground_truth_sim.launch.py \
-     start_vision_node:=true start_ais_node:=true \
-     start_nav_radar_node:=true start_mmwave_node:=true
+   # 【推荐】3 视觉 + 1 毫米波 + FoV 扇形 + 融合 + RViz
+   ros2 launch ground_truth_sim three_sensor_fusion_sim.launch.py
+
+   # 仅真值 + 仅真值 RViz（Grid + /sim/ground_truth_markers）
+   ros2 launch ground_truth_sim ground_truth_sim.launch.py
+
+   # 另开终端：在真值已发布时启动 3V+1R 传感器（不含融合）
+   ros2 launch percision_sim three_sensor_sim.launch.py
+
+   # 仅融合（需上游话题与 event_fusion_three_sensor_io.yaml 一致）
+   ros2 launch usv_event_fusion event_fusion.launch.py \
+     io_params_file:=$(ros2 pkg prefix usv_event_fusion)/share/usv_event_fusion/config/event_fusion_three_sensor_io.yaml
+
+   # 旧版一键：单路 sensors_sim + fusion（话题与 ground_truth_view.rviz 不完全匹配）
+   ros2 launch ground_truth_sim full_stack_sim.launch.py
    ```
 4. 独立运行任意仿真节点，用统一参数文件：
    ```bash
@@ -93,13 +122,13 @@ flowchart LR
 
 ### 一键脚本
 
-仓库提供 `scripts/run_full_sim.sh`，可在已 source 系统 ROS 2 环境后直接运行，实现“清理 -> 构建 -> source -> 启动全部仿真”的自动化流程：
+仓库提供 `scripts/run_full_sim.sh`，可在已 source 系统 ROS 2 环境后直接运行，实现“清理 -> 全工作区构建 -> source -> `full_stack_sim.launch.py`”：
 
 ```bash
 ./scripts/run_full_sim.sh
 ```
 
-脚本默认启用四个传感器模拟节点，可通过编辑脚本或在命令行追加 `--` 后的 `ros2 launch` 参数来自定义启动行为。
+脚本默认通过 `full_stack_sim.launch.py` 拉起真值、`sensors_sim`（视觉/导航雷达/毫米波，AIS 在脚本中设为 `true`）与 **`event_fusion_node`**，并打开全量 RViz。可在脚本内修改 `ros2 launch` 行以覆盖参数。
 
 若只需“构建 + multi_sensor_sim 多传感器 launch”，可使用新脚本：
 
@@ -107,12 +136,16 @@ flowchart LR
 ./scripts/run_multi_sensor_sim.sh [额外 ros2 launch 参数]
 ```
 
-该脚本会先删除工作区根目录下的 `build/`、`install/`、`log/` 再执行 `colcon build --packages-select usv_interfaces ground_truth_sim percision_sim`，随后 source `install/setup.bash` 并调用 `ros2 launch percision_sim multi_sensor_sim.launch.py params_file:=<multi_sensor_params.yaml>`，默认 `use_rviz:=true` 并加载 `ground_truth_sim/rviz/ground_truth_view.rviz`，同时由 `static_tf_broadcaster` 发布 `parent_frame:=map -> child_frame:=base_link`。可通过附加参数（例如 `use_rviz:=false`、`rviz_config:=...`、`parent_frame:=odom`、`child_frame:=usv_base`）覆盖默认行为。
+该脚本会先全量清理并 `colcon build` 上述三包，再在 **后台** 启动 `ground_truth_sim.launch.py use_rviz:=false`，随后前台启动 `multi_sensor_sim.launch.py`（默认 `multi_sensor_params.yaml` + `ground_truth_view.rviz`）。`parent_frame` / `child_frame` 在 multi_sensor launch 中为兼容保留的占位参数；静态 TF 由真值 launch 提供。可通过脚本末尾附加参数传给 `multi_sensor_sim`（例如 `use_rviz:=false`）。
 
 ## 统一参数管理
 
 - 真值：编辑 `src/sim/config/ground_truth_params.yaml` 或在 launch 时传入 `params_file:=<path>`。
-- 传感器：`src/percision_sim/config/percision_sim_params.yaml` 以节点名分组（`sim_vision_node` / `sim_ais_node` / ...），可复制后按场景定制。
+- **3V+1R 参考栈**（sim / overlay / fusion 三方需同步 yaw 与 fov）：
+  - 传感器：`src/percision_sim/config/three_vision_one_mmwave_params.yaml`
+  - 视场扇形 Marker：`src/sim/config/three_sensor_overlay_params.yaml`
+  - 融合 I/O：`src/usv_event_fusion/config/event_fusion_three_sensor_io.yaml`
+- 单路传感器：`src/percision_sim/config/percision_sim_params.yaml` 以节点名分组（`sim_vision_node` / `sim_ais_node` / ...），可复制后按场景定制。
 - 所有节点都支持以 `--ros-args -p key:=value` 方式覆盖参数，用于一次性调试。
 
 ## 传感器模拟对比
@@ -134,6 +167,10 @@ flowchart LR
 | `/ais/tracks` | `usv_interfaces/msg/AISTrackArray` | `sim_ais_node` |
 | `/nav_radar/targets` | `usv_interfaces/msg/NavRadarTargetArray` | `sim_nav_radar_node` |
 | `/mmwave/targets` | `usv_interfaces/msg/MmwaveTargetArray` | `sim_mmwave_node` |
+| `/fusion/snapshot` | `usv_interfaces/msg/FusedSceneSnapshot` | `event_fusion_node` |
+| `/fusion/catalog` | `usv_interfaces/msg/FusedTargetCatalog` | `event_fusion_node` |
+| `/fusion/tracks` | `usv_interfaces/msg/GlobalTrackArray` | `event_fusion_node`（可选 legacy） |
+| `/fusion/track_markers` | `visualization_msgs/msg/MarkerArray` | `event_fusion_node` |
 
 更多接口定义请参考 `usv_interfaces/msg/*.msg` 与 README。
 

@@ -14,7 +14,13 @@
     "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/GlobalTrack.msg",
     "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/GlobalTrackArray.msg",
     "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/VesselState.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/FusedTrackSample.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/FusedTargetProfile.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/FusedTargetSnapshot.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/FusedSceneSnapshot.msg",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:msg/FusedTargetCatalog.msg",
     "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:srv/ControlDevice.srv",
+    "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:srv/GetTargetHistory.srv",
     "/home/cczh/temp-code/ground_truth_sim/src/usv_interfaces:action/ExecuteMission.action"
   ]
 }

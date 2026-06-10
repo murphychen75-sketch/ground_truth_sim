@@ -1,0 +1,58 @@
+[0.005s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces
+[0.013s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.076s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.082s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.097s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.098s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.101s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.105s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.110s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.120s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.126s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.133s] -- Found unique_identifier_msgs: 2.2.1 (/opt/ros/humble/share/unique_identifier_msgs/cmake)
+[0.137s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.389s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.788s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.801s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.817s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.817s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.817s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.850s] -- Configuring done
+[0.884s] -- Generating done
+[0.892s] -- Build files have been written to: /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces
+[0.897s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces
+[0.898s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32
+[0.943s] [  0%] Generating C code for ROS interfaces
+[0.947s] failed to create symbolic link '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/ament_cmake_python/usv_interfaces/usv_interfaces' because existing path cannot be removed: Is a directory
+[0.947s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_usv_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_usv_interfaces] Error 1
+[0.947s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_usv_interfaces.dir/all] Error 2
+[0.947s] gmake[1]: *** Waiting for unfinished jobs....
+[0.953s] [  0%] Generating C++ code for ROS interfaces
+[1.964s] [  0%] Built target usv_interfaces__cpp
+[1.983s] Consolidate compiler generated dependencies of target usv_interfaces__rosidl_generator_c
+[1.993s] [  1%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.c.o
+[1.993s] [  1%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__functions.c.o
+[1.994s] [  1%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target_array__functions.c.o
+[1.994s] [  1%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__functions.c.o
+[1.994s] [  1%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o
+[1.995s] [  2%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.c.o
+[1.995s] [  3%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/operation_mode__functions.c.o
+[1.995s] [  3%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/ais_track__functions.c.o
+[1.995s] [  4%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o
+[1.995s] [  4%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o
+[1.996s] [  5%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__functions.c.o
+[1.996s] [  5%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vision_detection__functions.c.o
+[1.996s] [  5%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/action/detail/execute_mission__functions.c.o
+[1.996s] [  5%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target_array__functions.c.o
+[1.996s] [  7%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__functions.c.o
+[1.996s] [  7%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__functions.c.o
+[1.999s] [  8%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/vessel_state__functions.c.o
+[1.999s] [  9%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o
+[1.999s] [  9%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o
+[1.999s] [ 10%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.c.o
+[1.999s] [ 11%] Building C object CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o
+[2.054s] [ 12%] Linking C shared library libusv_interfaces__rosidl_generator_c.so
+[2.093s] [ 12%] Built target usv_interfaces__rosidl_generator_c
+[2.093s] gmake: *** [Makefile:146: all] Error 2
+[2.096s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces -- -j32 -l32

@@ -11,5 +11,11 @@
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/GlobalTrack.idl
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/GlobalTrackArray.idl
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/VesselState.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/FusedTrackSample.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/FusedTargetProfile.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/FusedTargetSnapshot.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/FusedSceneSnapshot.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:msg/FusedTargetCatalog.idl
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:srv/ControlDevice.idl
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:srv/GetTargetHistory.idl
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces:action/ExecuteMission.idl

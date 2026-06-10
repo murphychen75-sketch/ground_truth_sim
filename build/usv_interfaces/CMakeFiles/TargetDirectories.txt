@@ -9,7 +9,7 @@
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/ament_cmake_python_symlink_usv_interfaces.dir
+/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/ament_cmake_python_copy_usv_interfaces.dir
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/ament_cmake_python_build_usv_interfaces_egg.dir
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_generator_py.dir
 /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir

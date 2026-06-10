@@ -16,6 +16,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'track_id'
+#include "unique_identifier_msgs/msg/detail/uuid__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__usv_interfaces__msg__GlobalTrack __attribute__((deprecated))
 #else
@@ -35,11 +39,11 @@ struct GlobalTrack_
   using Type = GlobalTrack_<ContainerAllocator>;
 
   explicit GlobalTrack_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : track_id(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->track_id = 0ul;
       this->x = 0.0;
       this->y = 0.0;
       this->v_x = 0.0;
@@ -51,16 +55,18 @@ struct GlobalTrack_
       this->is_dark_target = false;
       this->is_ais_matched = false;
       this->matched_mmsi = 0ul;
+      this->source_model_name = "";
     }
   }
 
   explicit GlobalTrack_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : covariance(_alloc)
+  : track_id(_alloc, _init),
+    covariance(_alloc),
+    source_model_name(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->track_id = 0ul;
       this->x = 0.0;
       this->y = 0.0;
       this->v_x = 0.0;
@@ -72,12 +78,13 @@ struct GlobalTrack_
       this->is_dark_target = false;
       this->is_ais_matched = false;
       this->matched_mmsi = 0ul;
+      this->source_model_name = "";
     }
   }
 
   // field types and members
   using _track_id_type =
-    uint32_t;
+    unique_identifier_msgs::msg::UUID_<ContainerAllocator>;
   _track_id_type track_id;
   using _x_type =
     double;
@@ -112,10 +119,13 @@ struct GlobalTrack_
   using _matched_mmsi_type =
     uint32_t;
   _matched_mmsi_type matched_mmsi;
+  using _source_model_name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _source_model_name_type source_model_name;
 
   // setters for named parameter idiom
   Type & set__track_id(
-    const uint32_t & _arg)
+    const unique_identifier_msgs::msg::UUID_<ContainerAllocator> & _arg)
   {
     this->track_id = _arg;
     return *this;
@@ -184,6 +194,12 @@ struct GlobalTrack_
     const uint32_t & _arg)
   {
     this->matched_mmsi = _arg;
+    return *this;
+  }
+  Type & set__source_model_name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->source_model_name = _arg;
     return *this;
   }
 
@@ -263,6 +279,9 @@ struct GlobalTrack_
       return false;
     }
     if (this->matched_mmsi != other.matched_mmsi) {
+      return false;
+    }
+    if (this->source_model_name != other.source_model_name) {
       return false;
     }
     return true;

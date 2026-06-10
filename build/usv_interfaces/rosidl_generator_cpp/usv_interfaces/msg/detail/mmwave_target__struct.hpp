@@ -47,7 +47,8 @@ struct MmwaveTarget_
       this->size_w = 0.0;
       this->size_l = 0.0;
       this->size_h = 0.0;
-      this->snr = 0.0;
+      this->objmotion_status = 0;
+      this->track_id = 0ul;
     }
   }
 
@@ -65,7 +66,8 @@ struct MmwaveTarget_
       this->size_w = 0.0;
       this->size_l = 0.0;
       this->size_h = 0.0;
-      this->snr = 0.0;
+      this->objmotion_status = 0;
+      this->track_id = 0ul;
     }
   }
 
@@ -94,9 +96,12 @@ struct MmwaveTarget_
   using _size_h_type =
     double;
   _size_h_type size_h;
-  using _snr_type =
-    double;
-  _snr_type snr;
+  using _objmotion_status_type =
+    uint8_t;
+  _objmotion_status_type objmotion_status;
+  using _track_id_type =
+    uint32_t;
+  _track_id_type track_id;
 
   // setters for named parameter idiom
   Type & set__radar_id(
@@ -147,10 +152,16 @@ struct MmwaveTarget_
     this->size_h = _arg;
     return *this;
   }
-  Type & set__snr(
-    const double & _arg)
+  Type & set__objmotion_status(
+    const uint8_t & _arg)
   {
-    this->snr = _arg;
+    this->objmotion_status = _arg;
+    return *this;
+  }
+  Type & set__track_id(
+    const uint32_t & _arg)
+  {
+    this->track_id = _arg;
     return *this;
   }
 
@@ -220,7 +231,10 @@ struct MmwaveTarget_
     if (this->size_h != other.size_h) {
       return false;
     }
-    if (this->snr != other.snr) {
+    if (this->objmotion_status != other.objmotion_status) {
+      return false;
+    }
+    if (this->track_id != other.track_id) {
       return false;
     }
     return true;

@@ -1,1 +1,64 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces/msg/GlobalTrack.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/GlobalTrack.msg
+// generated code does not contain a copyright notice
+
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module usv_interfaces {
+  module msg {
+    typedef double double__16[16];
+    struct GlobalTrack {
+      @verbatim (language="comment", text=
+        "融合中心分配的全局唯一 ID")
+      unique_identifier_msgs::msg::UUID track_id;
+
+      @verbatim (language="comment", text=
+        "融合后的平滑相对坐标 X（米）")
+      double x;
+
+      @verbatim (language="comment", text=
+        "融合后的平滑相对坐标 Y（米）")
+      double y;
+
+      @verbatim (language="comment", text=
+        "融合后的平滑速度 X（米/秒）")
+      double v_x;
+
+      @verbatim (language="comment", text=
+        "融合后的平滑速度 Y（米/秒）")
+      double v_y;
+
+      @verbatim (language="comment", text=
+        "综合估算的 3D 尺寸——宽（米）")
+      double size_w;
+
+      @verbatim (language="comment", text=
+        "综合估算的 3D 尺寸——长（米）")
+      double size_l;
+
+      @verbatim (language="comment", text=
+        "综合估算的 3D 尺寸——高（米）")
+      double size_h;
+
+      @verbatim (language="comment", text=
+        "4x4 协方差矩阵（按 x, y, v_x, v_y 顺序）")
+      double__16 covariance;
+
+      @verbatim (language="comment", text=
+        "是否为未匹配 AIS 的暗目标/可疑船只")
+      boolean is_dark_target;
+
+      @verbatim (language="comment", text=
+        "是否已经绑定 AIS 轨迹")
+      boolean is_ais_matched;
+
+      @verbatim (language="comment", text=
+        "若绑定成功，对应的 AIS MMSI")
+      uint32 matched_mmsi;
+
+      @verbatim (language="comment", text=
+        "可选：Gazebo Sim 等仿真中的模型/实体名，独立真值节点可留空")
+      string source_model_name;
+    };
+  };
+};

@@ -1,0 +1,46 @@
+[0.462s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/usv_event_fusion': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_event_fusion build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/install.log --single-version-externally-managed install_data
+[0.572s] running egg_info
+[0.578s] writing ../../build/usv_event_fusion/usv_event_fusion.egg-info/PKG-INFO
+[0.578s] writing dependency_links to ../../build/usv_event_fusion/usv_event_fusion.egg-info/dependency_links.txt
+[0.578s] writing entry points to ../../build/usv_event_fusion/usv_event_fusion.egg-info/entry_points.txt
+[0.579s] writing requirements to ../../build/usv_event_fusion/usv_event_fusion.egg-info/requires.txt
+[0.579s] writing top-level names to ../../build/usv_event_fusion/usv_event_fusion.egg-info/top_level.txt
+[0.592s] reading manifest file '../../build/usv_event_fusion/usv_event_fusion.egg-info/SOURCES.txt'
+[0.592s] writing manifest file '../../build/usv_event_fusion/usv_event_fusion.egg-info/SOURCES.txt'
+[0.592s] running build
+[0.592s] running build_py
+[0.592s] copying usv_event_fusion/__init__.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.592s] copying usv_event_fusion/association_contract.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.592s] copying usv_event_fusion/motion_model.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/filters.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/sensor_models.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/track_state.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/association.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/fusion_engine.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/event_fusion_node.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/jpda.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/association_metrics.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/fusion_diagnostics.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/track_uuid.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] copying usv_event_fusion/track_overlap.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion
+[0.593s] running install
+[0.596s] running install_lib
+[0.602s] copying /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build/lib/usv_event_fusion/event_fusion_node.py -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages/usv_event_fusion
+[0.603s] byte-compiling /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages/usv_event_fusion/event_fusion_node.py to event_fusion_node.cpython-310.pyc
+[0.605s] running install_data
+[0.605s] copying resource/usv_event_fusion -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/ament_index/resource_index/packages
+[0.605s] copying package.xml -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion
+[0.605s] copying README.md -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion
+[0.605s] copying docs/usv_event_fusion_algorithm_reference.md -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/docs
+[0.605s] copying config/event_fusion_io.yaml -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/config
+[0.605s] copying config/event_fusion_algorithm.yaml -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/config
+[0.605s] copying config/event_fusion_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/config
+[0.605s] copying config/event_fusion_three_sensor_io.yaml -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/config
+[0.605s] copying launch/event_fusion.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/share/usv_event_fusion/launch
+[0.605s] running install_egg_info
+[0.613s] removing '/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages/usv_event_fusion-0.1.0-py3.10.egg-info' (and everything under it)
+[0.613s] Copying ../../build/usv_event_fusion/usv_event_fusion.egg-info to /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages/usv_event_fusion-0.1.0-py3.10.egg-info
+[0.613s] running install_scripts
+[0.671s] Installing event_fusion_node script to /home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/usv_event_fusion
+[0.671s] writing list of installed files to '/home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/install.log'
+[0.685s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/usv_event_fusion' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_event_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_event_fusion build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_event_fusion/install.log --single-version-externally-managed install_data

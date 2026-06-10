@@ -35,6 +35,10 @@ module usv_interfaces {
       double size_h;
 
       @verbatim (language="comment", text=
+        "检测框水平像素宽度（px），融合匹配用")
+      double pixel_width;
+
+      @verbatim (language="comment", text=
         "检测置信度（0~1），融合节点按距离动态调节协方差")
       double confidence;
     };

@@ -1,0 +1,81 @@
+# usv_fusion — sensor_fusion_node 参数（已弃用，仅供对照）
+#
+# 本包采用「定时器驱动」：fusion_timer_hz 同时控制融合步进与轨迹/快照发布频率。
+# 新项目请使用 usv_event_fusion；其融合计算仍为传感器事件驱动，轨迹发布由 track_publish_hz 控制
+# （见 usv_event_fusion/config/event_fusion_io.yaml）。
+
+sensor_fusion_node:
+  ros__parameters:
+
+    # ---------- 输入话题 ----------
+    vision_topics:  # 视觉检测话题列表，每项对应一路相机；长度须与下方相机数组一致
+      - "/vision/detections"
+    vision_camera_ids:  # 相机逻辑 ID（日志、聚类标记），与 vision_topics 等长
+      - "front"
+    vision_camera_yaws:  # 各相机光轴相对船体 x 轴偏航角 [rad]
+      - 0.0
+    vision_camera_mount_x:  # 各相机在船体坐标系下安装位置 x [m]
+      - 0.0
+    vision_camera_mount_y:  # 各相机在船体坐标系下安装位置 y [m]
+      - 0.0
+    mmwave_topic: "/mmwave/targets"  # 毫米波 4D 目标列表话题
+
+    # ---------- 输出话题 ----------
+    fusion_snapshot_topic: "/fusion/snapshot"  # 场景快照 FusedSceneSnapshot（高频）
+    fusion_catalog_topic: "/fusion/catalog"  # 目标档案 FusedTargetCatalog（低频）
+    fusion_tracks_topic: "/fusion/tracks"  # 可选旧版 GlobalTrackArray
+    fusion_markers_topic: "/fusion/track_markers"  # RViz 航迹历史折线 MarkerArray
+    publish_legacy_global_track: false  # 是否发布 fusion_tracks_topic
+    output_frame_id: "base_link"  # 所有融合输出消息的 header.frame_id
+
+    # ---------- 发布频率 ----------
+    fusion_timer_hz: 30.0  # 融合主循环频率 [Hz]：缓冲选帧、关联、EKF、快照与轨迹 Marker 均在此周期执行
+    catalog_publish_hz: 1.0  # 档案目录单独发布频率 [Hz]（与 fusion_timer_hz 解耦）
+    track_publish_hz: 0.0  # 仅 usv_event_fusion 使用；本节点忽略。event_fusion 下为 RViz 轨迹固定发布 [Hz]，0=随传感器回调
+
+    # ---------- 多路时间同步（缓冲选帧） ----------
+    max_sync_slop_sec: 0.1  # 选帧时允许的时间偏差 [s]（各路消息 stamp 与参考时刻的最大差）
+    sync_buffer_size: 60  # 每路视觉/雷达环形缓冲深度（条数）
+    sync_require_all_vision_topics: false  # true 时缺任一路视觉则本周期不融合
+
+    # ---------- 新生航迹延迟合并 ----------
+    defer_spawn_merge_enabled: true  # 近距离低速量测是否延迟 birth，优先与已有航迹合并
+    defer_spawn_max_pos_m: 35.0  # 触发延迟合并的最大平面距离 [m]
+    defer_spawn_max_speed_m_s: 6.0  # 触发延迟合并的最大速度模 [m/s]
+
+    # ---------- 航迹生命周期 ----------
+    coast_timeout_sec: 3.0  # 已确认航迹超过此时间无滤波更新则不写入快照发布 [s]
+    track_predict_stop_sec: 3.0  # 内部航迹超过此时间无滤波更新则从表中删除 [s]；<=0 表示永久 coast（旧行为）
+    max_history_points_per_track: 2000  # 每条航迹 RViz 历史折线最大点数
+    max_internal_tracks: 200  # 内部航迹表最大条数，超出后不再新生
+
+    # ---------- 历史落盘（可选） ----------
+    history_dir: ""  # 非空时按 target_<id>.jsonl 落盘，并启用 get_target_history 服务
+
+    # ---------- 关联门控 ----------
+    gating_m: 4.0  # 马氏距离门限系数（与测量/航迹方差配合，约等价于椭圆门倍数）
+    gate_distance_m: 25.0  # 平面欧氏距离硬门 [m]，超出则不可关联
+    cluster_max_distance_m: 8.0  # 跨相机视觉观测聚类：中心距小于此值 [m] 合并为一条量测
+    cluster_allow_same_camera: false  # 是否允许同相机两检测落入同一聚类
+
+    # ---------- 测量噪声（EKF R） ----------
+    position_std_radar_m: 1.5  # 毫米波平面位置测量标准差 [m]
+    position_std_vision_m: 2.0  # 视觉投影到 (x,y) 后位置测量标准差 [m]
+    velocity_std_radar_m_s: 0.5  # 毫米波速度测量标准差 [m/s]
+    vision_confidence_sigma_scale: 0.5  # 视觉置信度越低，位置标准差放大系数
+    radar_snr_sigma_scale: 20.0  # 雷达 SNR 越低，位置/速度标准差放大系数（依赖消息 snr 字段）
+
+    # ---------- 过程噪声（CV 模型 Q） ----------
+    process_noise_pos: 0.05  # 位置过程噪声强度（白加速度近似）
+    process_noise_vel: 0.5  # 速度过程噪声强度
+
+    # ---------- 传感器安装缺省（数组项不足时使用） ----------
+    default_camera_yaw_rad: 0.0  # 相机偏航缺省 [rad]
+    default_camera_mount_x_m: 0.0  # 相机安装 x 缺省 [m]
+    default_camera_mount_y_m: 0.0  # 相机安装 y 缺省 [m]
+    default_radar_mount_yaw_rad: 0.0  # 雷达安装偏航缺省 [rad]
+    default_radar_mount_x_m: 0.0  # 雷达安装 x 缺省 [m]
+    default_radar_mount_y_m: 0.0  # 雷达安装 y 缺省 [m]
+
+    # ---------- 其它 ----------
+    initial_dt_sec: 0.05  # 首帧或时间回退时 CV 预测使用的默认 dt [s]

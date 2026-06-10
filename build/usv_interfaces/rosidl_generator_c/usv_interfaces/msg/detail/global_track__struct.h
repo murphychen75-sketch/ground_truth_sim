@@ -18,11 +18,17 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'track_id'
+#include "unique_identifier_msgs/msg/detail/uuid__struct.h"
+// Member 'source_model_name'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in msg/GlobalTrack in the package usv_interfaces.
 typedef struct usv_interfaces__msg__GlobalTrack
 {
   /// 融合中心分配的全局唯一 ID
-  uint32_t track_id;
+  unique_identifier_msgs__msg__UUID track_id;
   /// 融合后的平滑相对坐标 X（米）
   double x;
   /// 融合后的平滑相对坐标 Y（米）
@@ -45,6 +51,8 @@ typedef struct usv_interfaces__msg__GlobalTrack
   bool is_ais_matched;
   /// 若绑定成功，对应的 AIS MMSI
   uint32_t matched_mmsi;
+  /// 可选：Gazebo Sim 等仿真中的模型/实体名，独立真值节点可留空
+  rosidl_runtime_c__String source_model_name;
 } usv_interfaces__msg__GlobalTrack;
 
 // Struct for a sequence of usv_interfaces__msg__GlobalTrack.

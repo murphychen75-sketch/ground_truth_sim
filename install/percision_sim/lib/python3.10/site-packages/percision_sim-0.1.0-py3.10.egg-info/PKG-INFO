@@ -1,12 +1,9 @@
 Metadata-Version: 2.1
-Name: percision-sim
+Name: percision_sim
 Version: 0.1.0
 Summary: Vision detection simulator driven by USV ground truth tracks
-Home-page: UNKNOWN
 Maintainer: USV Dev
 Maintainer-email: usv@example.com
 License: Apache-2.0
-Platform: UNKNOWN
-
-UNKNOWN
-
+Requires-Dist: setuptools
+Requires-Dist: numpy

@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
-class Init_MmwaveTarget_snr
+class Init_MmwaveTarget_track_id
 {
 public:
-  explicit Init_MmwaveTarget_snr(::usv_interfaces::msg::MmwaveTarget & msg)
+  explicit Init_MmwaveTarget_track_id(::usv_interfaces::msg::MmwaveTarget & msg)
   : msg_(msg)
   {}
-  ::usv_interfaces::msg::MmwaveTarget snr(::usv_interfaces::msg::MmwaveTarget::_snr_type arg)
+  ::usv_interfaces::msg::MmwaveTarget track_id(::usv_interfaces::msg::MmwaveTarget::_track_id_type arg)
   {
-    msg_.snr = std::move(arg);
+    msg_.track_id = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::usv_interfaces::msg::MmwaveTarget msg_;
+};
+
+class Init_MmwaveTarget_objmotion_status
+{
+public:
+  explicit Init_MmwaveTarget_objmotion_status(::usv_interfaces::msg::MmwaveTarget & msg)
+  : msg_(msg)
+  {}
+  Init_MmwaveTarget_track_id objmotion_status(::usv_interfaces::msg::MmwaveTarget::_objmotion_status_type arg)
+  {
+    msg_.objmotion_status = std::move(arg);
+    return Init_MmwaveTarget_track_id(msg_);
   }
 
 private:
@@ -43,10 +59,10 @@ public:
   explicit Init_MmwaveTarget_size_h(::usv_interfaces::msg::MmwaveTarget & msg)
   : msg_(msg)
   {}
-  Init_MmwaveTarget_snr size_h(::usv_interfaces::msg::MmwaveTarget::_size_h_type arg)
+  Init_MmwaveTarget_objmotion_status size_h(::usv_interfaces::msg::MmwaveTarget::_size_h_type arg)
   {
     msg_.size_h = std::move(arg);
-    return Init_MmwaveTarget_snr(msg_);
+    return Init_MmwaveTarget_objmotion_status(msg_);
   }
 
 private:

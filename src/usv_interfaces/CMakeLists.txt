@@ -11,6 +11,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED) # 新增
 find_package(builtin_interfaces REQUIRED)
+find_package(unique_identifier_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 # 定义消息文件
@@ -28,10 +29,16 @@ set(MSG_FILES
   msg/GlobalTrack.msg
   msg/GlobalTrackArray.msg
   msg/VesselState.msg
+  msg/FusedTrackSample.msg
+  msg/FusedTargetProfile.msg
+  msg/FusedTargetSnapshot.msg
+  msg/FusedSceneSnapshot.msg
+  msg/FusedTargetCatalog.msg
 )
 
 set(SRV_FILES
   srv/ControlDevice.srv
+  srv/GetTargetHistory.srv
 )
 
 set(ACTION_FILES
@@ -43,7 +50,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${MSG_FILES}
   ${SRV_FILES}
   ${ACTION_FILES}
-  DEPENDENCIES std_msgs geometry_msgs nav_msgs builtin_interfaces
+  DEPENDENCIES std_msgs geometry_msgs nav_msgs builtin_interfaces unique_identifier_msgs
 )
 
 # 1. 安装 C++ 头文件 (用于 C++ 节点引用常量)
@@ -62,7 +69,7 @@ install(DIRECTORY include/
 # endif()
 
 # 导出依赖
-ament_export_dependencies(std_msgs geometry_msgs nav_msgs builtin_interfaces)
+ament_export_dependencies(std_msgs geometry_msgs nav_msgs builtin_interfaces unique_identifier_msgs)
 ament_export_include_directories(include)
 
 ament_package()

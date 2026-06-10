@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/FusedTargetProfile.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module usv_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Slow-changing target attributes (catalog / archive).")
+    struct FusedTargetProfile {
+      unique_identifier_msgs::msg::UUID target_id;
+
+      double size_w;
+
+      double size_l;
+
+      double size_h;
+
+      int32 class_id;
+
+      string class_name;
+
+      @verbatim (language="comment", text=
+        "近 N 帧类别投票占比 [0,1]")
+      double class_confidence;
+
+      boolean is_dark_target;
+
+      boolean is_ais_matched;
+
+      uint32 matched_mmsi;
+
+      builtin_interfaces::msg::Time first_seen;
+
+      builtin_interfaces::msg::Time last_profile_update;
+    };
+  };
+};

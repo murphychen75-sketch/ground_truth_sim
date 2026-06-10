@@ -97,7 +97,6 @@ class SimAISNode(Node):
         array_msg = AISTrackArray()
         array_msg.header.stamp = msg.header.stamp
         array_msg.header.frame_id = frame_id
-        markers = MarkerArray()
         marker_list: List[Marker] = []
 
         for track in msg.tracks:
@@ -114,17 +113,32 @@ class SimAISNode(Node):
             array_msg.tracks.append(ais_track)
             marker_list.append(self._make_marker(track, frame_id, msg.header.stamp))
 
+        stamp = msg.header.stamp
+        # 全量刷新：先清空 ais_labels，避免旧 MMSI/旧 track 重生后 RViz 仍保留旧 TEXT
+        clear = MarkerArray()
+        clear.markers = [self._make_deleteall_ais_labels(frame_id, stamp)]
+        self._marker_pub.publish(clear)
+        if marker_list:
+            self._marker_pub.publish(MarkerArray(markers=marker_list))
+
         if not array_msg.tracks:
             return
 
-        markers.markers = marker_list
         self._ais_pub.publish(array_msg)
-        self._marker_pub.publish(markers)
 
     def _compute_heading(self, v_x: float, v_y: float) -> float:
         if abs(v_x) < 1e-6 and abs(v_y) < 1e-6:
             return 0.0
         return math.atan2(v_y, v_x)
+
+    def _make_deleteall_ais_labels(self, frame_id: str, stamp) -> Marker:
+        m = Marker()
+        m.header.frame_id = frame_id
+        m.header.stamp = stamp
+        m.ns = "ais_labels"
+        m.id = 0
+        m.action = Marker.DELETEALL
+        return m
 
     def _make_marker(self, track, frame_id: str, stamp) -> Marker:
         marker = Marker()

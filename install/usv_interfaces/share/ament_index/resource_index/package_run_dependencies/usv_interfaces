@@ -1,1 +1,1 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/usv_interfaces
+std_msgs;geometry_msgs;builtin_interfaces;action_msgs;sensor_msgs;nav_msgs;unique_identifier_msgs

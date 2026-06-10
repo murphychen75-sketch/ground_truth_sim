@@ -4,15 +4,24 @@
 from __future__ import annotations
 
 import math
-from dataclasses import dataclass, field
-from typing import List
+import uuid
+from typing import List, Optional
 
 import numpy as np
 import rclpy
 from geometry_msgs.msg import Point
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
+from unique_identifier_msgs.msg import UUID as RosUUID
 from visualization_msgs.msg import Marker, MarkerArray
+
+from ground_truth_sim.ctrv import (
+    TargetState,
+    append_history,
+    predict_future_path,
+    propagate_target,
+    sample_annulus_radius,
+)
 
 try:
     from usv_msgs.msg import GlobalTrack, GlobalTrackArray  # type: ignore
@@ -20,35 +29,15 @@ except ImportError:  # pragma: no cover - fallback for local package name
     from usv_interfaces.msg import GlobalTrack, GlobalTrackArray  # type: ignore
 
 
-@dataclass
-class TargetState:
-    track_id: int
-    x: float
-    y: float
-    speed: float
-    theta: float
-    omega: float
-    size_w: float
-    size_l: float
-    size_h: float
-    is_dark_target: bool
-    is_ais_matched: bool
-    matched_mmsi: int
-    history: List[Point] = field(default_factory=list)
-
-    @property
-    def v_x(self) -> float:
-        return self.speed * math.cos(self.theta)
-
-    @property
-    def v_y(self) -> float:
-        return self.speed * math.sin(self.theta)
+def _fill_ros_uuid_from_int(msg: RosUUID, value: int) -> None:
+    msg.uuid = list(uuid.UUID(int=value).bytes)
 
 
 class GroundTruthNode(Node):
     """ROS 2 node that simulates ground-truth targets and RViz markers."""
 
     def __init__(self) -> None:
+        """加载参数、初始化 RNG 与目标列表，并创建发布器与定时器。"""
         super().__init__("ground_truth_node")
         self._declare_parameters()
 
@@ -97,6 +86,7 @@ class GroundTruthNode(Node):
             self._history_max_points = 1
 
         self._targets: List[TargetState] = self._initialize_targets(count=self._target_count)
+        self._next_track_id = self._target_count + 1
 
         qos = QoSProfile(depth=10)
         self._track_pub = self.create_publisher(GlobalTrackArray, "/sim/ground_truth", qos)
@@ -110,6 +100,7 @@ class GroundTruthNode(Node):
     # Target initialization
     # ---------------------------------------------------------------------
     def _declare_parameters(self) -> None:
+        """声明本节点使用的全部 ROS 2 参数及其默认值。"""
         self.declare_parameter("update_dt", 0.02)
         self.declare_parameter("frame_id", "base_link")
         self.declare_parameter("target_count", 5)
@@ -133,14 +124,17 @@ class GroundTruthNode(Node):
         self.declare_parameter("rng_seed", -1)
 
     def _get_float(self, name: str) -> float:
+        """读取参数并转为 float；缺失时为 0.0。"""
         value = self.get_parameter(name).value
         return float(value) if value is not None else 0.0
 
     def _get_int(self, name: str) -> int:
+        """读取参数并转为 int；缺失时为 0。"""
         value = self.get_parameter(name).value
         return int(value) if value is not None else 0
 
     def _get_string(self, name: str) -> str:
+        """读取参数并转为 str；缺失时为空字符串。"""
         value = self.get_parameter(name).value
         return str(value) if value is not None else ""
 
@@ -148,90 +142,78 @@ class GroundTruthNode(Node):
     # Target initialization
     # ---------------------------------------------------------------------
     def _initialize_targets(self, count: int) -> List[TargetState]:
-        targets: List[TargetState] = []
-        for track_id in range(1, count + 1):
-            radius = self._sample_annulus_radius(self._radius_min, self._radius_max)
-            bearing = self._rng.uniform(-math.pi, math.pi)
-            x = radius * math.cos(bearing)
-            y = radius * math.sin(bearing)
-            speed = self._rng.uniform(self._speed_min, self._speed_max)
-            theta = self._rng.uniform(-math.pi, math.pi)
-            omega = 0.0
-            size_w = self._rng.uniform(self._size_w_min, self._size_w_max)
-            size_l = self._rng.uniform(self._size_l_min, self._size_l_max)
-            size_h = self._rng.uniform(self._size_h_min, self._size_h_max)
-            is_ais_matched = bool(self._rng.random() < self._ais_match_probability)
-            matched_mmsi = (
-                int(self._rng.integers(100_000_000, 999_999_999)) if is_ais_matched else 0
-            )
-            target = TargetState(
-                track_id=track_id,
-                x=x,
-                y=y,
-                speed=speed,
-                theta=theta,
-                omega=omega,
-                size_w=size_w,
-                size_l=size_l,
-                size_h=size_h,
-                is_dark_target=not is_ais_matched,
-                is_ais_matched=is_ais_matched,
-                matched_mmsi=matched_mmsi,
-            )
-            target.history.append(Point(x=float(x), y=float(y), z=0.0))
-            targets.append(target)
-        return targets
+        """生成 count 个目标，track_id 从 1 连续编号到 count。"""
+        return [self._create_target(track_id) for track_id in range(1, count + 1)]
 
-    def _sample_annulus_radius(self, r_min: float, r_max: float) -> float:
-        u = self._rng.random()
-        return math.sqrt((r_max**2 - r_min**2) * u + r_min**2)
+    def _create_target(self, track_id: int) -> TargetState:
+        """在环形区域内随机采样位置与运动、尺寸、AIS 属性，并写入首帧历史点。"""
+        radius = sample_annulus_radius(self._rng, self._radius_min, self._radius_max)
+        bearing = self._rng.uniform(-math.pi, math.pi)
+        x = radius * math.cos(bearing)
+        y = radius * math.sin(bearing)
+        speed = self._rng.uniform(self._speed_min, self._speed_max)
+        theta = self._rng.uniform(-math.pi, math.pi)
+        omega = 0.0
+        size_w = self._rng.uniform(self._size_w_min, self._size_w_max)
+        size_l = self._rng.uniform(self._size_l_min, self._size_l_max)
+        size_h = self._rng.uniform(self._size_h_min, self._size_h_max)
+        is_ais_matched = bool(self._rng.random() < self._ais_match_probability)
+        matched_mmsi = (
+            int(self._rng.integers(100_000_000, 999_999_999)) if is_ais_matched else 0
+        )
+        target = TargetState(
+            track_id=track_id,
+            x=x,
+            y=y,
+            speed=speed,
+            theta=theta,
+            omega=omega,
+            size_w=size_w,
+            size_l=size_l,
+            size_h=size_h,
+            is_dark_target=not is_ais_matched,
+            is_ais_matched=is_ais_matched,
+            matched_mmsi=matched_mmsi,
+        )
+        target.history.append(Point(x=float(x), y=float(y), z=0.0))
+        return target
 
     # ---------------------------------------------------------------------
     # Timer callback
     # ---------------------------------------------------------------------
     def _timer_callback(self) -> None:
-        for target in self._targets:
-            self._propagate_target(target)
+        """按 CTRV 推进各目标；越出外圆则换新 track_id 重生并发 RViz DELETE；否则累积轨迹历史。随后发布航迹与标记。"""
+        removed_track_ids: List[int] = []
+        for i, target in enumerate(self._targets):
+            propagate_target(
+                target,
+                self._dt,
+                self._omega_noise_std,
+                self._omega_decay,
+                self._omega_limit,
+                self._rng,
+            )
+            if math.hypot(target.x, target.y) > self._radius_max:
+                removed_track_ids.append(target.track_id)
+                new_id = self._next_track_id
+                self._next_track_id += 1
+                self._targets[i] = self._create_target(new_id)
+            else:
+                append_history(target, self._history_max_points)
 
         array_msg = self._build_track_array()
         self._track_pub.publish(array_msg)
-        self._publish_markers(array_msg)
-
-    def _propagate_target(self, target: TargetState) -> None:
-        omega_noise = self._rng.normal(0.0, self._omega_noise_std)
-        omega = (target.omega + omega_noise) * self._omega_decay
-        omega = float(np.clip(omega, -self._omega_limit, self._omega_limit))
-        target.omega = omega
-
-        if abs(omega) < 1e-3:
-            dx = target.speed * math.cos(target.theta) * self._dt
-            dy = target.speed * math.sin(target.theta) * self._dt
-        else:
-            theta = target.theta
-            dx = (target.speed / omega) * (
-                math.sin(theta + omega * self._dt) - math.sin(theta)
-            )
-            dy = (target.speed / omega) * (
-                -math.cos(theta + omega * self._dt) + math.cos(theta)
-            )
-        target.x += dx
-        target.y += dy
-        target.theta = self._wrap_angle(target.theta + omega * self._dt)
-        self._update_history(target)
-
-    def _update_history(self, target: TargetState) -> None:
-        target.history.append(Point(x=float(target.x), y=float(target.y), z=0.0))
-        if len(target.history) > self._history_max_points:
-            del target.history[0 : len(target.history) - self._history_max_points]
+        self._publish_markers(array_msg, removed_track_ids)
 
     def _build_track_array(self) -> GlobalTrackArray:
+        """将当前内存中的目标列表封装为带当前时间与 frame_id 的 GlobalTrackArray。"""
         msg = GlobalTrackArray()
         msg.header.stamp = self.get_clock().now().to_msg()
         msg.header.frame_id = self._frame_id
 
         for target in self._targets:
             track = GlobalTrack()
-            track.track_id = target.track_id
+            _fill_ros_uuid_from_int(track.track_id, target.track_id)
             track.x = target.x
             track.y = target.y
             track.v_x = target.v_x
@@ -243,15 +225,30 @@ class GroundTruthNode(Node):
             track.is_dark_target = target.is_dark_target
             track.is_ais_matched = target.is_ais_matched
             track.matched_mmsi = target.matched_mmsi
+            track.source_model_name = ""
             msg.tracks.append(track)
         return msg
 
     # ---------------------------------------------------------------------
     # RViz markers
     # ---------------------------------------------------------------------
-    def _publish_markers(self, track_array: GlobalTrackArray) -> None:
-        markers = MarkerArray()
+    def _publish_markers(
+        self,
+        track_array: GlobalTrackArray,
+        removed_track_ids: Optional[List[int]] = None,
+    ) -> None:
+        """发布 RViz 标记。
+
+        有目标重生时：先单独发布各命名空间的 DELETEALL（RViz2 对同一条消息内混排 DELETE 支持不稳定），
+        再发布当前所有目标的 ADD。无重生时仅发布 ADD，与上一周期同 id 的标记会被覆盖更新。
+        """
         stamp = track_array.header.stamp
+        if removed_track_ids:
+            clear = MarkerArray()
+            clear.markers = self._make_deleteall_markers_for_namespaces(stamp)
+            self._marker_pub.publish(clear)
+
+        markers = MarkerArray()
         marker_list: List[Marker] = []
         for target in self._targets:
             marker_list.append(self._make_position_marker(target, stamp))
@@ -260,7 +257,21 @@ class GroundTruthNode(Node):
         markers.markers = marker_list
         self._marker_pub.publish(markers)
 
+    def _make_deleteall_markers_for_namespaces(self, stamp) -> List[Marker]:
+        """对位姿 / 预测路径 / 历史三个命名空间各发一条 DELETEALL，清空该话题下对应 ns 的全部旧标记。"""
+        out: List[Marker] = []
+        for ns in ("target_pose", "target_path", "target_history"):
+            m = Marker()
+            m.header.frame_id = self._frame_id
+            m.header.stamp = stamp
+            m.ns = ns
+            m.id = 0
+            m.action = Marker.DELETEALL
+            out.append(m)
+        return out
+
     def _make_position_marker(self, target: TargetState, stamp) -> Marker:
+        """目标当前位置的球体标记；AIS 匹配与否用颜色区分。"""
         marker = Marker()
         marker.header.frame_id = self._frame_id
         marker.header.stamp = stamp
@@ -289,6 +300,7 @@ class GroundTruthNode(Node):
         return marker
 
     def _make_path_marker(self, target: TargetState, stamp) -> Marker:
+        """按当前 CTRV 状态预测的短时未来轨迹（LINE_STRIP）。"""
         marker = Marker()
         marker.header.frame_id = self._frame_id
         marker.header.stamp = stamp
@@ -301,10 +313,13 @@ class GroundTruthNode(Node):
         marker.color.r = 0.2
         marker.color.g = 0.6
         marker.color.b = 1.0 if target.is_ais_matched else 0.2
-        marker.points = self._predict_future_path(target)
+        marker.points = predict_future_path(
+            target, self._prediction_horizon, self._prediction_dt
+        )
         return marker
 
     def _make_history_marker(self, target: TargetState, stamp) -> Marker:
+        """目标已走过的平面轨迹历史（LINE_STRIP）。"""
         marker = Marker()
         marker.header.frame_id = self._frame_id
         marker.header.stamp = stamp
@@ -320,44 +335,9 @@ class GroundTruthNode(Node):
         marker.points = list(target.history)
         return marker
 
-    def _predict_future_path(self, target: TargetState) -> List[Point]:
-        points: List[Point] = []
-        x, y, theta = target.x, target.y, target.theta
-        omega = target.omega
-        steps = int(self._prediction_horizon / self._prediction_dt)
-        for _ in range(steps):
-            x, y, theta = self._ctrv_step(x, y, target.speed, theta, omega, self._prediction_dt)
-            points.append(Point(x=float(x), y=float(y), z=0.0))
-        return points
-
-    @staticmethod
-    def _ctrv_step(
-        x: float,
-        y: float,
-        speed: float,
-        theta: float,
-        omega: float,
-        dt: float,
-    ) -> tuple[float, float, float]:
-        if abs(omega) < 1e-3:
-            x_next = x + speed * math.cos(theta) * dt
-            y_next = y + speed * math.sin(theta) * dt
-            theta_next = theta
-        else:
-            x_next = x + (speed / omega) * (math.sin(theta + omega * dt) - math.sin(theta))
-            y_next = y + (speed / omega) * (-math.cos(theta + omega * dt) + math.cos(theta))
-            theta_next = theta + omega * dt
-        return x_next, y_next, GroundTruthNode._wrap_angle(theta_next)
-
-    @staticmethod
-    def _wrap_angle(angle: float) -> float:
-        wrapped = math.fmod(angle + math.pi, 2.0 * math.pi)
-        if wrapped < 0.0:
-            wrapped += 2.0 * math.pi
-        return wrapped - math.pi
-
 
 def main(args=None) -> None:
+    """节点入口：初始化 rclpy、创建节点并 spin，退出时销毁节点并 shutdown。"""
     rclpy.init(args=args)
     node = GroundTruthNode()
     try:

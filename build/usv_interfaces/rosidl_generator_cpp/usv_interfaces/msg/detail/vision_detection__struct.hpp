@@ -46,6 +46,7 @@ struct VisionDetection_
       this->distance_predict = 0.0;
       this->size_w = 0.0;
       this->size_h = 0.0;
+      this->pixel_width = 0.0;
       this->confidence = 0.0;
     }
   }
@@ -64,6 +65,7 @@ struct VisionDetection_
       this->distance_predict = 0.0;
       this->size_w = 0.0;
       this->size_h = 0.0;
+      this->pixel_width = 0.0;
       this->confidence = 0.0;
     }
   }
@@ -90,6 +92,9 @@ struct VisionDetection_
   using _size_h_type =
     double;
   _size_h_type size_h;
+  using _pixel_width_type =
+    double;
+  _pixel_width_type pixel_width;
   using _confidence_type =
     double;
   _confidence_type confidence;
@@ -135,6 +140,12 @@ struct VisionDetection_
     const double & _arg)
   {
     this->size_h = _arg;
+    return *this;
+  }
+  Type & set__pixel_width(
+    const double & _arg)
+  {
+    this->pixel_width = _arg;
     return *this;
   }
   Type & set__confidence(
@@ -205,6 +216,9 @@ struct VisionDetection_
       return false;
     }
     if (this->size_h != other.size_h) {
+      return false;
+    }
+    if (this->pixel_width != other.pixel_width) {
       return false;
     }
     if (this->confidence != other.confidence) {

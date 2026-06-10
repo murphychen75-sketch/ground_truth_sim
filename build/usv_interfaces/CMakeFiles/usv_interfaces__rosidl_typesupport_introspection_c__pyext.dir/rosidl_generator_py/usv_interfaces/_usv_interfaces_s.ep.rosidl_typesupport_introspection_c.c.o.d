@@ -238,6 +238,7 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__functions.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/global_track__type_support.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h \
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__type_support.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__struct.h \
@@ -250,10 +251,27 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/vessel_state__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/control_device__type_support.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/control_device__struct.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__type_support.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__struct.h \
+ /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/action/detail/execute_mission__type_support.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/action/detail/execute_mission__struct.h \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
  /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_c/usv_interfaces/action/detail/execute_mission__functions.h

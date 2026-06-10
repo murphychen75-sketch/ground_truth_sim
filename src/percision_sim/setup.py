@@ -13,10 +13,16 @@ setup(
         ("share/" + package_name + "/config", [
             "config/percision_sim_params.yaml",
             "config/multi_sensor_params.yaml",
+            "config/three_vision_one_mmwave_params.yaml",
         ]),
-        ("share/" + package_name + "/launch", [
-            "launch/multi_sensor_sim.launch.py",
-        ]),
+        (
+            "share/" + package_name + "/launch",
+            [
+                "launch/sensors_sim.launch.py",
+                "launch/multi_sensor_sim.launch.py",
+                "launch/three_sensor_sim.launch.py",
+            ],
+        ),
     ],
     install_requires=["setuptools", "numpy"],
     zip_safe=True,
@@ -24,7 +30,6 @@ setup(
     maintainer_email="usv@example.com",
     description="Vision detection simulator driven by USV ground truth tracks",
     license="Apache-2.0",
-    tests_require=["pytest"],
     entry_points={
         "console_scripts": [
             "sim_vision_node = percision_sim.sim_vision_node:main",

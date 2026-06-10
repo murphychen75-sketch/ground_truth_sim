@@ -104,6 +104,11 @@ static bool _VisionDetection__cdr_serialize(
     cdr << ros_message->size_h;
   }
 
+  // Field name: pixel_width
+  {
+    cdr << ros_message->pixel_width;
+  }
+
   // Field name: confidence
   {
     cdr << ros_message->confidence;
@@ -178,6 +183,11 @@ static bool _VisionDetection__cdr_deserialize(
     cdr >> ros_message->size_h;
   }
 
+  // Field name: pixel_width
+  {
+    cdr >> ros_message->pixel_width;
+  }
+
   // Field name: confidence
   {
     cdr >> ros_message->confidence;
@@ -235,6 +245,12 @@ size_t get_serialized_size_usv_interfaces__msg__VisionDetection(
   // field.name size_h
   {
     size_t item_size = sizeof(ros_message->size_h);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name pixel_width
+  {
+    size_t item_size = sizeof(ros_message->pixel_width);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -330,6 +346,14 @@ size_t max_serialized_size_usv_interfaces__msg__VisionDetection(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: size_h
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: pixel_width
   {
     size_t array_size = 1;
 

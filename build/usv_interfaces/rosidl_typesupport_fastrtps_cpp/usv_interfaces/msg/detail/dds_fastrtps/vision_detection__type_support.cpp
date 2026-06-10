@@ -46,6 +46,8 @@ cdr_serialize(
   cdr << ros_message.size_w;
   // Member: size_h
   cdr << ros_message.size_h;
+  // Member: pixel_width
+  cdr << ros_message.pixel_width;
   // Member: confidence
   cdr << ros_message.confidence;
   return true;
@@ -77,6 +79,9 @@ cdr_deserialize(
 
   // Member: size_h
   cdr >> ros_message.size_h;
+
+  // Member: pixel_width
+  cdr >> ros_message.pixel_width;
 
   // Member: confidence
   cdr >> ros_message.confidence;
@@ -132,6 +137,12 @@ get_serialized_size(
   // Member: size_h
   {
     size_t item_size = sizeof(ros_message.size_h);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: pixel_width
+  {
+    size_t item_size = sizeof(ros_message.pixel_width);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -228,6 +239,15 @@ max_serialized_size_VisionDetection(
   }
 
   // Member: size_h
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: pixel_width
   {
     size_t array_size = 1;
 

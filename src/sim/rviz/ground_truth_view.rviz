@@ -132,6 +132,14 @@ Visualization Manager:
       Topic: /mmwave/left/markers
       Queue Size: 10
       Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Fusion Track History
+      Namespaces:
+        fusion_history: true
+      Topic: /fusion/track_markers
+      Queue Size: 10
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 3; 3; 3

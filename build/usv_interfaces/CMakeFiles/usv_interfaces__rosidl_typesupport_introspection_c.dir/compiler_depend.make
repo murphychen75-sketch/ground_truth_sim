@@ -307,6 +307,396 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesup
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/fused_target_snapshot.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_introspection_c.h
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__type_support.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/fused_target_profile.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__type_support.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_introspection_c.h
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/fused_track_sample.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_c.h
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
 CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
@@ -369,7 +759,17 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesup
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
-  rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h
+  rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
 
 CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__type_support.c \
   /usr/include/stdc-predef.h \
@@ -439,6 +839,7 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesup
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/header.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
@@ -1123,6 +1524,95 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesup
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
   /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o: rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c \
+  /usr/include/stdc-predef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/message_introspection.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+  rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.h \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__type_support.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h \
+  rosidl_generator_c/usv_interfaces/msg/fused_track_sample.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h \
+  rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_c.h \
+  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h
+
+
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__rosidl_typesupport_introspection_c.h:
 
 rosidl_generator_c/usv_interfaces/srv/detail/control_device__struct.h:
 
@@ -1131,8 +1621,6 @@ rosidl_generator_c/usv_interfaces/msg/vision_detection.h:
 rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__functions.h:
 
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection_array__rosidl_typesupport_introspection_c.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__functions.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
 
@@ -1160,13 +1648,51 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target_ar
 
 rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__struct.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__functions.h:
+rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__type_support.h:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_introspection_c.h:
+rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__type_support.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__struct.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_introspection_c.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target__type_support.c:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection__type_support.c:
+
+rosidl_generator_c/usv_interfaces/msg/detail/global_track__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__struct.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__functions.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_introspection_c.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__type_support.c:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/fused_track_sample.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -1178,7 +1704,7 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__r
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target__rosidl_typesupport_introspection_c.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -1191,6 +1717,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.h:
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/endian.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
@@ -1205,6 +1733,12 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vessel_state__rosid
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.c:
+
+rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__struct.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target_array__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__functions.h:
 
@@ -1224,15 +1758,9 @@ rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.h:
-
-rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/stdc-predef.h:
-
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target__type_support.c:
 
 /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/field_types.h:
 
@@ -1250,9 +1778,13 @@ rosidl_generator_c/usv_interfaces/msg/nav_radar_target.h:
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h:
+
 /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
 
@@ -1262,15 +1794,19 @@ rosidl_generator_c/usv_interfaces/msg/nav_radar_target.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__functions.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__type_support.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__type_support.c:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/mmwave_target_array__rosidl_typesupport_introspection_c.h:
+/usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1298,9 +1834,15 @@ rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__typ
 
 rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.c:
 
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__rosidl_typesupport_introspection_c.h:
+
+/usr/include/features.h:
+
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__rosidl_typesupport_introspection_c.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.h:
 
@@ -1330,25 +1872,15 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection__r
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/features.h:
-
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__rosidl_typesupport_introspection_c.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
-
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__rosidl_typesupport_introspection_c.h:
-
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target_array__type_support.c:
 
 /usr/include/alloca.h:
-
-rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__functions.h:
 
 rosidl_generator_c/usv_interfaces/action/detail/execute_mission__struct.h:
 
@@ -1366,6 +1898,8 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track__rosidl_t
 
 rosidl_generator_c/usv_interfaces/msg/detail/vision_detection__struct.h:
 
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h:
@@ -1376,6 +1910,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/operation_mode__functions.h:
 
 /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h:
 
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__rosidl_typesupport_introspection_c.h:
+
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection_array__type_support.c:
 
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.c:
@@ -1383,10 +1919,6 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_
 rosidl_generator_c/usv_interfaces/action/detail/execute_mission__type_support.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-rosidl_generator_c/usv_interfaces/msg/mmwave_target.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
@@ -1396,7 +1928,11 @@ rosidl_generator_c/usv_interfaces/msg/mmwave_target.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h:
+rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__functions.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/ais_track__struct.h:
 
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track_array__type_support.c:
 
@@ -1414,9 +1950,15 @@ rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__struct.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__functions.h:
 
-/opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h:
+rosidl_generator_c/usv_interfaces/msg/mmwave_target.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+rosidl_generator_c/usv_interfaces/msg/fused_target_profile.h:
 
 rosidl_generator_c/usv_interfaces/msg/global_track.h:
+
+/opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/identifier.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h:
 
@@ -1434,38 +1976,42 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__
 
 rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__struct.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track_array__type_support.c:
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__type_support.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__struct.h:
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/ais_track_array__rosidl_typesupport_introspection_c.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/ais_track__struct.h:
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__functions.h:
-
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/vision_detection__type_support.c:
-
-rosidl_generator_c/usv_interfaces/msg/detail/global_track__type_support.h:
-
-rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__struct.h:
+rosidl_generator_c/usv_interfaces/msg/fused_target_snapshot.h:
 
 rosidl_generator_c/usv_interfaces/msg/detail/vision_detection__type_support.h:
 
 rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target_array__functions.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__struct.h:
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__functions.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target_array__struct.h:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__rosidl_typesupport_introspection_c.h:
 
-rosidl_generator_c/usv_interfaces/msg/detail/mmwave_target__type_support.h:
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__struct.h:
 
-/usr/include/stdlib.h:
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h:
 
-rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/nav_radar_target__type_support.c:
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__struct.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h:
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c:

@@ -1,0 +1,40 @@
+[0.348s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim': AMENT_PREFIX_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces LD_LIBRARY_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/percision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages:/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/percision_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/percision_sim/install.log --single-version-externally-managed install_data
+[0.463s] running egg_info
+[0.470s] writing ../../build/percision_sim/percision_sim.egg-info/PKG-INFO
+[0.470s] writing dependency_links to ../../build/percision_sim/percision_sim.egg-info/dependency_links.txt
+[0.470s] writing entry points to ../../build/percision_sim/percision_sim.egg-info/entry_points.txt
+[0.470s] writing requirements to ../../build/percision_sim/percision_sim.egg-info/requires.txt
+[0.471s] writing top-level names to ../../build/percision_sim/percision_sim.egg-info/top_level.txt
+[0.484s] reading manifest file '../../build/percision_sim/percision_sim.egg-info/SOURCES.txt'
+[0.485s] writing manifest file '../../build/percision_sim/percision_sim.egg-info/SOURCES.txt'
+[0.485s] running build
+[0.485s] running build_py
+[0.485s] copying percision_sim/__init__.py -> /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim
+[0.485s] copying percision_sim/sim_vision_node.py -> /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim
+[0.485s] copying percision_sim/sim_ais_node.py -> /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim
+[0.485s] copying percision_sim/sim_nav_radar_node.py -> /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim
+[0.485s] copying percision_sim/sim_mmwave_node.py -> /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim
+[0.485s] running install
+[0.488s] running install_lib
+[0.495s] copying /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build/lib/percision_sim/sim_mmwave_node.py -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages/percision_sim
+[0.495s] byte-compiling /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages/percision_sim/sim_mmwave_node.py to sim_mmwave_node.cpython-310.pyc
+[0.496s] running install_data
+[0.496s] copying resource/percision_sim -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/ament_index/resource_index/packages
+[0.496s] copying package.xml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim
+[0.496s] copying README.md -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim
+[0.496s] copying config/percision_sim_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+[0.496s] copying config/multi_sensor_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+[0.496s] copying config/three_vision_one_mmwave_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/config
+[0.496s] copying launch/sensors_sim.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/launch
+[0.496s] copying launch/multi_sensor_sim.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/launch
+[0.496s] copying launch/three_sensor_sim.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/percision_sim/share/percision_sim/launch
+[0.496s] running install_egg_info
+[0.504s] removing '/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages/percision_sim-0.1.0-py3.10.egg-info' (and everything under it)
+[0.504s] Copying ../../build/percision_sim/percision_sim.egg-info to /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages/percision_sim-0.1.0-py3.10.egg-info
+[0.505s] running install_scripts
+[0.564s] Installing sim_ais_node script to /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/percision_sim
+[0.565s] Installing sim_mmwave_node script to /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/percision_sim
+[0.565s] Installing sim_nav_radar_node script to /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/percision_sim
+[0.565s] Installing sim_vision_node script to /home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/percision_sim
+[0.565s] writing list of installed files to '/home/cczh/temp-code/ground_truth_sim/build/percision_sim/install.log'
+[0.578s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/percision_sim' returned '0': AMENT_PREFIX_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces LD_LIBRARY_PATH=/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/percision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/percision_sim/lib/python3.10/site-packages:/home/cczh/temp-code/ground_truth_sim/install/usv_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/percision_sim build --build-base /home/cczh/temp-code/ground_truth_sim/build/percision_sim/build install --record /home/cczh/temp-code/ground_truth_sim/build/percision_sim/install.log --single-version-externally-managed install_data

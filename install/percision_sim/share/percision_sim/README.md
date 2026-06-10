@@ -131,7 +131,7 @@ ros2 run percision_sim sim_mmwave_node
 | `angle_noise_std` | `0.08` | 方位角噪声标准差（弧度） |
 | `velocity_noise_std` | `0.1` | 速度噪声标准差（m/s） |
 | `size_jitter` | `0.2` | 宽/长的随机波动比例 |
-| `snr_min` / `snr_max` | `10.0 / 30.0` | SNR 范围（均匀分布） |
+| `motion_speed_threshold_m_s` | `0.3` | 速度低于此阈值时 `objmotion_status=0`（静止） |
 | `cylinder_height` | `1.0` | 圆柱 Marker 高度（米） |
 | `publish_rate_hz` | `0.0` | 输出频率限制（Hz，0 表示与真值同步） |
 
@@ -154,22 +154,36 @@ ros2 run percision_sim sim_mmwave_node --ros-args \
 
 Launch 文件中同样可以通过参数字典为每个实例指定独立话题和 FoV。
 
-### 多传感器一键启动
+### 单路传感器 launch（依赖真值）
+
+在 **已运行** `ground_truth_sim.launch.py`（或任意发布 `/sim/ground_truth` 的节点）后：
+
+```bash
+ros2 launch percision_sim sensors_sim.launch.py \
+	params_file:=$(ros2 pkg prefix percision_sim)/share/percision_sim/config/percision_sim_params.yaml
+```
+
+用 `start_vision_node` / `start_ais_node` / `start_nav_radar_node` / `start_mmwave_node`（默认除 AIS 外为 `true`）按需开关四个 `sim_*` 节点。
+
+### 四视觉 + 四毫米波 launch
 
 `launch/multi_sensor_sim.launch.py` 会根据 `config/multi_sensor_params.yaml` 同时启动：
 
-- 1× `ground_truth_node`（50 Hz 真值）
 - 4× `sim_vision_node`（前/后/左/右，`fov_half_angle=45°`，`publish_rate_hz=25`）
 - 4× `sim_mmwave_node`（前/后/左/右，`fov_half_angle=60°`，`publish_rate_hz=15`）
 
-各节点自动加载同一个参数文件，根据节点名分组配置独立话题（例如 `/vision/front/detections`、`/mmwave/port/targets`）与朝向（`camera_yaw`、`radar_yaw`）。运行方式：
+**不**再包含 `ground_truth_node` 或静态 TF；请先启动 `ground_truth_sim.launch.py`（建议 `use_rviz:=false`），再启动本 launch。各节点加载同一 YAML，按节点名分组（例如 `/vision/front/detections`、`/mmwave/left/targets`）。后方毫米波 `frame_id` 与静态 TF 中的 `mmwave_back_link` 对齐。
 
 ```bash
+# 终端 1
+ros2 launch ground_truth_sim ground_truth_sim.launch.py use_rviz:=false
+
+# 终端 2
 ros2 launch percision_sim multi_sensor_sim.launch.py \
 	params_file:=$(ros2 pkg prefix percision_sim)/share/percision_sim/config/multi_sensor_params.yaml
 ```
 
-可通过 `params_file` 指定自定义 YAML，对 FoV、输出频率或话题命名进行二次修改。
+也可使用仓库脚本 `./scripts/run_multi_sensor_sim.sh`（后台自动拉起真值）。通过 `params_file` 可替换为自定义 YAML。
 
 ## 参数 YAML
 
@@ -184,6 +198,6 @@ $(ros2 pkg prefix percision_sim)/share/percision_sim/config/percision_sim_params
 - `sim_vision_node`: 话题 (`input_topic`/`detection_topic`/`marker_topic`)、视场限制与距离/角度噪声 (`fov_half_angle`, `sigma_angle`, `distance_noise_*`)、摄像头姿态 (`frame_id`, `camera_yaw`) 以及识别类别 (`camera_id`, `class_name`, `class_id`)、发布频率 (`publish_rate_hz`)。
 - `sim_ais_node`: 延迟队列与输出 (`delay_sec`, `timer_period`, `queue_max`)、AIS 文本标签 (`ship_name_prefix`, `text_height`) 以及输入/输出话题。
 - `sim_nav_radar_node`: 1 Hz 周期 (`min_period`)、定位噪声 (`noise_std`)、面积波动 (`area_jitter`) 与 Marker 厚度 (`marker_height`)。
-- `sim_mmwave_node`: 雷达姿态 (`frame_id`, `radar_id`, `radar_yaw`)、视场 (`fov_half_angle`)、极坐标/多普勒噪声 (`radial_noise_std`, `angle_noise_std`, `velocity_noise_std`)、尺寸波动 (`size_jitter`)、SNR 范围 (`snr_min`, `snr_max`)、圆柱高度 (`cylinder_height`) 以及输出频率 (`publish_rate_hz`)。
+- `sim_mmwave_node`: 雷达姿态 (`frame_id`, `radar_id`, `radar_yaw`)、视场 (`fov_half_angle`)、极坐标/多普勒噪声 (`radial_noise_std`, `angle_noise_std`, `velocity_noise_std`)、尺寸波动 (`size_jitter`)、动静判定 (`motion_speed_threshold_m_s`)、圆柱高度 (`cylinder_height`) 以及输出频率 (`publish_rate_hz`)。
 
 若需自定义参数，可复制该 YAML，调整对应节点下的 `ros__parameters` 值，再在运行/launch 时指定新的文件。

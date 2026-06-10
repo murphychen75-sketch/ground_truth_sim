@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/usv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "usv_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/usv_interfaces")

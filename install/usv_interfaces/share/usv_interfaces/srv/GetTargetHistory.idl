@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from usv_interfaces/srv/GetTargetHistory.srv
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+#include "usv_interfaces/msg/FusedTrackSample.idl"
+
+module usv_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request history samples for one target_id from on-disk jsonl (written by sensor_fusion_node).")
+    struct GetTargetHistory_Request {
+      unique_identifier_msgs::msg::UUID target_id;
+
+      @verbatim (language="comment", text=
+        "inclusive; sec and nanosec both zero => from file start")
+      builtin_interfaces::msg::Time t_start;
+
+      @verbatim (language="comment", text=
+        "inclusive; both zero => until file end")
+      builtin_interfaces::msg::Time t_end;
+
+      @verbatim (language="comment", text=
+        "0 => no limit (use with care)")
+      uint32 max_samples;
+    };
+    struct GetTargetHistory_Response {
+      @verbatim (language="comment", text=
+        "0 = OK, 1 = unknown target / no file, 2 = read error")
+      int32 status;
+
+      sequence<usv_interfaces::msg::FusedTrackSample> samples;
+    };
+  };
+};

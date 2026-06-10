@@ -12,10 +12,12 @@
   <depend>rclpy</depend>
   <depend>visualization_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>tf2_geometry_msgs</depend>
   <depend>std_msgs</depend>
   <depend>tf2_ros</depend>
   <depend>usv_interfaces</depend>
-
+  <depend>unique_identifier_msgs</depend>
+  <exec_depend>usv_event_fusion</exec_depend>
   <export>
     <build_type>ament_python</build_type>
   </export>

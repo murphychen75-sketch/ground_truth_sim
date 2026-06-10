@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Launch RViz-ready ground truth simulation pipeline."""
+"""Launch static TF, ground truth publisher, and optional RViz (truth-only display)."""
 
 from __future__ import annotations
 
@@ -13,11 +13,13 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 _PACKAGE_SHARE = get_package_share_directory("ground_truth_sim")
-_DEFAULT_RVIZ_CONFIG = os.path.join(_PACKAGE_SHARE, "rviz", "ground_truth_view.rviz")
+_DEFAULT_RVIZ_CONFIG = os.path.join(_PACKAGE_SHARE, "rviz", "ground_truth_only.rviz")
 _DEFAULT_PARAMS_FILE = os.path.join(_PACKAGE_SHARE, "config", "ground_truth_params.yaml")
+_DEFAULT_RANGE_OVERLAY_PARAMS = os.path.join(_PACKAGE_SHARE, "config", "range_overlay_params.yaml")
 
 
 def generate_launch_description() -> LaunchDescription:
+    """Start static TF, ground_truth_node, range overlays for RViz, and optional RViz."""
     parent_frame_arg = DeclareLaunchArgument(
         "parent_frame", default_value="map", description="Parent TF frame name"
     )
@@ -27,7 +29,7 @@ def generate_launch_description() -> LaunchDescription:
     use_rviz_arg = DeclareLaunchArgument(
         "use_rviz",
         default_value="true",
-        description="Whether to auto-start RViz with the provided config",
+        description="Whether to auto-start RViz with the truth-only config",
     )
     rviz_config_arg = DeclareLaunchArgument(
         "rviz_config",
@@ -37,27 +39,12 @@ def generate_launch_description() -> LaunchDescription:
     params_file_arg = DeclareLaunchArgument(
         "params_file",
         default_value=_DEFAULT_PARAMS_FILE,
-        description="YAML file that stores ground truth node parameters",
+        description="YAML file for ground_truth_node parameters",
     )
-    start_vision_arg = DeclareLaunchArgument(
-        "start_vision_node",
-        default_value="true",
-        description="Whether to launch percision_sim's simulated vision node",
-    )
-    start_ais_arg = DeclareLaunchArgument(
-        "start_ais_node",
-        default_value="false",
-        description="Whether to launch percision_sim's AIS delay simulator",
-    )
-    start_nav_radar_arg = DeclareLaunchArgument(
-        "start_nav_radar_node",
-        default_value="true",
-        description="Whether to launch percision_sim's navigation radar simulator",
-    )
-    start_mmwave_arg = DeclareLaunchArgument(
-        "start_mmwave_node",
-        default_value="true",
-        description="Whether to launch percision_sim's mmWave radar simulator",
+    range_overlay_params_arg = DeclareLaunchArgument(
+        "range_overlay_params_file",
+        default_value=_DEFAULT_RANGE_OVERLAY_PARAMS,
+        description="YAML for range_overlay_node (/sim/range_overlay_markers)",
     )
 
     static_tf_node = Node(
@@ -80,44 +67,20 @@ def generate_launch_description() -> LaunchDescription:
         parameters=[LaunchConfiguration("params_file")],
     )
 
+    range_overlay_node = Node(
+        package="ground_truth_sim",
+        executable="range_overlay_node",
+        name="range_overlay_node",
+        output="screen",
+        parameters=[LaunchConfiguration("range_overlay_params_file")],
+    )
+
     rviz_node = Node(
         package="rviz2",
         executable="rviz2",
         name="ground_truth_rviz",
         arguments=["-d", LaunchConfiguration("rviz_config")],
         condition=IfCondition(LaunchConfiguration("use_rviz")),
-    )
-
-    sim_vision_node = Node(
-        package="percision_sim",
-        executable="sim_vision_node",
-        name="sim_vision_node",
-        output="screen",
-        condition=IfCondition(LaunchConfiguration("start_vision_node")),
-    )
-
-    sim_ais_node = Node(
-        package="percision_sim",
-        executable="sim_ais_node",
-        name="sim_ais_node",
-        output="screen",
-        condition=IfCondition(LaunchConfiguration("start_ais_node")),
-    )
-
-    sim_nav_radar_node = Node(
-        package="percision_sim",
-        executable="sim_nav_radar_node",
-        name="sim_nav_radar_node",
-        output="screen",
-        condition=IfCondition(LaunchConfiguration("start_nav_radar_node")),
-    )
-
-    sim_mmwave_node = Node(
-        package="percision_sim",
-        executable="sim_mmwave_node",
-        name="sim_mmwave_node",
-        output="screen",
-        condition=IfCondition(LaunchConfiguration("start_mmwave_node")),
     )
 
     return LaunchDescription(
@@ -127,16 +90,10 @@ def generate_launch_description() -> LaunchDescription:
             use_rviz_arg,
             rviz_config_arg,
             params_file_arg,
-            start_vision_arg,
-            start_ais_arg,
-            start_nav_radar_arg,
-            start_mmwave_arg,
+            range_overlay_params_arg,
             static_tf_node,
             ground_truth_node,
-            sim_vision_node,
-            sim_ais_node,
-            sim_nav_radar_node,
-            sim_mmwave_node,
+            range_overlay_node,
             rviz_node,
         ]
     )

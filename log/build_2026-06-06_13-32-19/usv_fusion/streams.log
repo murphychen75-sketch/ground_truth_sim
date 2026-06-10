@@ -1,0 +1,31 @@
+[0.569s] Invoking command in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_fusion build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/install.log --single-version-externally-managed install_data
+[0.692s] running egg_info
+[0.699s] writing ../../build/usv_fusion/usv_fusion.egg-info/PKG-INFO
+[0.699s] writing dependency_links to ../../build/usv_fusion/usv_fusion.egg-info/dependency_links.txt
+[0.699s] writing entry points to ../../build/usv_fusion/usv_fusion.egg-info/entry_points.txt
+[0.699s] writing requirements to ../../build/usv_fusion/usv_fusion.egg-info/requires.txt
+[0.699s] writing top-level names to ../../build/usv_fusion/usv_fusion.egg-info/top_level.txt
+[0.712s] reading manifest file '../../build/usv_fusion/usv_fusion.egg-info/SOURCES.txt'
+[0.713s] writing manifest file '../../build/usv_fusion/usv_fusion.egg-info/SOURCES.txt'
+[0.713s] running build
+[0.713s] running build_py
+[0.713s] copying usv_fusion/__init__.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build/lib/usv_fusion
+[0.713s] copying usv_fusion/association_fusion.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build/lib/usv_fusion
+[0.713s] copying usv_fusion/sensor_fusion_node.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build/lib/usv_fusion
+[0.713s] copying usv_fusion/vision_cluster.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build/lib/usv_fusion
+[0.713s] copying usv_fusion/history_io.py -> /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build/lib/usv_fusion
+[0.713s] running install
+[0.716s] running install_lib
+[0.723s] running install_data
+[0.723s] copying resource/usv_fusion -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/share/ament_index/resource_index/packages
+[0.723s] copying package.xml -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/share/usv_fusion
+[0.723s] copying README.md -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/share/usv_fusion
+[0.723s] copying config/fusion_params.yaml -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/share/usv_fusion/config
+[0.723s] copying launch/fusion.launch.py -> /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/share/usv_fusion/launch
+[0.723s] running install_egg_info
+[0.731s] removing '/home/cczh/temp-code/ground_truth_sim/install/usv_fusion/lib/python3.10/site-packages/usv_fusion-0.1.0-py3.10.egg-info' (and everything under it)
+[0.731s] Copying ../../build/usv_fusion/usv_fusion.egg-info to /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/lib/python3.10/site-packages/usv_fusion-0.1.0-py3.10.egg-info
+[0.731s] running install_scripts
+[0.789s] Installing sensor_fusion_node script to /home/cczh/temp-code/ground_truth_sim/install/usv_fusion/lib/usv_fusion
+[0.789s] writing list of installed files to '/home/cczh/temp-code/ground_truth_sim/build/usv_fusion/install.log'
+[0.802s] Invoked command in '/home/cczh/temp-code/ground_truth_sim/src/usv_fusion' returned '0': PYTHONPATH=/home/cczh/temp-code/ground_truth_sim/build/usv_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cczh/temp-code/ground_truth_sim/install/usv_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/usv_fusion build --build-base /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/build install --record /home/cczh/temp-code/ground_truth_sim/build/usv_fusion/install.log --single-version-externally-managed install_data

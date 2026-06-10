@@ -27,22 +27,24 @@ typedef struct usv_interfaces__msg__MmwaveTarget
 {
   /// 雷达实例标识（如 front/right/port），区分不同 mmWave 设备
   rosidl_runtime_c__String radar_id;
-  /// 聚类中心相对坐标 X（米）
+  /// 纵向位置 (m, VCS)
   double x;
-  /// 聚类中心相对坐标 Y（米）
+  /// 横向位置 (m, VCS)
   double y;
-  /// 目标速度矢量 X（米/秒），可为绝对或相对速度
+  /// 纵向速度 (m/s)
   double v_x;
-  /// 目标速度矢量 Y（米/秒）
+  /// 横向速度 (m/s)
   double v_y;
-  /// 点云聚类估算宽度（米）
+  /// 包围盒宽度/横向尺寸 (m)
   double size_w;
-  /// 点云聚类估算长度（米）
+  /// 包围盒长度/纵向尺寸 (m)
   double size_l;
-  /// 点云聚类估算高度（米，仅用于高度分类，不参与 EKF 追踪）
+  /// 包围盒高度 (m)
   double size_h;
-  /// 信噪比，融合节点依此调节尺寸置信度
-  double snr;
+  /// 动静状态: 0 静止, 1 运动
+  uint8_t objmotion_status;
+  /// 航迹 ID
+  uint32_t track_id;
 } usv_interfaces__msg__MmwaveTarget;
 
 // Struct for a sequence of usv_interfaces__msg__MmwaveTarget.

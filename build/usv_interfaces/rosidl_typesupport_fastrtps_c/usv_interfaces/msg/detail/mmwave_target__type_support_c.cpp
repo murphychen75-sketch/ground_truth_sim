@@ -100,9 +100,14 @@ static bool _MmwaveTarget__cdr_serialize(
     cdr << ros_message->size_h;
   }
 
-  // Field name: snr
+  // Field name: objmotion_status
   {
-    cdr << ros_message->snr;
+    cdr << ros_message->objmotion_status;
+  }
+
+  // Field name: track_id
+  {
+    cdr << ros_message->track_id;
   }
 
   return true;
@@ -168,9 +173,14 @@ static bool _MmwaveTarget__cdr_deserialize(
     cdr >> ros_message->size_h;
   }
 
-  // Field name: snr
+  // Field name: objmotion_status
   {
-    cdr >> ros_message->snr;
+    cdr >> ros_message->objmotion_status;
+  }
+
+  // Field name: track_id
+  {
+    cdr >> ros_message->track_id;
   }
 
   return true;
@@ -236,9 +246,15 @@ size_t get_serialized_size_usv_interfaces__msg__MmwaveTarget(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name snr
+  // field.name objmotion_status
   {
-    size_t item_size = sizeof(ros_message->snr);
+    size_t item_size = sizeof(ros_message->objmotion_status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name track_id
+  {
+    size_t item_size = sizeof(ros_message->track_id);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -339,13 +355,20 @@ size_t max_serialized_size_usv_interfaces__msg__MmwaveTarget(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: snr
+  // member: objmotion_status
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: track_id
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -356,7 +379,7 @@ size_t max_serialized_size_usv_interfaces__msg__MmwaveTarget(
     using DataType = usv_interfaces__msg__MmwaveTarget;
     is_plain =
       (
-      offsetof(DataType, snr) +
+      offsetof(DataType, track_id) +
       last_member_size
       ) == ret_val;
   }

@@ -40,6 +40,8 @@ typedef struct usv_interfaces__msg__VisionDetection
   double size_w;
   /// 预测的可见高度（米）
   double size_h;
+  /// 检测框水平像素宽度（px），融合匹配用
+  double pixel_width;
   /// 检测置信度（0~1），融合节点按距离动态调节协方差
   double confidence;
 } usv_interfaces__msg__VisionDetection;

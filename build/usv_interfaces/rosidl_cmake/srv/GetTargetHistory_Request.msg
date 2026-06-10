@@ -1,0 +1,5 @@
+# Request history samples for one target_id from on-disk jsonl (written by sensor_fusion_node).
+unique_identifier_msgs/UUID target_id
+builtin_interfaces/Time t_start  # inclusive; sec and nanosec both zero => from file start
+builtin_interfaces/Time t_end    # inclusive; both zero => until file end
+uint32 max_samples               # 0 => no limit (use with care)

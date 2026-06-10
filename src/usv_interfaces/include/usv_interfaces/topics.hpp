@@ -37,6 +37,13 @@ namespace usv_interfaces {
     constexpr char TOPIC_CONTROL_DEVIATION[] = "/usv/control/deviation";     // usv_interfaces/ControlDeviation
     constexpr char TOPIC_CONTROL_MODE[]      = "/usv/control/mode";          // usv_interfaces/OperationMode
 
+    // 融合输出 (usv_event_fusion / legacy usv_fusion)
+    constexpr char TOPIC_FUSION_SNAPSHOT[] = "/fusion/snapshot";              // usv_interfaces/FusedSceneSnapshot
+    constexpr char TOPIC_FUSION_CATALOG[]  = "/fusion/catalog";               // usv_interfaces/FusedTargetCatalog
+    constexpr char TOPIC_FUSION_TRACKS[]   = "/fusion/tracks";                // GlobalTrackArray（legacy）
+    constexpr char TOPIC_FUSION_MARKERS[]  = "/fusion/track_markers";         // visualization_msgs/MarkerArray
+    constexpr char SERVICE_GET_TARGET_HISTORY[] = "get_target_history";       // usv_interfaces/GetTargetHistory
+
 } // namespace usv_interfaces
 
 #endif // USV_INTERFACES__TOPICS_HPP_

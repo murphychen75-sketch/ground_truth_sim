@@ -251,10 +251,80 @@ CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.s"
 	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.s
 
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s
+
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o: rosidl_generator_py/usv_interfaces/srv/_control_device_s.c
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o"
 	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c
 
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.i: cmake_force
@@ -265,10 +335,24 @@ CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.s"
 	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.s
 
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c > CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i
+
+CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s"
+	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s
+
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o: rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o"
 	/usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o -MF CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o.d -o CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c
 
 CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.i: cmake_force
@@ -294,7 +378,13 @@ usv_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_s.c.o" \
 "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o" \
 "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o" \
 "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o" \
+"CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o" \
 "CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o"
 
 # External object files for target usv_interfaces__rosidl_generator_py
@@ -313,14 +403,19 @@ rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CM
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_s.c.o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_vessel_state_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.o
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/action/_execute_mission_s.c.o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: libusv_interfaces__rosidl_typesupport_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: libusv_interfaces__rosidl_generator_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
@@ -331,6 +426,7 @@ rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
@@ -341,7 +437,7 @@ rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /o
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so: CMakeFiles/usv_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C shared library rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C shared library rosidl_generator_py/usv_interfaces/libusv_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usv_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

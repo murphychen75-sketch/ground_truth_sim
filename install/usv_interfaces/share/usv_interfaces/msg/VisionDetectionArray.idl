@@ -1,1 +1,25 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces/msg/VisionDetectionArray.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/VisionDetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Header.idl"
+#include "usv_interfaces/msg/VisionDetection.idl"
+
+module usv_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "双时间戳（语义区分）：" "\n"
+      "- header.stamp：与该帧对应的图像采集时刻（仿真中与输入真值 stamp 对齐）" "\n"
+      "- output_stamp：识别结果输出时刻（采集时刻 + 算法/流水线延迟；percision_sim 内可用随机延迟建模）")
+    struct VisionDetectionArray {
+      std_msgs::msg::Header header;
+
+      builtin_interfaces::msg::Time output_stamp;
+
+      @verbatim (language="comment", text=
+        "当前帧的检测列表")
+      sequence<usv_interfaces::msg::VisionDetection> detections;
+    };
+  };
+};

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: usv_fusion
+Version: 0.1.0
+Summary: Vision and mmWave fusion for USV
+Maintainer: USV Dev
+Maintainer-email: usv@example.com
+License: Apache-2.0
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: scipy

@@ -88,7 +88,13 @@ rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: ros
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/GlobalTrack.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/GlobalTrackArray.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/VesselState.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/FusedTrackSample.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/FusedTargetProfile.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/FusedTargetSnapshot.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/FusedSceneSnapshot.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/msg/FusedTargetCatalog.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/srv/ControlDevice.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/srv/GetTargetHistory.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: rosidl_adapter/usv_interfaces/action/ExecuteMission.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -164,11 +170,11 @@ rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /op
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
+rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
 
@@ -208,8 +214,26 @@ rosidl_typesupport_c/usv_interfaces/msg/global_track_array__type_support.cpp: ro
 rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp
 
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp
+
 rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp
+
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp
 
 rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp
@@ -396,10 +420,80 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_int
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp.s
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp
 
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.i: cmake_force
@@ -410,10 +504,24 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_int
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.s
 
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp > CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i
+
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s
+
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o: rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o -MF CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o.d -o CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o -c /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp
 
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.i: cmake_force
@@ -439,7 +547,13 @@ usv_interfaces__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track_array__type_support.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o" \
+"CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o" \
 "CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o"
 
 # External object files for target usv_interfaces__rosidl_typesupport_c
@@ -458,19 +572,25 @@ libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_ty
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.cpp.o
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/global_track_array__type_support.cpp.o
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/vessel_state__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.o
+libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make
 libusv_interfaces__rosidl_typesupport_c.so: libusv_interfaces__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -478,7 +598,7 @@ libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/libunique_identi
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libusv_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libusv_interfaces__rosidl_typesupport_c.so: CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library libusv_interfaces__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX shared library libusv_interfaces__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -493,6 +613,11 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/ais_track__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/ais_track_array__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/global_track_array__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/mmwave_target__type_support.cpp
@@ -504,6 +629,7 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/vision_detection__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/msg/vision_detection_array__type_support.cpp
 CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp
+CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp
 	cd /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces /home/cczh/temp-code/ground_truth_sim/src/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/depend
 

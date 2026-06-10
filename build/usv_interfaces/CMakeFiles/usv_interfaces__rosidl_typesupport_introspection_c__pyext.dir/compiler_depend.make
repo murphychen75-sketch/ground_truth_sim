@@ -279,6 +279,7 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
   rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__functions.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track__type_support.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__type_support.h \
   rosidl_generator_c/usv_interfaces/msg/detail/global_track_array__struct.h \
@@ -291,20 +292,59 @@ CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h \
   rosidl_generator_c/usv_interfaces/msg/detail/vessel_state__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__type_support.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__struct.h \
+  rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.h \
   rosidl_generator_c/usv_interfaces/srv/detail/control_device__type_support.h \
   rosidl_generator_c/usv_interfaces/srv/detail/control_device__struct.h \
   rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.h \
+  rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__type_support.h \
+  rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__struct.h \
+  rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.h \
   rosidl_generator_c/usv_interfaces/action/detail/execute_mission__type_support.h \
   rosidl_generator_c/usv_interfaces/action/detail/execute_mission__struct.h \
-  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   rosidl_generator_c/usv_interfaces/action/detail/execute_mission__functions.h
 
 
 rosidl_generator_c/usv_interfaces/action/detail/execute_mission__functions.h:
 
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.h:
+
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__struct.h:
+
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__type_support.h:
+
 rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.h:
 
 rosidl_generator_c/usv_interfaces/srv/detail/control_device__struct.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__struct.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__type_support.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__type_support.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.h:
 
@@ -448,6 +488,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/ais_track__functions.h:
 
 /usr/include/python3.10/cpython/compile.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
@@ -535,6 +577,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/vision_detection_array__struct.h:
 /usr/include/python3.10/genobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__struct.h:
 
 /usr/include/python3.10/cpython/traceback.h:
 
@@ -640,6 +684,8 @@ rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/python3.10/sliceobject.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.h:
+
 /usr/include/linux/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
@@ -676,6 +722,8 @@ rosidl_generator_c/usv_interfaces/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/errno.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.h:
+
 /usr/include/python3.10/cpython/fileutils.h:
 
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_introspection_c.c:
@@ -693,6 +741,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/ais_track_array__functions.h:
 /usr/include/python3.10/pymem.h:
 
 /usr/include/python3.10/cellobject.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
@@ -766,6 +816,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/vessel_state__functions.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__struct.h:
+
 /usr/include/python3.10/cpython/listobject.h:
 
 /usr/include/python3.10/dictobject.h:
@@ -813,6 +865,8 @@ rosidl_generator_c/usv_interfaces/msg/detail/nav_radar_target__struct.h:
 /usr/include/python3.10/pythonrun.h:
 
 /usr/include/python3.10/descrobject.h:
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__struct.h:
 
 /usr/include/python3.10/genericaliasobject.h:
 

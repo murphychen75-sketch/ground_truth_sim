@@ -1,0 +1,34 @@
+# event_fusion_node — 外部输入与安装几何（按平台/标定修改）
+# 算法参数见 event_fusion_algorithm.yaml
+event_fusion_node:
+  ros__parameters:
+
+    vision_topics:  # 视觉检测数组话题列表，每项对应一路相机
+      - "/vision/detections"
+    vision_camera_ids:  # 相机标识，与 vision_topics 等长，用于日志与观测标记
+      - "front"
+    vision_camera_yaws:  # 各相机光轴相对船体 x 轴偏航角 [rad]
+      - 0.0
+    vision_camera_mount_x:  # 各相机在 output_frame 下安装位置 x [m]
+      - 0.0
+    vision_camera_mount_y:  # 各相机在 output_frame 下安装位置 y [m]
+      - 0.0
+    default_camera_yaw_rad: 0.0  # vision_camera_yaws 缺省时的偏航角 [rad]
+    default_camera_mount_x_m: 0.0  # 相机安装 x 缺省值 [m]
+    default_camera_mount_y_m: 0.0  # 相机安装 y 缺省值 [m]
+    vision_focal_length_px: 800.0  # 针孔模型焦距 [px]，用于宽度像素投影，标定后填写
+
+    mmwave_topic: "/mmwave/targets"  # 毫米波目标列表话题
+    default_radar_mount_yaw_rad: 0.0  # 雷达相对船体安装偏航 [rad]
+    default_radar_mount_x_m: 0.0  # 雷达安装位置 x [m]
+    default_radar_mount_y_m: 0.0  # 雷达安装位置 y [m]
+
+    output_frame_id: "base_link"  # 融合输出消息的 header.frame_id
+    fusion_snapshot_topic: "/fusion/snapshot"  # 已确认航迹场景快照 FusedSceneSnapshot
+    fusion_catalog_topic: "/fusion/catalog"  # 目标档案目录 FusedTargetCatalog（定时发布）
+    fusion_tracks_topic: "/fusion/tracks"  # 可选旧版 GlobalTrackArray 话题
+    fusion_markers_topic: "/fusion/track_markers"  # RViz 航迹历史 MarkerArray
+    publish_legacy_global_track: false  # 是否发布 fusion_tracks_topic 旧接口
+    catalog_publish_hz: 1.0  # 档案目录发布频率 [Hz]（与 fusion_timer_hz 解耦）
+    track_publish_hz: 20.0  # RViz 轨迹固定发布频率 [Hz]；融合计算仍随传感器回调。0=每回调更新（旧行为）
+    max_history_points_per_track: 2000  # 每条航迹 RViz 历史折线最大点数

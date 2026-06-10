@@ -46,3 +46,12 @@ TOPIC_CMD_THRUSTER_RIGHT = "/wamv/thrusters/right_thrust/cmd_thrust" # Type: std
 TOPIC_VESSEL_STATE      = "/usv/state/vessel"           # Type: usv_interfaces/VesselState
 TOPIC_CONTROL_DEVIATION = "/usv/control/deviation"      # Type: usv_interfaces/ControlDeviation
 TOPIC_CONTROL_MODE      = "/usv/control/mode"           # Type: usv_interfaces/OperationMode
+
+# ==========================================
+# 融合输出 (Fusion) — usv_event_fusion / legacy usv_fusion
+# ==========================================
+TOPIC_FUSION_SNAPSHOT = "/fusion/snapshot"               # Type: usv_interfaces/FusedSceneSnapshot
+TOPIC_FUSION_CATALOG  = "/fusion/catalog"                # Type: usv_interfaces/FusedTargetCatalog
+TOPIC_FUSION_TRACKS   = "/fusion/tracks"                 # Type: usv_interfaces/GlobalTrackArray（可选 legacy）
+TOPIC_FUSION_MARKERS  = "/fusion/track_markers"          # Type: visualization_msgs/MarkerArray
+SERVICE_GET_TARGET_HISTORY = "get_target_history"        # Type: usv_interfaces/GetTargetHistory（节点相对名）

@@ -131,11 +131,41 @@ CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/v
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__struct.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__traits.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_track_sample.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_profile.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_snapshot.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_scene_snapshot.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_catalog.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/control_device.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__builder.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__struct.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__traits.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__type_support.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/get_target_history.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__builder.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__struct.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__traits.hpp
+CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__type_support.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/action/execute_mission.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/action/detail/execute_mission__builder.hpp
 CMakeFiles/usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/action/detail/execute_mission__struct.hpp
@@ -171,7 +201,13 @@ rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/us
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/GlobalTrack.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/GlobalTrackArray.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/VesselState.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/FusedTrackSample.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/FusedTargetProfile.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/FusedTargetSnapshot.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/FusedSceneSnapshot.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/msg/FusedTargetCatalog.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/srv/ControlDevice.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/srv/GetTargetHistory.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: rosidl_adapter/usv_interfaces/action/ExecuteMission.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
@@ -247,11 +283,11 @@ rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/s
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/nav_msgs/srv/GetPlan.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/nav_msgs/srv/LoadMap.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/nav_msgs/srv/SetMap.idl
+rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
 rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -447,6 +483,81 @@ rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__traits.hpp: rosidl_
 rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/vessel_state__type_support.hpp
 
+rosidl_generator_cpp/usv_interfaces/msg/fused_track_sample.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/fused_track_sample.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/fused_target_profile.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/fused_target_profile.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/fused_target_snapshot.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/fused_target_snapshot.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/fused_scene_snapshot.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/fused_scene_snapshot.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/fused_target_catalog.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/fused_target_catalog.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.hpp
+
 rosidl_generator_cpp/usv_interfaces/srv/control_device.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/control_device.hpp
 
@@ -461,6 +572,21 @@ rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__traits.hpp: rosid
 
 rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__type_support.hpp
+
+rosidl_generator_cpp/usv_interfaces/srv/get_target_history.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/get_target_history.hpp
+
+rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__builder.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__builder.hpp
+
+rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__struct.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__struct.hpp
+
+rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__traits.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__traits.hpp
+
+rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__type_support.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__type_support.hpp
 
 rosidl_generator_cpp/usv_interfaces/action/execute_mission.hpp: rosidl_generator_cpp/usv_interfaces/msg/control_deviation.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/usv_interfaces/action/execute_mission.hpp
@@ -498,6 +624,26 @@ usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/control_devi
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/control_deviation__struct.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/control_deviation__traits.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/control_deviation__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/global_track__builder.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/global_track__struct.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/global_track__traits.hpp
@@ -538,6 +684,11 @@ usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vision_detec
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vision_detection_array__struct.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vision_detection_array__traits.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/detail/vision_detection_array__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_scene_snapshot.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_catalog.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_profile.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_target_snapshot.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/fused_track_sample.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/global_track.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/global_track_array.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/msg/mmwave_target.hpp
@@ -553,6 +704,11 @@ usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_devi
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__struct.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__traits.hpp
 usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/control_device__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__builder.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__struct.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__traits.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/detail/get_target_history__type_support.hpp
+usv_interfaces__cpp: rosidl_generator_cpp/usv_interfaces/srv/get_target_history.hpp
 usv_interfaces__cpp: CMakeFiles/usv_interfaces__cpp.dir/build.make
 .PHONY : usv_interfaces__cpp
 

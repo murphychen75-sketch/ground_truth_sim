@@ -19,7 +19,7 @@
 - `package.xml`：包元信息与依赖声明（`std_msgs`、`geometry_msgs`、`nav_msgs`、`builtin_interfaces` 等）。
 - `msg/`：
   - `ControlDeviation.msg` — 控制偏差（横向/航向误差、目标/当前速度等）。
-  - `VisionDetection.msg` — 视觉检测单目标（相机 id、角度、距离、横向宽度、高度、置信度）。
+  - `VisionDetection.msg` — 视觉检测单目标（相机 id、角度、距离、横向宽度、高度、像素宽度、置信度）。
   - `VisionDetectionArray.msg` — 视觉检测集合（含 header 与 output_stamp）。
   - `MmwaveTarget.msg` — 4D 毫米波目标（雷达 ID、平面坐标、速度、尺寸、SNR）。
   - `MmwaveTargetArray.msg` — 毫米波目标数组（含 header）。
@@ -29,11 +29,17 @@
   - `AISTrackArray.msg` — AIS 跟踪集合（含 header）。
   - `GlobalTrack.msg` — 融合后的全局轨迹（id、平面位姿、速度、尺寸、协方差、标签）。
   - `GlobalTrackArray.msg` — 全局轨迹集合（含 header）。
+  - `FusedTrackSample.msg` — 融合轨迹单样本（时间、位姿速度、协方差），用于 service 响应与 jsonl。
+  - `FusedTargetProfile.msg` — 融合目标档案（尺寸、类别、AIS 绑定、首次/最后更新时间）。
+  - `FusedTargetSnapshot.msg` — 单目标瞬时快照（嵌套 `FusedTrackSample` + 尺寸与 AIS 摘要）。
+  - `FusedSceneSnapshot.msg` — 场景快照（`FusedTargetSnapshot[]`）。
+  - `FusedTargetCatalog.msg` — 档案列表（`FusedTargetProfile[]`）。
   - `VesselState.msg` — 船舶综合状态（GNSS/里程计/IMU 融合的 pose/twist、电池、姿态等）。
-  - `VisionDetection.msg` — 视觉检测单目标（相机 id、角度、距离、横向宽度、高度、置信度）。
+  - `VisionDetection.msg` — 视觉检测单目标（相机 id、角度、距离、横向宽度、高度、像素宽度、置信度）。
   - `OperationMode.msg` — 运行模式常量与当前模式字段。
 - `srv/`：
   - `ControlDevice.srv` — 设备控制服务（请求 device_id/command/value，返回 success/message）。
+  - `GetTargetHistory.srv` — 按 `target_id` 与时间窗从落盘 jsonl 读取 `FusedTrackSample[]`（`status`：0 成功，1 无文件，2 错误）。
 - `action/`：
   - `ExecuteMission.action` — 执行任务的动作接口（goal/feedback/result）。
 - `include/usv_interfaces/topics.hpp`：C++ 话题/frame 常量。
@@ -52,10 +58,10 @@
 
 - VisionDetection / VisionDetectionArray
   - 单体字段：camera_id、class_name、class_id、azimuth、distance_predict、size_w、size_h、confidence
-  - Array：包含 `std_msgs/Header header`（采样时间）与 `builtin_interfaces/Time output_stamp`（处理完成时间）以及 `VisionDetection[] detections`。
+  - Array：包含 `std_msgs/Header header`（图像采集时间戳）、`builtin_interfaces/Time output_stamp`（识别输出时间戳；与采集的间隔可由仿真建模）以及 `VisionDetection[] detections`。
 
 - MmwaveTarget / MmwaveTargetArray
-  - 单体字段：radar_id、x、y、v_x、v_y、size_w、size_l、size_h、snr
+  - 单体字段：radar_id、x、y、v_x、v_y、size_w、size_l、size_h、objmotion_status、track_id
   - Array：包含 `std_msgs/Header header` 与 `MmwaveTarget[] targets`。
 
 - NavRadarTarget / NavRadarTargetArray
@@ -67,7 +73,7 @@
   - Array：包含 `std_msgs/Header header` 与 `AISTrack[] tracks`。
 
 - GlobalTrack / GlobalTrackArray
-  - 单体字段（融合输出）：track_id、x、y、v_x、v_y、size_w、size_l、size_h、float64[16] covariance、is_dark_target、is_ais_matched、matched_mmsi
+  - 单体字段（融合输出）：track_id、x、y、v_x、v_y、size_w、size_l、size_h、float64[16] covariance、is_dark_target、is_ais_matched、matched_mmsi、source_model_name
   - Array：包含 `std_msgs/Header header` 与 `GlobalTrack[] tracks`（融合时间戳，base_link 坐标系）。
 
 - RadarSector
@@ -103,6 +109,7 @@
 | `azimuth` | `float64` | 目标相对该摄像头光心的水平方位角（弧度，右正） |
 | `distance_predict` | `float64` | 单目预测的相对直线距离（米），<100 m 可信度高，>300 m 仅保留角度 |
 | `size_w` / `size_h` | `float64` | 预测的目标物理宽度、可见高度（米），仅提供可视范围内的尺寸 |
+| `pixel_width` | `float64` | 检测框水平像素宽度（px），融合节点与航迹 profile 投影宽度匹配 |
 | `confidence` | `float64` | 检测置信度（0~1），融合节点会按距离动态调节协方差 |
 
 | VisionDetectionArray 字段 | 类型 | 说明 |
@@ -118,11 +125,13 @@
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
 | `radar_id` | `string` | 雷达实例标识（如 `front`/`right`），用于区分多雷达输出 |
-| `x` / `y` | `float64` | 聚类中心相对坐标（米） |
-| `v_x` / `v_y` | `float64` | 平面速度矢量（米/秒），可为绝对或相对速度 |
-| `size_w` / `size_l` | `float64` | 点云聚类估算的宽度/长度（米） |
-| `size_h` | `float64` | 点云聚类估算的高度（米），仅用于高度分类，不参与 EKF 追踪 |
-| `snr` | `float64` | 信噪比，融合节点据此调节尺寸置信度 |
+| `x` | `float64` | 纵向位置 (m, VCS) |
+| `y` | `float64` | 横向位置 (m, VCS) |
+| `v_x` / `v_y` | `float64` | 纵向/横向速度 (m/s) |
+| `size_w` / `size_l` | `float64` | 包围盒宽度/长度 (m) |
+| `size_h` | `float64` | 包围盒高度 (m) |
+| `objmotion_status` | `uint8` | 动静状态：0 静止，1 运动 |
+| `track_id` | `uint32` | 雷达侧航迹 ID |
 
 | MmwaveTargetArray 字段 | 类型 | 说明 |
 | --- | --- | --- |
@@ -169,6 +178,7 @@
 | `is_dark_target` | `bool` | 是否为未匹配 AIS 的暗目标/可疑船只 |
 | `is_ais_matched` | `bool` | 是否成功绑定 AIS |
 | `matched_mmsi` | `uint32` | 若绑定成功，对应的 AIS MMSI |
+| `source_model_name` | `string` | 可选：仿真源模型名（如 Gazebo Sim），非仿真真值可留空 |
 
 | GlobalTrackArray 字段 | 类型 | 说明 |
 | --- | --- | --- |

@@ -315,17 +315,17 @@ usv_interfaces__rosidl_typesupport_cpp/fast:
 .PHONY : usv_interfaces__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_usv_interfaces
+# Target rules for targets named ament_cmake_python_copy_usv_interfaces
 
 # Build rule for target.
-ament_cmake_python_symlink_usv_interfaces: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_usv_interfaces
-.PHONY : ament_cmake_python_symlink_usv_interfaces
+ament_cmake_python_copy_usv_interfaces: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_usv_interfaces
+.PHONY : ament_cmake_python_copy_usv_interfaces
 
 # fast build rule for target.
-ament_cmake_python_symlink_usv_interfaces/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_usv_interfaces.dir/build.make CMakeFiles/ament_cmake_python_symlink_usv_interfaces.dir/build
-.PHONY : ament_cmake_python_symlink_usv_interfaces/fast
+ament_cmake_python_copy_usv_interfaces/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_usv_interfaces.dir/build.make CMakeFiles/ament_cmake_python_copy_usv_interfaces.dir/build
+.PHONY : ament_cmake_python_copy_usv_interfaces/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_usv_interfaces_egg
@@ -500,6 +500,126 @@ rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.s: ros
 rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.c.s
 .PHONY : rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.c.s
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.o
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.i: rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.i
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.s: rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.c.s
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.o
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.i: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.i
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.s: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.c.s
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.o
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.i: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.i
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.s: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.c.s
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.o
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.i: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.i
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.s: rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.c.s
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.o
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.i: rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.i
+
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.s: rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.c.s
 
 rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.o: rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.c.o
 .PHONY : rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.o
@@ -765,6 +885,30 @@ rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.c.s
 .PHONY : rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.c.s
 
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.o: rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.o
+
+# target to build an object file
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.o
+
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.i: rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.i
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.i
+
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.s: rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.s
+.PHONY : rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.c.s
+
 rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.o
 
@@ -932,6 +1076,126 @@ rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.s: rosidl_generator_
 rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.s
 .PHONY : rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.c.s
+
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.o: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.o
+
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.i: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.i
+
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.s: rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.c.s
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.o
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.i: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.i
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.s: rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.c.s
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.o
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.i: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.i
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.s: rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.c.s
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.o: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.o
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.i: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.i
+
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.s: rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.c.s
+
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.o: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.o
+
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.i: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.i
+
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.s: rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.c.s
 
 rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.o: rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.c.o
 .PHONY : rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.o
@@ -1197,6 +1461,30 @@ rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.s
 .PHONY : rosidl_generator_py/usv_interfaces/srv/_control_device_s.c.s
 
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.o: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.o
+
+# target to build an object file
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.o
+
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.i: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.i
+
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.s: rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/usv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s
+.PHONY : rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.c.s
+
 rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.o: rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.o
 
@@ -1292,6 +1580,126 @@ rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.s: rosid
 rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.cpp.s
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.i: rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.s: rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.i: rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.s: rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.i: rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.s: rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.i: rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.s: rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.i: rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.s: rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
 
 rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.o: rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.o
@@ -1557,6 +1965,30 @@ rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.cpp.s
 
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.o: rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.o
+
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.i: rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.i
+
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.s: rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.cpp.s
+
 rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.o: rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.o
 
@@ -1652,6 +2084,126 @@ rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.s: ros
 rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.cpp.s
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.i: rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.s: rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.cpp.s
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.i: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.s: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.cpp.s
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.i: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.s: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.cpp.s
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.i: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.s: rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.cpp.s
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.i: rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.s: rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.cpp.s
 
 rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.o: rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.o
@@ -1917,6 +2469,30 @@ rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.cpp.s
 
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.o: rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.o
+
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.i: rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.i
+
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.s: rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.o
 
@@ -2012,6 +2588,126 @@ rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.o
@@ -2277,6 +2973,30 @@ rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_sup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.o: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.i: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.s: rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.o
 
@@ -2372,6 +3092,126 @@ rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_d
 rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.cpp.s
 
 rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.o
@@ -2637,6 +3477,30 @@ rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_d
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.o: rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.i: rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.s: rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.cpp.s
+
 rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.o
 
@@ -2732,6 +3596,126 @@ rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.c.s
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.c.s
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.c.s
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.c.s
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.c.s
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.c.s
 
 rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.o
@@ -2997,6 +3981,30 @@ rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.c.s
 
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.o: rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.o
+
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.i: rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.i
+
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.s: rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.c.s
+
 rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.o
 
@@ -3092,6 +4100,126 @@ rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation
 rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.o
@@ -3357,6 +4485,30 @@ rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.o: rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.i: rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.s: rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/usv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3371,7 +4523,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_usv_interfaces_egg"
-	@echo "... ament_cmake_python_symlink_usv_interfaces"
+	@echo "... ament_cmake_python_copy_usv_interfaces"
 	@echo "... uninstall"
 	@echo "... usv_interfaces"
 	@echo "... usv_interfaces__cpp"
@@ -3400,6 +4552,21 @@ help:
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.o"
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.i"
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/control_deviation__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_scene_snapshot__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_catalog__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_profile__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_target_snapshot__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/fused_track_sample__functions.s"
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.o"
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.i"
 	@echo "... rosidl_generator_c/usv_interfaces/msg/detail/global_track__functions.s"
@@ -3433,6 +4600,9 @@ help:
 	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.o"
 	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.i"
 	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/control_device__functions.s"
+	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.o"
+	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.i"
+	@echo "... rosidl_generator_c/usv_interfaces/srv/detail/get_target_history__functions.s"
 	@echo "... rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/usv_interfaces/_usv_interfaces_s.ep.rosidl_typesupport_c.s"
@@ -3454,6 +4624,21 @@ help:
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.o"
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.i"
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_control_deviation_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_scene_snapshot_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_catalog_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_profile_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_target_snapshot_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/msg/_fused_track_sample_s.s"
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.o"
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.i"
 	@echo "... rosidl_generator_py/usv_interfaces/msg/_global_track_array_s.s"
@@ -3487,6 +4672,9 @@ help:
 	@echo "... rosidl_generator_py/usv_interfaces/srv/_control_device_s.o"
 	@echo "... rosidl_generator_py/usv_interfaces/srv/_control_device_s.i"
 	@echo "... rosidl_generator_py/usv_interfaces/srv/_control_device_s.s"
+	@echo "... rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.o"
+	@echo "... rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.i"
+	@echo "... rosidl_generator_py/usv_interfaces/srv/_get_target_history_s.s"
 	@echo "... rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.o"
 	@echo "... rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.i"
 	@echo "... rosidl_typesupport_c/usv_interfaces/action/execute_mission__type_support.s"
@@ -3499,6 +4687,21 @@ help:
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.o"
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.i"
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/control_deviation__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_scene_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_catalog__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_profile__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_target_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/msg/fused_track_sample__type_support.s"
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.o"
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.i"
 	@echo "... rosidl_typesupport_c/usv_interfaces/msg/global_track__type_support.s"
@@ -3532,6 +4735,9 @@ help:
 	@echo "... rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.o"
 	@echo "... rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.i"
 	@echo "... rosidl_typesupport_c/usv_interfaces/srv/control_device__type_support.s"
+	@echo "... rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.o"
+	@echo "... rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.i"
+	@echo "... rosidl_typesupport_c/usv_interfaces/srv/get_target_history__type_support.s"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.o"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.i"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/action/execute_mission__type_support.s"
@@ -3544,6 +4750,21 @@ help:
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.o"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.i"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/control_deviation__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_scene_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_catalog__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_profile__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_target_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/fused_track_sample__type_support.s"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.o"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.i"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/msg/global_track__type_support.s"
@@ -3577,6 +4798,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.o"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.i"
 	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/control_device__type_support.s"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.o"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.i"
+	@echo "... rosidl_typesupport_cpp/usv_interfaces/srv/get_target_history__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/action/detail/execute_mission__type_support_c.s"
@@ -3589,6 +4813,21 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/control_deviation__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_catalog__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_profile__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/fused_track_sample__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/msg/detail/global_track__type_support_c.s"
@@ -3622,6 +4861,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/control_device__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/usv_interfaces/srv/detail/get_target_history__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/action/detail/dds_fastrtps/execute_mission__type_support.s"
@@ -3634,6 +4876,21 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/control_deviation__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_scene_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_catalog__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_profile__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_target_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/fused_track_sample__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/msg/detail/dds_fastrtps/global_track__type_support.s"
@@ -3667,6 +4924,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/control_device__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/usv_interfaces/srv/detail/dds_fastrtps/get_target_history__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/action/detail/execute_mission__type_support.s"
@@ -3679,6 +4939,21 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/control_deviation__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_catalog__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_profile__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/fused_track_sample__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/msg/detail/global_track__type_support.s"
@@ -3712,6 +4987,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/control_device__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/usv_interfaces/srv/detail/get_target_history__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/action/detail/execute_mission__type_support.s"
@@ -3724,6 +5002,21 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/control_deviation__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_scene_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_catalog__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_profile__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_target_snapshot__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/fused_track_sample__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/msg/detail/global_track__type_support.s"
@@ -3757,6 +5050,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/control_device__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/usv_interfaces/srv/detail/get_target_history__type_support.s"
 .PHONY : help
 
 

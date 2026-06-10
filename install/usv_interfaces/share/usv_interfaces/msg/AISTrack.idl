@@ -1,1 +1,38 @@
-/home/cczh/temp-code/ground_truth_sim/build/usv_interfaces/rosidl_adapter/usv_interfaces/msg/AISTrack.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from usv_interfaces/msg/AISTrack.msg
+// generated code does not contain a copyright notice
+
+
+module usv_interfaces {
+  module msg {
+    struct AISTrack {
+      @verbatim (language="comment", text=
+        "船舶唯一识别码（Maritime Mobile Service Identity）")
+      uint32 mmsi;
+
+      @verbatim (language="comment", text=
+        "船名")
+      string ship_name;
+
+      @verbatim (language="comment", text=
+        "解算后的相对本船 X 坐标（米）")
+      double relative_x;
+
+      @verbatim (language="comment", text=
+        "解算后的相对本船 Y 坐标（米）")
+      double relative_y;
+
+      @verbatim (language="comment", text=
+        "相对速度矢量 X（米/秒）")
+      double relative_v_x;
+
+      @verbatim (language="comment", text=
+        "相对速度矢量 Y（米/秒）")
+      double relative_v_y;
+
+      @verbatim (language="comment", text=
+        "真实艏向角（弧度）")
+      double true_heading;
+    };
+  };
+};

@@ -6,6 +6,16 @@ msg/AISTrackArray.idl
 msg/AISTrackArray.msg
 msg/ControlDeviation.idl
 msg/ControlDeviation.msg
+msg/FusedSceneSnapshot.idl
+msg/FusedSceneSnapshot.msg
+msg/FusedTargetCatalog.idl
+msg/FusedTargetCatalog.msg
+msg/FusedTargetProfile.idl
+msg/FusedTargetProfile.msg
+msg/FusedTargetSnapshot.idl
+msg/FusedTargetSnapshot.msg
+msg/FusedTrackSample.idl
+msg/FusedTrackSample.msg
 msg/GlobalTrack.idl
 msg/GlobalTrack.msg
 msg/GlobalTrackArray.idl
@@ -30,3 +40,7 @@ srv/ControlDevice.idl
 srv/ControlDevice.srv
 srv/ControlDevice_Request.msg
 srv/ControlDevice_Response.msg
+srv/GetTargetHistory.idl
+srv/GetTargetHistory.srv
+srv/GetTargetHistory_Request.msg
+srv/GetTargetHistory_Response.msg

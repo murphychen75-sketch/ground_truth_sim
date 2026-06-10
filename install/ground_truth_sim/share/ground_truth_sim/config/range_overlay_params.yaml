@@ -1,0 +1,30 @@
+# MarkerArray overlays for RViz: GT spawn annulus + vision/mmwave FoV sector rings.
+# Add RViz → MarkerArray → Topic: /sim/range_overlay_markers, Fixed Frame: map 或 base_link。
+
+range_overlay_node:
+  ros__parameters:
+    marker_topic: "/sim/range_overlay_markers"
+    publish_hz: 1.0
+    frame_id: "base_link"
+    z_height: 0.08
+    line_width: 0.25
+    circle_segments: 96
+    sector_arc_segments: 48
+
+    show_gt_annulus: true
+    gt_annulus_radius_min: 50.0
+    gt_annulus_radius_max: 200.0
+
+    # 与 percision_sim 前向相机默认一致：camera_yaw=0，fov_half≈45°
+    show_vision_sector: true
+    vision_yaw: 0.0
+    vision_fov_half_angle: 0.78539816339
+    vision_range_min: 1.0
+    vision_range_max: 220.0
+
+    # 与前向毫米波默认一致：radar_yaw=0，fov_half≈60°
+    show_mmwave_sector: true
+    mmwave_yaw: 0.0
+    mmwave_fov_half_angle: 1.0471975512
+    mmwave_range_min: 1.0
+    mmwave_range_max: 220.0

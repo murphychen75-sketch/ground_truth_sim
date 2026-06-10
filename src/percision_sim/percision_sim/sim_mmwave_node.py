@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import math
+import zlib
 from typing import List, Optional
 
 import numpy as np
@@ -32,12 +33,10 @@ class SimMmwaveNode(Node):
         self.declare_parameter("radar_yaw", 0.0)
         self.declare_parameter("fov_half_angle", math.pi / 3.0)  # 120deg total FoV
         self.declare_parameter("radial_noise_std", 0.5)
-        self.declare_parameter("angle_noise_std", 0.08)
-        self.declare_parameter("velocity_noise_std", 0.1)
+        self.declare_parameter("angle_noise_deg", 0.1)
+        self.declare_parameter("velocity_resolution_m_s", 0.1)
         self.declare_parameter("size_jitter", 0.2)
-        self.declare_parameter("snr_min", 10.0)
-        self.declare_parameter("snr_max", 30.0)
-        self.declare_parameter("cylinder_height", 1.0)
+        self.declare_parameter("motion_speed_threshold_m_s", 0.3)
         self.declare_parameter("publish_rate_hz", 0.0)
 
         self._input_topic = self._get_string("input_topic")
@@ -48,12 +47,10 @@ class SimMmwaveNode(Node):
         self._radar_yaw = self._get_float("radar_yaw")
         self._fov_half_angle = max(0.0, self._get_float("fov_half_angle"))
         self._radial_std = max(0.0, self._get_float("radial_noise_std"))
-        self._angle_std = max(0.0, self._get_float("angle_noise_std"))
-        self._velocity_std = max(0.0, self._get_float("velocity_noise_std"))
+        self._angle_noise_deg = max(0.0, self._get_float("angle_noise_deg"))
+        self._velocity_resolution = max(0.0, self._get_float("velocity_resolution_m_s"))
         self._size_jitter = max(0.0, self._get_float("size_jitter"))
-        self._snr_min = self._get_float("snr_min")
-        self._snr_max = max(self._snr_min, self._get_float("snr_max"))
-        self._cylinder_height = max(0.1, self._get_float("cylinder_height"))
+        self._motion_speed_threshold = max(0.0, self._get_float("motion_speed_threshold_m_s"))
         publish_rate = self._get_float("publish_rate_hz")
         self._min_publish_period = 1.0 / publish_rate if publish_rate > 0.0 else 0.0
         self._last_publish_time: Optional[float] = None
@@ -70,8 +67,16 @@ class SimMmwaveNode(Node):
         total_fov_deg = math.degrees(self._fov_half_angle * 2.0)
         rate_info = f"{publish_rate:.1f} Hz" if publish_rate > 0.0 else "sync"
         self.get_logger().info(
-            "SimMmwaveNode ready (radar_id=%s, yaw=%.1f°, FoV≈%.1f°, rate=%s, radial_std=%.2f m, angle_std=%.2f rad)"
-            % (self._radar_id, yaw_deg, total_fov_deg, rate_info, self._radial_std, self._angle_std)
+            "SimMmwaveNode ready (radar_id=%s, yaw=%.1f°, FoV≈%.1f°, rate=%s, radial_std=%.2f m, angle_noise=±%.2f°, velocity_res=%.2f m/s)"
+            % (
+                self._radar_id,
+                yaw_deg,
+                total_fov_deg,
+                rate_info,
+                self._radial_std,
+                self._angle_noise_deg,
+                self._velocity_resolution,
+            )
         )
 
     # ------------------------------------------------------------------
@@ -92,6 +97,9 @@ class SimMmwaveNode(Node):
         targets.header.frame_id = frame_id
 
         markers = MarkerArray()
+        # RViz matches markers by (namespace, id). When fewer targets are in FoV than
+        # the previous frame, old ids would otherwise stay visible forever unless cleared.
+        markers.markers = self._make_clear_all_markers(frame_id, msg.header.stamp)
         marker_list: List[Marker] = []
 
         cos_yaw = math.cos(-self._radar_yaw)
@@ -108,11 +116,12 @@ class SimMmwaveNode(Node):
                 continue
 
             noisy_x, noisy_y = self._apply_polar_noise(track.x, track.y)
-            noisy_vx = self._apply_velocity_noise(track.v_x)
-            noisy_vy = self._apply_velocity_noise(track.v_y)
+            noisy_vx = self._quantize_velocity(track.v_x)
+            noisy_vy = self._quantize_velocity(track.v_y)
             jittered_w = self._apply_size_jitter(track.size_w)
             jittered_l = self._apply_size_jitter(track.size_l)
-            snr = self._rng.uniform(self._snr_min, self._snr_max)
+            speed = math.hypot(noisy_vx, noisy_vy)
+            objmotion = 1 if speed >= self._motion_speed_threshold else 0
 
             target = MmwaveTarget()
             target.radar_id = self._radar_id
@@ -123,7 +132,8 @@ class SimMmwaveNode(Node):
             target.size_w = jittered_w
             target.size_l = jittered_l
             target.size_h = track.size_h
-            target.snr = snr
+            target.objmotion_status = objmotion
+            target.track_id = int(zlib.crc32(bytes(track.track_id.uuid)) & 0xFFFFFFFF)
             targets.targets.append(target)
 
             marker_list.extend(
@@ -135,18 +145,13 @@ class SimMmwaveNode(Node):
                     y=noisy_y,
                     vx=noisy_vx,
                     vy=noisy_vy,
-                    diameter=max(max(jittered_w, jittered_l), 0.5),
+                    size_w=jittered_w,
+                    size_l=jittered_l,
+                    size_h=track.size_h,
                 )
             )
 
-        if marker_list:
-            markers.markers = marker_list
-        else:
-            delete_marker = Marker()
-            delete_marker.header.frame_id = frame_id
-            delete_marker.header.stamp = msg.header.stamp
-            delete_marker.action = Marker.DELETEALL
-            markers.markers = [delete_marker]
+        markers.markers.extend(marker_list)
 
         self._target_pub.publish(targets)
         self._marker_pub.publish(markers)
@@ -159,14 +164,15 @@ class SimMmwaveNode(Node):
         theta = math.atan2(y, x)
         if self._radial_std > 0.0:
             r = float(self._rng.normal(r, self._radial_std))
-        if self._angle_std > 0.0:
-            theta = float(self._rng.normal(theta, self._angle_std))
+        if self._angle_noise_deg > 0.0:
+            delta_deg = float(self._rng.uniform(-self._angle_noise_deg, self._angle_noise_deg))
+            theta += math.radians(delta_deg)
         return r * math.cos(theta), r * math.sin(theta)
 
-    def _apply_velocity_noise(self, value: float) -> float:
-        if self._velocity_std <= 0.0:
+    def _quantize_velocity(self, value: float) -> float:
+        if self._velocity_resolution <= 0.0:
             return value
-        return float(self._rng.normal(value, self._velocity_std))
+        return round(value / self._velocity_resolution) * self._velocity_resolution
 
     def _apply_size_jitter(self, base: float) -> float:
         if base <= 0.0:
@@ -175,6 +181,19 @@ class SimMmwaveNode(Node):
             return base
         factor = self._rng.uniform(1.0 - self._size_jitter, 1.0 + self._size_jitter)
         return max(0.0, base * float(factor))
+
+    def _make_clear_all_markers(self, frame_id: str, stamp) -> List[Marker]:
+        """DELETEALL per namespace used by this node so RViz drops stale ids."""
+        out: List[Marker] = []
+        for ns in ("mmwave_targets", "mmwave_velocity"):
+            m = Marker()
+            m.header.frame_id = frame_id
+            m.header.stamp = stamp
+            m.ns = ns
+            m.id = 0
+            m.action = Marker.DELETEALL
+            out.append(m)
+        return out
 
     def _make_markers(
         self,
@@ -185,28 +204,32 @@ class SimMmwaveNode(Node):
         y: float,
         vx: float,
         vy: float,
-        diameter: float,
+        size_w: float,
+        size_l: float,
+        size_h: float,
     ) -> List[Marker]:
-        cylinder = Marker()
-        cylinder.header.frame_id = frame_id
-        cylinder.header.stamp = stamp
-        cylinder.ns = "mmwave_targets"
-        cylinder.id = base_id
-        cylinder.type = Marker.CYLINDER
-        cylinder.action = Marker.ADD
-        cylinder.pose.position.x = x
-        cylinder.pose.position.y = y
-        cylinder.pose.position.z = self._cylinder_height * 0.5
-        cylinder.pose.orientation.w = 1.0
-        cylinder.scale.x = max(diameter, 0.5)
-        cylinder.scale.y = max(diameter, 0.5)
-        cylinder.scale.z = self._cylinder_height
-        cylinder.color.r = 0.0
-        cylinder.color.g = 1.0
-        cylinder.color.b = 0.0
-        cylinder.color.a = 0.8
-        cylinder.lifetime.sec = 0
-        cylinder.lifetime.nanosec = 0
+        box_h = max(size_h, 0.01)
+
+        box = Marker()
+        box.header.frame_id = frame_id
+        box.header.stamp = stamp
+        box.ns = "mmwave_targets"
+        box.id = base_id
+        box.type = Marker.CUBE
+        box.action = Marker.ADD
+        box.pose.position.x = x
+        box.pose.position.y = y
+        box.pose.position.z = box_h * 0.5
+        box.pose.orientation.w = 1.0
+        box.scale.x = max(size_l, 0.01)
+        box.scale.y = max(size_w, 0.01)
+        box.scale.z = box_h
+        box.color.r = 0.0
+        box.color.g = 1.0
+        box.color.b = 0.0
+        box.color.a = 0.8
+        box.lifetime.sec = 0
+        box.lifetime.nanosec = 0
 
         arrow = Marker()
         arrow.header.frame_id = frame_id
@@ -215,8 +238,8 @@ class SimMmwaveNode(Node):
         arrow.id = base_id + 10000
         arrow.type = Marker.ARROW
         arrow.action = Marker.ADD
-        start = Point(x=x, y=y, z=self._cylinder_height)
-        end = Point(x=x + vx, y=y + vy, z=self._cylinder_height)
+        start = Point(x=x, y=y, z=box_h)
+        end = Point(x=x + vx, y=y + vy, z=box_h)
         arrow.points = [start, end]
         arrow.scale.x = 0.2  # shaft diameter
         arrow.scale.y = 0.4  # head diameter
@@ -228,7 +251,7 @@ class SimMmwaveNode(Node):
         arrow.lifetime.sec = 0
         arrow.lifetime.nanosec = 0
 
-        return [cylinder, arrow]
+        return [box, arrow]
 
     def _get_string(self, name: str) -> str:
         value = self.get_parameter(name).value
